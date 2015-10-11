@@ -113,7 +113,8 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5d0-y8-FIt">
                                 <rect key="frame" x="27" y="49" width="259" height="67"/>
-                                <string key="text">どんな夢を見たか教えてください</string>
+                                <string key="text">どんな夢を見たか
+教えてください</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -130,6 +131,29 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jji-Fc-LGQ">
+                                <rect key="frame" x="1" y="49" width="319" height="125"/>
+                                <string key="text">おはようございますどんな夢を見たか教えてください</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="例）海で家族と遊ぶ夢をみた" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ddY-Pe-4cf">
+                                <rect key="frame" x="38" y="182" width="240" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCp-ES-vui">
+                                <rect key="frame" x="120" y="244" width="68" height="29"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="完了">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Da3-kO-v6t" kind="show" id="vez-Pf-Qtl"/>
+                                </connections>
+                            </button>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backGroundStar.png" translatesAutoresizingMaskIntoConstraints="NO" id="w3H-NG-6FT">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="584"/>
                             </imageView>
@@ -141,6 +165,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LP9-Dm-RVi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="756" y="248"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uCT-N1-lqi">
+            <objects>
+                <viewController id="Da3-kO-v6t" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s0l-Ix-cpR"/>
+                        <viewControllerLayoutGuide type="bottom" id="csQ-eL-weQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RdP-PI-Az1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backGroundStar.png" translatesAutoresizingMaskIntoConstraints="NO" id="BCE-A6-5Pa">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="584"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4EC-7e-sU9">
+                                <rect key="frame" x="1" y="53" width="319" height="125"/>
+                                <string key="text">ありがとうございました  引き続きよろしくおねがいします。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nty-My-n3O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1139" y="248"/>
         </scene>
         <!--Non Rem View Controller-->
         <scene sceneID="bk2-vc-yqZ">
