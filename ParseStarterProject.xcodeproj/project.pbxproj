@@ -29,7 +29,6 @@
 		B014F1031BCA6435007B40D0 /* backGroundStar.png in Resources */ = {isa = PBXBuildFile; fileRef = B014F1021BCA6435007B40D0 /* backGroundStar.png */; };
 		B014F1051BCA7140007B40D0 /* musicOn.png in Resources */ = {isa = PBXBuildFile; fileRef = B014F1041BCA7140007B40D0 /* musicOn.png */; };
 		B047F2E31BA9133C0062F359 /* dreaming2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B047F2E21BA9133C0062F359 /* dreaming2.jpg */; };
-		B047F2E91BA9144B0062F359 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = B047F2E81BA9144B0062F359 /* title.png */; };
 		B047F2ED1BA91ACA0062F359 /* loveMe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B047F2EC1BA91ACA0062F359 /* loveMe.mp3 */; };
 		B06564B11B60F93500E61BCD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06564B01B60F93500E61BCD /* CoreMotion.framework */; };
 		B06A1D4D1BC9500D00567957 /* shorebirdsBeach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B06A1D4C1BC9500D00567957 /* shorebirdsBeach.mp3 */; };
@@ -64,7 +63,6 @@
 		B014F1021BCA6435007B40D0 /* backGroundStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backGroundStar.png; sourceTree = "<group>"; };
 		B014F1041BCA7140007B40D0 /* musicOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = musicOn.png; sourceTree = "<group>"; };
 		B047F2E21BA9133C0062F359 /* dreaming2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dreaming2.jpg; sourceTree = "<group>"; };
-		B047F2E81BA9144B0062F359 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
 		B047F2EB1BA915B10062F359 /* dreamDate.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = dreamDate.pages; sourceTree = "<group>"; };
 		B047F2EC1BA91ACA0062F359 /* loveMe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loveMe.mp3; sourceTree = "<group>"; };
 		B06564B01B60F93500E61BCD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
@@ -116,17 +114,12 @@
 		81BA81471A49DA1800E65899 /* ParseStarterProject */ = {
 			isa = PBXGroup;
 			children = (
-				B00ACC971BC1682A0069AF91 /* brianInokashira.mp3 */,
-				B047F2EC1BA91ACA0062F359 /* loveMe.mp3 */,
+				B04153201BCB759900B0E54D /* music */,
 				B047F2EB1BA915B10062F359 /* dreamDate.pages */,
 				B014F1021BCA6435007B40D0 /* backGroundStar.png */,
-				B047F2E81BA9144B0062F359 /* title.png */,
 				B014F0F21BCA53DB007B40D0 /* backGround.png */,
-				B06A1D4C1BC9500D00567957 /* shorebirdsBeach.mp3 */,
-				B00ACC951BC166870069AF91 /* brianSinging.mp3 */,
 				B014F1041BCA7140007B40D0 /* musicOn.png */,
 				B047F2E21BA9133C0062F359 /* dreaming2.jpg */,
-				B07780B71BC3C13400C43975 /* BeachWaves.mp3 */,
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
 				B001E62F1BA93B06005AEB7F /* SleepLogModel.xcdatamodeld */,
@@ -173,6 +166,18 @@
 				81BA81761A49E0D500E65899 /* libsqlite3.dylib */,
 			);
 			name = "System Frameworks";
+			sourceTree = "<group>";
+		};
+		B04153201BCB759900B0E54D /* music */ = {
+			isa = PBXGroup;
+			children = (
+				B07780B71BC3C13400C43975 /* BeachWaves.mp3 */,
+				B00ACC951BC166870069AF91 /* brianSinging.mp3 */,
+				B00ACC971BC1682A0069AF91 /* brianInokashira.mp3 */,
+				B06A1D4C1BC9500D00567957 /* shorebirdsBeach.mp3 */,
+				B047F2EC1BA91ACA0062F359 /* loveMe.mp3 */,
+			);
+			name = music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,7 +246,6 @@
 				B047F2E31BA9133C0062F359 /* dreaming2.jpg in Resources */,
 				B047F2ED1BA91ACA0062F359 /* loveMe.mp3 in Resources */,
 				B014F1031BCA6435007B40D0 /* backGroundStar.png in Resources */,
-				B047F2E91BA9144B0062F359 /* title.png in Resources */,
 				B014F1051BCA7140007B40D0 /* musicOn.png in Resources */,
 				B014F0F31BCA53DB007B40D0 /* backGround.png in Resources */,
 				B06A1D4D1BC9500D00567957 /* shorebirdsBeach.mp3 in Resources */,

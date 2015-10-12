@@ -67,22 +67,15 @@ class SwiftPlayerManager: NSObject, AVAudioPlayerDelegate{
     }
 }
 
+
 class ViewController: UIViewController , UITextFieldDelegate {
     
     var manager : SwiftPlayerManager?
     let myMotionManager = CMMotionManager()
     
-    var first_readingX: Double = 0.0
-    var second_readingX: Double = 0.0
-    var differenceX: Double = 0.0
-    
-    var first_readingY: Double = 0.0
-    var second_readingY: Double = 0.0
-    var differenceY: Double = 0.0
-    
-    var first_readingZ: Double = 0.0
-    var second_readingZ: Double = -1.0
-    var differenceZ: Double = 0.0
+    var first_reading = CMAcceleration(x: 0.0, y: 0.0, z: 0.0)
+    var second_reading = CMAcceleration(x: 0.0, y: 0.0, z: 0.0)
+    var difference = CMAcceleration(x: 0.0, y: 0.0, z: 0.0)
     
     //var music : Bool = false
     var musicStarted : Bool = false
@@ -115,7 +108,7 @@ class ViewController: UIViewController , UITextFieldDelegate {
     override func viewDidLoad() {
         self.userName.delegate = self
         
-        var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("timerStart"), userInfo: nil, repeats: true)
+        self.timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("timerStart"), userInfo: nil, repeats: true)
         
         super.viewDidLoad()
         manager = SwiftPlayerManager()
@@ -123,67 +116,73 @@ class ViewController: UIViewController , UITextFieldDelegate {
         //readAccelerometer()
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        self.pauseMusic()
+        myMotionManager.stopAccelerometerUpdates()
+    }
+    
     //布団に入って３０分待ってから加速度を図り始める
-//                func timerStart(){
-//                    if (count < 60*30){
-//                        count++
-//                        println(count)
-//                    }
-//                    if count ==  60*30 {
-//                        readAccelerometer()
-//                    }
-//    
-//                }
-
-    //テスト用
     func timerStart(){
-        if (count < 10){
+        if (count < 60*30){
             count++
             println(count)
         }
-        if count ==  10 {
+        if count ==  60*30 {
             readAccelerometer()
         }
         
     }
-
+    
+    //テスト用
+//    func timerStart(){
+//        count++
+//        if (count < 10){
+//            println(count)
+//        }
+//        if count ==  10 {
+//            readAccelerometer()
+//        }
+//        let volume = (sin(Float(count/10)) + 1) / 2
+//        manager?.player.volume = volume
+//    }
+    
     func readAccelerometer(){
-
+        
         
         myMotionManager.accelerometerUpdateInterval = 1.0
         myMotionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue(), withHandler: {(accelerometerData:CMAccelerometerData!, error:NSError!) -> Void in
             
             let x = accelerometerData.acceleration.x
-            self.first_readingX = self.second_readingX
-            self.second_readingX = x
-            self.differenceX = abs (self.second_readingX -  self.first_readingX)
+            self.first_reading.x = self.second_reading.x
+            self.second_reading.x = x
+            self.difference.x = abs (self.second_reading.x -  self.first_reading.x)
             //println("DifferenceX:\(self.differenceX)")
             
             let y = accelerometerData.acceleration.y
-            self.first_readingY = self.second_readingY
-            self.second_readingY = y
-            self.differenceY = abs (self.second_readingY -  self.first_readingY)
+            self.first_reading.y = self.second_reading.y
+            self.second_reading.y = y
+            self.difference.y = abs (self.second_reading.y -  self.first_reading.y)
             //println("DifferenceY:\(self.differenceY)")
             
             let z = accelerometerData.acceleration.z
-            self.first_readingZ = self.second_readingZ
-            self.second_readingZ = z
-            self.differenceZ = abs (self.second_readingZ -  self.first_readingZ)
+            self.first_reading.z = self.second_reading.z
+            self.second_reading.z = z
+            self.difference.z = abs (self.second_reading.z -  self.first_reading.z)
             //println("DifferenceZ:\(self.differenceZ)")
             
             //Parse: create a table of acceletometer data
-            var accelerometer = PFObject(className: NSUUID().UUIDString)
+            var accelerometer = PFObject(className: "Data")
             
             if let user = PFUser.currentUser(),
                 objectID = user.objectId {
-                accelerometer["userID"] = objectID
+                    accelerometer["userID"] = objectID
             }
             
             //Parse: setting up variables details
             accelerometer["name"] = name
-            accelerometer["DifferenceX"]=self.differenceX
-            accelerometer["DifferenceY"]=self.differenceY
-            accelerometer["DifferenceZ"]=self.differenceZ
+            accelerometer["DifferenceX"]=self.difference.x
+            accelerometer["DifferenceY"]=self.difference.y
+            accelerometer["DifferenceZ"]=self.difference.z
             accelerometer["REM"]=self.rem
             
             //Parse: send! checking if it's sucessful
@@ -196,7 +195,9 @@ class ViewController: UIViewController , UITextFieldDelegate {
                 }
             }
             
-            if ((self.differenceX > 0.1 || self.differenceY > 0.1 ) || self.differenceZ > 0.1 ){
+            if ((self.difference.x > 0.1 || self.difference.y > 0.1 ) || self.difference.z > 0.1 ){
+                
+                
                 
                 //self.movement = true
                 
