@@ -33,7 +33,6 @@
 		B06564B11B60F93500E61BCD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06564B01B60F93500E61BCD /* CoreMotion.framework */; };
 		B06A1D4D1BC9500D00567957 /* shorebirdsBeach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B06A1D4C1BC9500D00567957 /* shorebirdsBeach.mp3 */; };
 		B07780B81BC3C13400C43975 /* BeachWaves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B07780B71BC3C13400C43975 /* BeachWaves.mp3 */; };
-		B07780BA1BC3CA6300C43975 /* nonRemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07780B91BC3CA6300C43975 /* nonRemViewController.swift */; };
 		B0EFEA451B62071200D71A35 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0EFEA441B62071200D71A35 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,7 +67,6 @@
 		B06564B01B60F93500E61BCD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		B06A1D4C1BC9500D00567957 /* shorebirdsBeach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shorebirdsBeach.mp3; sourceTree = "<group>"; };
 		B07780B71BC3C13400C43975 /* BeachWaves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BeachWaves.mp3; sourceTree = "<group>"; };
-		B07780B91BC3CA6300C43975 /* nonRemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = nonRemViewController.swift; sourceTree = "<group>"; };
 		B0EFEA441B62071200D71A35 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -126,7 +124,6 @@
 				81BA814E1A49DA1800E65899 /* Main.storyboard */,
 				B014F0F61BCA5922007B40D0 /* UserInputModeViewController.swift */,
 				B014F0F41BCA57C5007B40D0 /* appExplanationViewController.swift */,
-				B07780B91BC3CA6300C43975 /* nonRemViewController.swift */,
 				81BA81511A49DA1800E65899 /* Images.xcassets */,
 				81BA81481A49DA1800E65899 /* Supporting Files */,
 			);
@@ -281,7 +278,6 @@
 				B001E6311BA93B06005AEB7F /* SleepLogModel.xcdatamodeld in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 				B014F0F51BCA57C5007B40D0 /* appExplanationViewController.swift in Sources */,
-				B07780BA1BC3CA6300C43975 /* nonRemViewController.swift in Sources */,
 				B014F0F71BCA5922007B40D0 /* UserInputModeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
