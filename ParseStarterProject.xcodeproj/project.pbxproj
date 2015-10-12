@@ -28,6 +28,7 @@
 		B014F0F71BCA5922007B40D0 /* UserInputModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B014F0F61BCA5922007B40D0 /* UserInputModeViewController.swift */; };
 		B014F1031BCA6435007B40D0 /* backGroundStar.png in Resources */ = {isa = PBXBuildFile; fileRef = B014F1021BCA6435007B40D0 /* backGroundStar.png */; };
 		B014F1051BCA7140007B40D0 /* musicOn.png in Resources */ = {isa = PBXBuildFile; fileRef = B014F1041BCA7140007B40D0 /* musicOn.png */; };
+		B04153261BCC11FF00B0E54D /* userFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04153251BCC11FF00B0E54D /* userFeedbackViewController.swift */; };
 		B047F2ED1BA91ACA0062F359 /* loveMe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B047F2EC1BA91ACA0062F359 /* loveMe.mp3 */; };
 		B06564B11B60F93500E61BCD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06564B01B60F93500E61BCD /* CoreMotion.framework */; };
 		B06A1D4D1BC9500D00567957 /* shorebirdsBeach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B06A1D4C1BC9500D00567957 /* shorebirdsBeach.mp3 */; };
@@ -60,6 +61,7 @@
 		B014F0F61BCA5922007B40D0 /* UserInputModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInputModeViewController.swift; sourceTree = "<group>"; };
 		B014F1021BCA6435007B40D0 /* backGroundStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backGroundStar.png; sourceTree = "<group>"; };
 		B014F1041BCA7140007B40D0 /* musicOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = musicOn.png; sourceTree = "<group>"; };
+		B04153251BCC11FF00B0E54D /* userFeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userFeedbackViewController.swift; sourceTree = "<group>"; };
 		B047F2EB1BA915B10062F359 /* dreamDate.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = dreamDate.pages; sourceTree = "<group>"; };
 		B047F2EC1BA91ACA0062F359 /* loveMe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loveMe.mp3; sourceTree = "<group>"; };
 		B06564B01B60F93500E61BCD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
@@ -118,6 +120,7 @@
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
 				B014F0F61BCA5922007B40D0 /* UserInputModeViewController.swift */,
 				B014F0F41BCA57C5007B40D0 /* appExplanationViewController.swift */,
+				B04153251BCC11FF00B0E54D /* userFeedbackViewController.swift */,
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				81BA81511A49DA1800E65899 /* Images.xcassets */,
 				81BA81481A49DA1800E65899 /* Supporting Files */,
@@ -288,6 +291,7 @@
 			files = (
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
 				B001E6311BA93B06005AEB7F /* SleepLogModel.xcdatamodeld in Sources */,
+				B04153261BCC11FF00B0E54D /* userFeedbackViewController.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 				B014F0F51BCA57C5007B40D0 /* appExplanationViewController.swift in Sources */,
 				B014F0F71BCA5922007B40D0 /* UserInputModeViewController.swift in Sources */,

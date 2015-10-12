@@ -86,15 +86,9 @@ class ViewController: UIViewController , UITextFieldDelegate {
     
     var rem : Bool = true
     
-    let image0 = UIImage(named: "images/backGroundStar.png")
-    let image1 = UIImage(named: "images/dreaming2.jpg")
-    
     @IBOutlet var showDreaming: UIImageView!
-    
     @IBOutlet var userName: UITextField!
-    
     @IBOutlet var enterButton: UIButton!
-    
     @IBOutlet var explanation: UILabel!
     
     @IBAction func userNameEnter(sender: AnyObject) {
@@ -112,8 +106,6 @@ class ViewController: UIViewController , UITextFieldDelegate {
         
         super.viewDidLoad()
         manager = SwiftPlayerManager()
-        
-        //readAccelerometer()
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -122,32 +114,31 @@ class ViewController: UIViewController , UITextFieldDelegate {
     }
     
     //布団に入って３０分待ってから加速度を図り始める
-    func timerStart(){
-        if (count < 60*30){
-            count++
-            println(count)
-        }
-        if count ==  60*30 {
-            readAccelerometer()
-        }
-        
-    }
+    //    func timerStart(){
+    //        if (count < 60*30){
+    //            count++
+    //            println(count)
+    //        }
+    //        if count ==  60*30 {
+    //            readAccelerometer()
+    //        }
+    //
+    //    }
     
     //テスト用
-//    func timerStart(){
-//        count++
-//        if (count < 10){
-//            println(count)
-//        }
-//        if count ==  10 {
-//            readAccelerometer()
-//        }
-//        let volume = (sin(Float(count/10)) + 1) / 2
-//        manager?.player.volume = volume
-//    }
+    func timerStart(){
+        count++
+        if (count < 10){
+            println(count)
+        }
+        if count ==  10 {
+            readAccelerometer()
+        }
+        let volume = (sin(Float(count/10)) + 1) / 2
+        manager?.player.volume = volume
+    }
     
     func readAccelerometer(){
-        
         
         myMotionManager.accelerometerUpdateInterval = 1.0
         myMotionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue(), withHandler: {(accelerometerData:CMAccelerometerData!, error:NSError!) -> Void in
@@ -196,7 +187,6 @@ class ViewController: UIViewController , UITextFieldDelegate {
             }
             
             if ((self.difference.x > 0.1 || self.difference.y > 0.1 ) || self.difference.z > 0.1 ){
-                
                 
                 
                 //self.movement = true

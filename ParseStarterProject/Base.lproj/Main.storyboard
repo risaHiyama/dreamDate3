@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="348" y="248"/>
         </scene>
-        <!--View Controller-->
+        <!--User Feedback View Controller-->
         <scene sceneID="UcZ-cs-8dq">
             <objects>
-                <viewController id="WWT-yO-OwP" sceneMemberID="viewController">
+                <viewController id="WWT-yO-OwP" customClass="userFeedbackViewController" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="360-nI-c9V"/>
                         <viewControllerLayoutGuide type="bottom" id="E2v-Es-ND3"/>
@@ -117,6 +117,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="userFeedback" destination="rAk-gx-Pv1" id="WMU-ia-JXR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LP9-Dm-RVi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -139,7 +142,8 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5G-Pc-egg">
                                 <rect key="frame" x="32" y="128" width="257" height="69"/>
-                                <string key="text">ありがとうございましたよろしくおねがいします</string>
+                                <string key="text">ありがとうございました
+よろしくおねがいします</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -156,7 +160,6 @@
         <!--User Input Mode View Controller-->
         <scene sceneID="Pnb-jy-hXB">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tgC-Lm-2bF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="XWY-TP-i4A" customClass="UserInputModeViewController" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e9j-1j-XcQ"/>
@@ -208,6 +211,7 @@
                         <outlet property="button2" destination="d3B-up-GUz" id="jna-rw-ADx"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tgC-Lm-2bF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-362" y="248"/>
         </scene>
