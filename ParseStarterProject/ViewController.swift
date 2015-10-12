@@ -172,9 +172,15 @@ class ViewController: UIViewController , UITextFieldDelegate {
             //println("DifferenceZ:\(self.differenceZ)")
             
             //Parse: create a table of acceletometer data
-            var accelerometer = PFObject(className:name)
+            var accelerometer = PFObject(className: NSUUID().UUIDString)
+            
+            if let user = PFUser.currentUser(),
+                objectID = user.objectId {
+                accelerometer["userID"] = objectID
+            }
             
             //Parse: setting up variables details
+            accelerometer["name"] = name
             accelerometer["DifferenceX"]=self.differenceX
             accelerometer["DifferenceY"]=self.differenceY
             accelerometer["DifferenceZ"]=self.differenceZ
@@ -203,12 +209,17 @@ class ViewController: UIViewController , UITextFieldDelegate {
                 //                    push.setMessage("Satomi is dreaming!")
                 //                    push.sendPushInBackground()
                 
-                self.playMusic()
+                if self.rem == true {
+                    self.playMusic()
+                }
                 
                 //accelerometer["moved"]=self.movement
                 //println("moved")
             }
             else{
+                if self.rem == false {
+                    self.playMusic()
+                }
             }
             
             if (self.manager!.playState()) {
