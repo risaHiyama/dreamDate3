@@ -18,6 +18,10 @@ class userFeedbackViewController: UIViewController {
     
     @IBOutlet var userFeedback: UITextField!
     
+    @IBAction func userInput(sender: AnyObject) {
+        //userFeedback.textをpartse class Dreamに送る
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

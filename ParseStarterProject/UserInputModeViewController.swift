@@ -8,8 +8,6 @@
 
 import UIKit
 
-
-
 class UserInputModeViewController: UIViewController {
     
     @IBOutlet weak var button1: UIButton!

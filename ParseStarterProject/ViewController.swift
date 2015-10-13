@@ -141,25 +141,23 @@ class ViewController: UIViewController , UITextFieldDelegate {
     func readAccelerometer(){
         
         myMotionManager.accelerometerUpdateInterval = 1.0
+        
         myMotionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue(), withHandler: {(accelerometerData:CMAccelerometerData!, error:NSError!) -> Void in
             
             let x = accelerometerData.acceleration.x
             self.first_reading.x = self.second_reading.x
             self.second_reading.x = x
             self.difference.x = abs (self.second_reading.x -  self.first_reading.x)
-            //println("DifferenceX:\(self.differenceX)")
             
             let y = accelerometerData.acceleration.y
             self.first_reading.y = self.second_reading.y
             self.second_reading.y = y
             self.difference.y = abs (self.second_reading.y -  self.first_reading.y)
-            //println("DifferenceY:\(self.differenceY)")
             
             let z = accelerometerData.acceleration.z
             self.first_reading.z = self.second_reading.z
             self.second_reading.z = z
             self.difference.z = abs (self.second_reading.z -  self.first_reading.z)
-            //println("DifferenceZ:\(self.differenceZ)")
             
             //Parse: create a table of acceletometer data
             var accelerometer = PFObject(className: "Data")
@@ -188,17 +186,14 @@ class ViewController: UIViewController , UITextFieldDelegate {
             
             if ((self.difference.x > 0.1 || self.difference.y > 0.1 ) || self.difference.z > 0.1 ){
                 
-                
                 //self.movement = true
-                
                 //self.music = true
                 
                 // Send a notification to all devices subscribed to the "Giants" channel.
-                //                    let push = PFPush()
-                //
-                //                    push.setChannel("Giants")
-                //                    push.setMessage("Satomi is dreaming!")
-                //                    push.sendPushInBackground()
+                //  let push = PFPush()
+                //  push.setChannel("Giants")
+                //  push.setMessage("Satomi is dreaming!")
+                //  push.sendPushInBackground()
                 
                 if self.rem == true {
                     self.playMusic()
@@ -222,7 +217,6 @@ class ViewController: UIViewController , UITextFieldDelegate {
             }
         })
     }
-    
     
     func playMusic(){
         self.manager!.playOrPause()
