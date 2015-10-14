@@ -15,12 +15,10 @@ class logInViewController: UIViewController {
     
     var signupActive = true
     
-    
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
     
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
-    
     
     @IBOutlet weak var topButton: UIButton!
     @IBOutlet weak var bottonButton: UIButton!
@@ -29,11 +27,12 @@ class logInViewController: UIViewController {
     @IBAction func login(sender: AnyObject) {
         
         if signupActive == true {
+            
             topButton.setTitle("Log in", forState : UIControlState.Normal)
             
             registeredText.text = "既に登録している"
             
-            bottonButton.setTitle("Sign up",forState : UIControlState.Normal)
+            bottonButton.setTitle("Sign up", forState : UIControlState.Normal)
             
             signupActive = false
         } else {
@@ -41,7 +40,7 @@ class logInViewController: UIViewController {
             
             registeredText.text = "既に登録している"
             
-            bottonButton.setTitle("Log in",forState : UIControlState.Normal)
+            bottonButton.setTitle("Log in", forState : UIControlState.Normal)
             
             signupActive = true
             
@@ -85,6 +84,7 @@ class logInViewController: UIViewController {
             if signupActive == true {
                 
                 let user = PFUser()
+                
                 user.username = username.text
                 user.password = password.text
                 
@@ -99,11 +99,12 @@ class logInViewController: UIViewController {
                         //signup successful
                         self.performSegueWithIdentifier("login",sender: self)
                         
-                    }else {
+                    } else {
                         
-                        if let errorString = error!.userInfo["error"] as? String{
+                        if let errorString = error!.userInfo ["error"] as? String{
                             
                             errorMessage = errorString
+                            
                         }
                         
                         self.displayAlert("Failded Signup", message: errorMessage)
@@ -116,6 +117,7 @@ class logInViewController: UIViewController {
                 
                 
                 PFUser.logInWithUsernameInBackground(username.text!, password: password.text!, block:
+                    
                     {(user, error) -> Void in
                         
                         if user != nil{
@@ -132,12 +134,16 @@ class logInViewController: UIViewController {
                             
                             self.displayAlert("Failded Login", message: errorMessage)
                             
-                            
-                            
                     }
                 })
             }
         }
+    }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        username.endEditing(true)
+        password.endEditing(true)
+        super.touchesBegan(touches, withEvent: event)
     }
     
     

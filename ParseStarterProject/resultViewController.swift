@@ -72,10 +72,11 @@ class resultViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
-    
-    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        result.endEditing(true)
+        super.touchesBegan(touches, withEvent: event)
+    }
+
     /*
     // MARK: - Navigation
     

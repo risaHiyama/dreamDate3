@@ -225,6 +225,10 @@ class ViewController: UIViewController , UITextFieldDelegate {
         })
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        self.pauseMusic()
+    }
+    
     
     func playMusic(){
         self.manager!.playOrPause()
