@@ -28,14 +28,12 @@
 		B014F0F71BCA5922007B40D0 /* UserInputModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B014F0F61BCA5922007B40D0 /* UserInputModeViewController.swift */; };
 		B014F1031BCA6435007B40D0 /* backGroundStar.png in Resources */ = {isa = PBXBuildFile; fileRef = B014F1021BCA6435007B40D0 /* backGroundStar.png */; };
 		B014F1051BCA7140007B40D0 /* musicOn.png in Resources */ = {isa = PBXBuildFile; fileRef = B014F1041BCA7140007B40D0 /* musicOn.png */; };
-		B047F2E31BA9133C0062F359 /* dreaming2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B047F2E21BA9133C0062F359 /* dreaming2.jpg */; };
-		B047F2E91BA9144B0062F359 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = B047F2E81BA9144B0062F359 /* title.png */; };
 		B047F2ED1BA91ACA0062F359 /* loveMe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B047F2EC1BA91ACA0062F359 /* loveMe.mp3 */; };
 		B06564B11B60F93500E61BCD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06564B01B60F93500E61BCD /* CoreMotion.framework */; };
 		B06A1D4D1BC9500D00567957 /* shorebirdsBeach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B06A1D4C1BC9500D00567957 /* shorebirdsBeach.mp3 */; };
 		B07780B81BC3C13400C43975 /* BeachWaves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B07780B71BC3C13400C43975 /* BeachWaves.mp3 */; };
-		B07780BA1BC3CA6300C43975 /* nonRemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07780B91BC3CA6300C43975 /* nonRemViewController.swift */; };
 		B0EFEA451B62071200D71A35 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0EFEA441B62071200D71A35 /* AVFoundation.framework */; };
+		E47CB5501BCD0585000BD89E /* logInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47CB54F1BCD0584000BD89E /* logInViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,15 +61,13 @@
 		B014F0F61BCA5922007B40D0 /* UserInputModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInputModeViewController.swift; sourceTree = "<group>"; };
 		B014F1021BCA6435007B40D0 /* backGroundStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backGroundStar.png; sourceTree = "<group>"; };
 		B014F1041BCA7140007B40D0 /* musicOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = musicOn.png; sourceTree = "<group>"; };
-		B047F2E21BA9133C0062F359 /* dreaming2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dreaming2.jpg; sourceTree = "<group>"; };
-		B047F2E81BA9144B0062F359 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
 		B047F2EB1BA915B10062F359 /* dreamDate.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = dreamDate.pages; sourceTree = "<group>"; };
 		B047F2EC1BA91ACA0062F359 /* loveMe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loveMe.mp3; sourceTree = "<group>"; };
 		B06564B01B60F93500E61BCD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		B06A1D4C1BC9500D00567957 /* shorebirdsBeach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shorebirdsBeach.mp3; sourceTree = "<group>"; };
 		B07780B71BC3C13400C43975 /* BeachWaves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BeachWaves.mp3; sourceTree = "<group>"; };
-		B07780B91BC3CA6300C43975 /* nonRemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = nonRemViewController.swift; sourceTree = "<group>"; };
 		B0EFEA441B62071200D71A35 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E47CB54F1BCD0584000BD89E /* logInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = logInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,24 +112,16 @@
 		81BA81471A49DA1800E65899 /* ParseStarterProject */ = {
 			isa = PBXGroup;
 			children = (
-				B00ACC971BC1682A0069AF91 /* brianInokashira.mp3 */,
-				B047F2EC1BA91ACA0062F359 /* loveMe.mp3 */,
-				B047F2EB1BA915B10062F359 /* dreamDate.pages */,
-				B014F1021BCA6435007B40D0 /* backGroundStar.png */,
-				B047F2E81BA9144B0062F359 /* title.png */,
-				B014F0F21BCA53DB007B40D0 /* backGround.png */,
-				B06A1D4C1BC9500D00567957 /* shorebirdsBeach.mp3 */,
-				B00ACC951BC166870069AF91 /* brianSinging.mp3 */,
-				B014F1041BCA7140007B40D0 /* musicOn.png */,
-				B047F2E21BA9133C0062F359 /* dreaming2.jpg */,
-				B07780B71BC3C13400C43975 /* BeachWaves.mp3 */,
+				E4EF38801BCCEB2E007730FC /* music */,
+				E4EF38811BCCEB54007730FC /* music */,
+				E4EF38821BCCEB60007730FC /* domucment */,
+				81BA814E1A49DA1800E65899 /* Main.storyboard */,
+				E47CB54F1BCD0584000BD89E /* logInViewController.swift */,
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
-				B001E62F1BA93B06005AEB7F /* SleepLogModel.xcdatamodeld */,
-				81BA814E1A49DA1800E65899 /* Main.storyboard */,
 				B014F0F61BCA5922007B40D0 /* UserInputModeViewController.swift */,
 				B014F0F41BCA57C5007B40D0 /* appExplanationViewController.swift */,
-				B07780B91BC3CA6300C43975 /* nonRemViewController.swift */,
+				B001E62F1BA93B06005AEB7F /* SleepLogModel.xcdatamodeld */,
 				81BA81511A49DA1800E65899 /* Images.xcassets */,
 				81BA81481A49DA1800E65899 /* Supporting Files */,
 			);
@@ -175,6 +163,36 @@
 			name = "System Frameworks";
 			sourceTree = "<group>";
 		};
+		E4EF38801BCCEB2E007730FC /* music */ = {
+			isa = PBXGroup;
+			children = (
+				B00ACC971BC1682A0069AF91 /* brianInokashira.mp3 */,
+				B047F2EC1BA91ACA0062F359 /* loveMe.mp3 */,
+				B06A1D4C1BC9500D00567957 /* shorebirdsBeach.mp3 */,
+				B00ACC951BC166870069AF91 /* brianSinging.mp3 */,
+				B07780B71BC3C13400C43975 /* BeachWaves.mp3 */,
+			);
+			name = music;
+			sourceTree = "<group>";
+		};
+		E4EF38811BCCEB54007730FC /* music */ = {
+			isa = PBXGroup;
+			children = (
+				B014F1021BCA6435007B40D0 /* backGroundStar.png */,
+				B014F0F21BCA53DB007B40D0 /* backGround.png */,
+				B014F1041BCA7140007B40D0 /* musicOn.png */,
+			);
+			name = music;
+			sourceTree = "<group>";
+		};
+		E4EF38821BCCEB60007730FC /* domucment */ = {
+			isa = PBXGroup;
+			children = (
+				B047F2EB1BA915B10062F359 /* dreamDate.pages */,
+			);
+			name = domucment;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -202,7 +220,9 @@
 		81BA813D1A49DA1800E65899 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Parse;
 				TargetAttributes = {
 					81BA81441A49DA1800E65899 = {
@@ -238,10 +258,8 @@
 				B00ACC961BC166870069AF91 /* brianSinging.mp3 in Resources */,
 				B00ACC981BC1682A0069AF91 /* brianInokashira.mp3 in Resources */,
 				B07780B81BC3C13400C43975 /* BeachWaves.mp3 in Resources */,
-				B047F2E31BA9133C0062F359 /* dreaming2.jpg in Resources */,
 				B047F2ED1BA91ACA0062F359 /* loveMe.mp3 in Resources */,
 				B014F1031BCA6435007B40D0 /* backGroundStar.png in Resources */,
-				B047F2E91BA9144B0062F359 /* title.png in Resources */,
 				B014F1051BCA7140007B40D0 /* musicOn.png in Resources */,
 				B014F0F31BCA53DB007B40D0 /* backGround.png in Resources */,
 				B06A1D4D1BC9500D00567957 /* shorebirdsBeach.mp3 in Resources */,
@@ -277,7 +295,7 @@
 				B001E6311BA93B06005AEB7F /* SleepLogModel.xcdatamodeld in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 				B014F0F51BCA57C5007B40D0 /* appExplanationViewController.swift in Sources */,
-				B07780BA1BC3CA6300C43975 /* nonRemViewController.swift in Sources */,
+				E47CB5501BCD0585000BD89E /* logInViewController.swift in Sources */,
 				B014F0F71BCA5922007B40D0 /* UserInputModeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,7 +334,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: 理紗 樋山 (KSZE6D49E7)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 理紗 樋山 (KSZE6D49E7)";
 				COPY_PHASE_STRIP = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -334,7 +355,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "c5ad1793-a389-4cb1-815d-b876861ee1ff";
+				PROVISIONING_PROFILE = "7099d8b4-1ffe-4409-a4d4-a75da5f67b70";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -361,6 +382,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: 理紗 樋山 (KSZE6D49E7)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 理紗 樋山 (KSZE6D49E7)";
 				COPY_PHASE_STRIP = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -372,7 +395,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "c5ad1793-a389-4cb1-815d-b876861ee1ff";
+				PROVISIONING_PROFILE = "7099d8b4-1ffe-4409-a4d4-a75da5f67b70";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -387,6 +410,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: 理紗 樋山 (KSZE6D49E7)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -394,6 +418,7 @@
 				INFOPLIST_FILE = ParseStarterProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.risahiyama.dreamdate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ParseStarterProject/ParseStarterProject-Bridging-Header.h";
@@ -408,6 +433,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -415,6 +441,7 @@
 				INFOPLIST_FILE = ParseStarterProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.risahiyama.dreamdate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ParseStarterProject/ParseStarterProject-Bridging-Header.h";

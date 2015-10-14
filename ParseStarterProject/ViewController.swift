@@ -26,11 +26,10 @@ class SwiftPlayerManager: NSObject, AVAudioPlayerDelegate{
         let audioPath = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("shorebirdsBeach", ofType: "mp3")!)
         
         // プレイヤー準備
-        player = AVAudioPlayer(contentsOfURL: audioPath, error: nil)
+        player = try? AVAudioPlayer(contentsOfURL: audioPath)
         player.delegate = self
         player.prepareToPlay()
         player.numberOfLoops=2*10
-        
         
         // When users indicate they are Giants fans, we subscribe them to that channel.
         //            let currentInstallation = PFInstallation.currentInstallation()
@@ -48,7 +47,7 @@ class SwiftPlayerManager: NSObject, AVAudioPlayerDelegate{
     }
     
     // 再生終了時処理
-    func audioPlayerDidFinishPlaying(player: AVAudioPlayer!, successfully flag: Bool) {
+    func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool) {
         player.stop()
         
         // 再生終了を通知
@@ -93,9 +92,6 @@ class ViewController: UIViewController , UITextFieldDelegate {
     
     var rem : Bool = true
     
-    let image0 = UIImage(named: "images/backGroundStar.png")
-    let image1 = UIImage(named: "images/dreaming2.jpg")
-    
     @IBOutlet var showDreaming: UIImageView!
     
     @IBOutlet var userName: UITextField!
@@ -105,7 +101,7 @@ class ViewController: UIViewController , UITextFieldDelegate {
     @IBOutlet var explanation: UILabel!
     
     @IBAction func userNameEnter(sender: AnyObject) {
-        name=userName.text
+        name=userName.text!
         enterButton.hidden = true
         userName.hidden = true
         explanation.hidden = true
@@ -115,12 +111,11 @@ class ViewController: UIViewController , UITextFieldDelegate {
     override func viewDidLoad() {
         self.userName.delegate = self
         
-        var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("timerStart"), userInfo: nil, repeats: true)
+        _ = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("timerStart"), userInfo: nil, repeats: true)
         
         super.viewDidLoad()
         manager = SwiftPlayerManager()
         
-        //readAccelerometer()
     }
     
     //布団に入って３０分待ってから加速度を図り始める
@@ -139,7 +134,7 @@ class ViewController: UIViewController , UITextFieldDelegate {
     func timerStart(){
         if (count < 10){
             count++
-            println(count)
+            print(count)
         }
         if count ==  10 {
             readAccelerometer()
@@ -149,34 +144,37 @@ class ViewController: UIViewController , UITextFieldDelegate {
 
     func readAccelerometer(){
 
-        
         myMotionManager.accelerometerUpdateInterval = 1.0
-        myMotionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue(), withHandler: {(accelerometerData:CMAccelerometerData!, error:NSError!) -> Void in
+        myMotionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue(), withHandler: {(accelerometerData:CMAccelerometerData?, error:NSError?) -> Void in
             
-            let x = accelerometerData.acceleration.x
-            self.first_readingX = self.second_readingX
-            self.second_readingX = x
-            self.differenceX = abs (self.second_readingX -  self.first_readingX)
-            //println("DifferenceX:\(self.differenceX)")
+            if let x = accelerometerData?.acceleration.x {
+                self.first_readingX = self.second_readingX
+                self.second_readingX = x
+                self.differenceX = abs (self.second_readingX -  self.first_readingX)
+                //println("DifferenceX:\(self.differenceX)")
+            }
             
-            let y = accelerometerData.acceleration.y
-            self.first_readingY = self.second_readingY
-            self.second_readingY = y
-            self.differenceY = abs (self.second_readingY -  self.first_readingY)
-            //println("DifferenceY:\(self.differenceY)")
+            if let y = accelerometerData?.acceleration.y {
+                self.first_readingY = self.second_readingY
+                self.second_readingY = y
+                self.differenceY = abs (self.second_readingY -  self.first_readingY)
+                //println("DifferenceY:\(self.differenceY)")
+            }
             
-            let z = accelerometerData.acceleration.z
-            self.first_readingZ = self.second_readingZ
-            self.second_readingZ = z
-            self.differenceZ = abs (self.second_readingZ -  self.first_readingZ)
-            //println("DifferenceZ:\(self.differenceZ)")
+            if let z = accelerometerData?.acceleration.z {
+                self.first_readingZ = self.second_readingZ
+                self.second_readingZ = z
+                self.differenceZ = abs (self.second_readingZ -  self.first_readingZ)
+                //println("DifferenceZ:\(self.differenceZ)")
+            }
+            
             
             //Parse: create a table of acceletometer data
-            var accelerometer = PFObject(className: NSUUID().UUIDString)
+            let accelerometer = PFObject(className: NSUUID().UUIDString)
             
             if let user = PFUser.currentUser(),
                 objectID = user.objectId {
-                accelerometer["userID"] = objectID
+                    accelerometer["userID"] = objectID
             }
             
             //Parse: setting up variables details
@@ -191,8 +189,8 @@ class ViewController: UIViewController , UITextFieldDelegate {
                 if success == true{
                     //println("Successful")
                 }else{
-                    println("Failed")
-                    println(error)
+                    print("Failed")
+                    print(error)
                 }
             }
             
