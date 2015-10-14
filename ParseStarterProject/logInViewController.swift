@@ -13,21 +13,62 @@ import Parse
 
 class logInViewController: UIViewController {
     
+    var signupActive = true
+    
+    
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
     
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
     
+    
+    @IBOutlet weak var topButton: UIButton!
+    @IBOutlet weak var bottonButton: UIButton!
+    @IBOutlet weak var registeredText: UILabel!
+    
+    @IBAction func login(sender: AnyObject) {
+        
+        if signupActive == true {
+            topButton.setTitle("Log in", forState : UIControlState.Normal)
+            
+            registeredText.text = "既に登録している"
+            
+            bottonButton.setTitle("Sign up",forState : UIControlState.Normal)
+            
+            signupActive = false
+        } else {
+            topButton.setTitle("Sign up", forState : UIControlState.Normal)
+            
+            registeredText.text = "既に登録している"
+            
+            bottonButton.setTitle("Log in",forState : UIControlState.Normal)
+            
+            signupActive = true
+            
+        }
+        
+    }
+    
+    
+    
+    func displayAlert(title: String ,message: String){
+        
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        
+        alert.addAction((UIAlertAction(title: "OK", style: .Default, handler: {(action) -> Void in
+            self.dismissViewControllerAnimated(true, completion: nil)
+        })))
+        
+        self.presentViewController(alert, animated: true, completion: nil)
+        
+    }
+    
     @IBAction func signUp(sender: AnyObject) {
+        
         if username.text == "" || password.text == ""{
             
-            let alert = UIAlertController(title: "error", message:"UsernameとPasswordの設定をして下さい", preferredStyle: UIAlertControllerStyle.Alert)
-            
-            alert.addAction((UIAlertAction(title: "OK", style: .Default, handler: {(action) -> Void in
-                self.dismissViewControllerAnimated(true, completion: nil)
-            })))
-            
-            self.presentViewController(alert, animated: true, completion: nil)
+            displayAlert("Error in form", message: "Please enter a username and password")
             
         } else {
             
@@ -39,51 +80,87 @@ class logInViewController: UIViewController {
             activityIndicator.startAnimating()
             UIApplication.sharedApplication().beginIgnoringInteractionEvents()
             
-            let user = PFUser()
-            user.username = username.text
-            user.password = password.text
+            var errorMessage = "please try again later"
             
-            _ = "please try again later"
-            
-//            user.signUpInBackgroundWithBlock({ (success, error) -> Void in
-//
-//                self.activityIndicator.stopAnimating()
-//                UIApplication.sharedApplication().endIgnoringInteractionEvents()
-//                
-//                if error= nil{
-//                    //signing up successful
-//                } else{
-//                    if let errorString = error!.userInfo?["error"] as? NSString{
-//                        
-//                    }
-//                }
+            if signupActive == true {
+                
+                let user = PFUser()
+                user.username = username.text
+                user.password = password.text
+                
+                user.signUpInBackgroundWithBlock ({
+                    (success,error) -> Void in
+                    
+                    self.activityIndicator.stopAnimating()
+                    UIApplication.sharedApplication().endIgnoringInteractionEvents()
+                    
+                    if error == nil {
+                        
+                        //signup successful
+                        self.performSegueWithIdentifier("login",sender: self)
+                        
+                    }else {
+                        
+                        if let errorString = error!.userInfo["error"] as? String{
+                            
+                            errorMessage = errorString
+                        }
+                        
+                        self.displayAlert("Failded Signup", message: errorMessage)
+                        
+                    }
+                    
+                })
+                
+            } else {
+                
+                
+                PFUser.logInWithUsernameInBackground(username.text!, password: password.text!, block:
+                    {(user, error) -> Void in
+                        
+                        if user != nil{
+                            
+                            //loged in !
+                            self.performSegueWithIdentifier("login",sender: self)
+                            
+                        } else {
+                            
+                            if let errorString = error!.userInfo["error"] as? String{
+                                
+                                errorMessage = errorString
+                            }
+                            
+                            self.displayAlert("Failded Login", message: errorMessage)
+                            
+                            
+                            
+                        }
+                })
             }
-            
         }
+    }
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
-        @IBAction func login(sender: AnyObject) {
-        }
-        
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            
-            // Do any additional setup after loading the view.
-        }
-        
-        override func didReceiveMemoryWarning() {
-            super.didReceiveMemoryWarning()
-            // Dispose of any resources that can be recreated.
-        }
-        
-        
-        /*
-        // MARK: - Navigation
-        
-        // In a storyboard-based application, you will often want to do a little preparation before navigation
-        override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-        }
-        */
-        
+        // Do any additional setup after loading the view.
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+    /*
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    // Get the new view controller using segue.destinationViewController.
+    // Pass the selected object to the new view controller.
+    }
+    */
+    
 }

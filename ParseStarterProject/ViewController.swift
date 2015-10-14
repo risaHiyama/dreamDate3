@@ -92,24 +92,19 @@ class ViewController: UIViewController , UITextFieldDelegate {
     
     var rem : Bool = true
     
-    @IBOutlet var showDreaming: UIImageView!
-    
-    @IBOutlet var userName: UITextField!
-    
-    @IBOutlet var enterButton: UIButton!
-    
     @IBOutlet var explanation: UILabel!
     
-    @IBAction func userNameEnter(sender: AnyObject) {
-        name=userName.text!
-        enterButton.hidden = true
-        userName.hidden = true
+    //開始後画像入れ替えするため
+    @IBOutlet var showDreaming: UIImageView!
+    
+    @IBOutlet weak var start: UIButton!
+    
+    @IBAction func startMonitoring(sender: AnyObject) {
+        timerStart()
         explanation.hidden = true
-        self.view.endEditing(true);
     }
     
     override func viewDidLoad() {
-        self.userName.delegate = self
         
         _ = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("timerStart"), userInfo: nil, repeats: true)
         
@@ -138,6 +133,7 @@ class ViewController: UIViewController , UITextFieldDelegate {
         }
         if count ==  10 {
             readAccelerometer()
+            start.hidden = true
         }
         
     }
@@ -170,22 +166,21 @@ class ViewController: UIViewController , UITextFieldDelegate {
             
             
             //Parse: create a table of acceletometer data
-            let accelerometer = PFObject(className: NSUUID().UUIDString)
+            let object = PFObject(className:"Data")
             
             if let user = PFUser.currentUser(),
                 objectID = user.objectId {
-                    accelerometer["userID"] = objectID
+                    object["userID"] = objectID
             }
             
             //Parse: setting up variables details
-            accelerometer["name"] = name
-            accelerometer["DifferenceX"]=self.differenceX
-            accelerometer["DifferenceY"]=self.differenceY
-            accelerometer["DifferenceZ"]=self.differenceZ
-            accelerometer["REM"]=self.rem
+            object["DifferenceX"]=self.differenceX
+            object["DifferenceY"]=self.differenceY
+            object["DifferenceZ"]=self.differenceZ
+            object["REM"]=self.rem
             
             //Parse: send! checking if it's sucessful
-            accelerometer.saveInBackgroundWithBlock{(success,error)->Void in
+            object.saveInBackgroundWithBlock{(success,error)->Void in
                 if success == true{
                     //println("Successful")
                 }else{
@@ -221,10 +216,10 @@ class ViewController: UIViewController , UITextFieldDelegate {
             }
             
             if (self.manager!.playState()) {
-                accelerometer["music"]=self.manager!.playState()
+                object["music"]=self.manager!.playState()
                 self.showDreaming.image=UIImage(named: "musicOn.png")
             } else {
-                accelerometer["music"]=self.manager!.playState()
+                object["music"]=self.manager!.playState()
                 self.showDreaming.image=UIImage(named: "backGroundStar.png")
             }
         })

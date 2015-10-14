@@ -24,7 +24,6 @@
 		B00ACC961BC166870069AF91 /* brianSinging.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B00ACC951BC166870069AF91 /* brianSinging.mp3 */; };
 		B00ACC981BC1682A0069AF91 /* brianInokashira.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B00ACC971BC1682A0069AF91 /* brianInokashira.mp3 */; };
 		B014F0F31BCA53DB007B40D0 /* backGround.png in Resources */ = {isa = PBXBuildFile; fileRef = B014F0F21BCA53DB007B40D0 /* backGround.png */; };
-		B014F0F51BCA57C5007B40D0 /* appExplanationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B014F0F41BCA57C5007B40D0 /* appExplanationViewController.swift */; };
 		B014F0F71BCA5922007B40D0 /* UserInputModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B014F0F61BCA5922007B40D0 /* UserInputModeViewController.swift */; };
 		B014F1031BCA6435007B40D0 /* backGroundStar.png in Resources */ = {isa = PBXBuildFile; fileRef = B014F1021BCA6435007B40D0 /* backGroundStar.png */; };
 		B014F1051BCA7140007B40D0 /* musicOn.png in Resources */ = {isa = PBXBuildFile; fileRef = B014F1041BCA7140007B40D0 /* musicOn.png */; };
@@ -57,7 +56,6 @@
 		B00ACC951BC166870069AF91 /* brianSinging.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = brianSinging.mp3; sourceTree = "<group>"; };
 		B00ACC971BC1682A0069AF91 /* brianInokashira.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = brianInokashira.mp3; sourceTree = "<group>"; };
 		B014F0F21BCA53DB007B40D0 /* backGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backGround.png; sourceTree = "<group>"; };
-		B014F0F41BCA57C5007B40D0 /* appExplanationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = appExplanationViewController.swift; sourceTree = "<group>"; };
 		B014F0F61BCA5922007B40D0 /* UserInputModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInputModeViewController.swift; sourceTree = "<group>"; };
 		B014F1021BCA6435007B40D0 /* backGroundStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backGroundStar.png; sourceTree = "<group>"; };
 		B014F1041BCA7140007B40D0 /* musicOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = musicOn.png; sourceTree = "<group>"; };
@@ -117,10 +115,9 @@
 				E4EF38821BCCEB60007730FC /* domucment */,
 				81BA814E1A49DA1800E65899 /* Main.storyboard */,
 				E47CB54F1BCD0584000BD89E /* logInViewController.swift */,
-				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
-				81BA814C1A49DA1800E65899 /* ViewController.swift */,
 				B014F0F61BCA5922007B40D0 /* UserInputModeViewController.swift */,
-				B014F0F41BCA57C5007B40D0 /* appExplanationViewController.swift */,
+				81BA814C1A49DA1800E65899 /* ViewController.swift */,
+				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				B001E62F1BA93B06005AEB7F /* SleepLogModel.xcdatamodeld */,
 				81BA81511A49DA1800E65899 /* Images.xcassets */,
 				81BA81481A49DA1800E65899 /* Supporting Files */,
@@ -294,7 +291,6 @@
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
 				B001E6311BA93B06005AEB7F /* SleepLogModel.xcdatamodeld in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
-				B014F0F51BCA57C5007B40D0 /* appExplanationViewController.swift in Sources */,
 				E47CB5501BCD0585000BD89E /* logInViewController.swift in Sources */,
 				B014F0F71BCA5922007B40D0 /* UserInputModeViewController.swift in Sources */,
 			);

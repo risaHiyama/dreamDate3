@@ -21,14 +21,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <animations/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="例：Risa" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="3cN-5X-ccQ">
-                                <rect key="frame" x="54" y="205" width="210" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyJ-FL-djE">
-                                <rect key="frame" x="100" y="253" width="119" height="30"/>
+                                <rect key="frame" x="100" y="223" width="119" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="スタート">
@@ -36,11 +30,21 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="userNameEnter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qat-8M-eZm"/>
+                                    <action selector="startMonitoring:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x1U-BG-l4K"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="267" translatesAutoresizingMaskIntoConstraints="NO" id="VHL-5F-UGN">
+                                <rect key="frame" x="33" y="71" width="267" height="104"/>
+                                <animations/>
+                                <string key="text">携帯を充電した状態で
+音量を３にして、
+携帯を枕の横に置いて下さい。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgr-QS-lDz">
-                                <rect key="frame" x="100" y="418" width="119" height="30"/>
+                                <rect key="frame" x="100" y="423" width="119" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="終了">
@@ -51,16 +55,6 @@
                                     <segue destination="WWT-yO-OwP" kind="show" id="zd0-J9-Idi"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="267" translatesAutoresizingMaskIntoConstraints="NO" id="VHL-5F-UGN">
-                                <rect key="frame" x="33" y="50" width="267" height="104"/>
-                                <animations/>
-                                <string key="text">携帯を充電した状態で
-音量を３にして、
-携帯を枕の横に置いて下さい。</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -68,10 +62,9 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="enterButton" destination="kyJ-FL-djE" id="a6f-kg-avP"/>
                         <outlet property="explanation" destination="VHL-5F-UGN" id="MKd-AS-DQi"/>
                         <outlet property="showDreaming" destination="OHq-iG-dCi" id="xMf-mw-G5S"/>
-                        <outlet property="userName" destination="3cN-5X-ccQ" id="smj-RV-hfa"/>
+                        <outlet property="start" destination="kyJ-FL-djE" id="ZOJ-V1-CNa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -149,7 +142,7 @@
                                 <animations/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="257" translatesAutoresizingMaskIntoConstraints="NO" id="D5G-Pc-egg">
-                                <rect key="frame" x="32" y="128" width="257" height="69"/>
+                                <rect key="frame" x="32" y="237" width="257" height="69"/>
                                 <animations/>
                                 <string key="text">ありがとうございました
 よろしくおねがいします</string>
@@ -232,10 +225,10 @@
             </objects>
             <point key="canvasLocation" x="-193" y="248"/>
         </scene>
-        <!--App Explanation View Controller-->
+        <!--View Controller-->
         <scene sceneID="aJ6-xf-Ywg">
             <objects>
-                <viewController id="d8B-li-1Gh" customClass="appExplanationViewController" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="d8B-li-1Gh" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0eZ-IJ-a2S"/>
                         <viewControllerLayoutGuide type="bottom" id="MnA-jy-bCd"/>
@@ -259,7 +252,7 @@
                                     <color key="titleShadowColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="XWY-TP-i4A" kind="show" id="fLr-nI-veU"/>
+                                    <segue destination="1oU-3B-fnU" kind="show" id="cCe-4m-vSE"/>
                                 </connections>
                             </button>
                             <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="276" translatesAutoresizingMaskIntoConstraints="NO" id="k01-lg-wdw">
@@ -307,7 +300,7 @@ leOBhOOAggrigKjljZTlipvjgZfjgabjgY/jgaDjgZXjgovmlrnjga8K5LiL44Gu44Oc44K/44Oz44KS
                                 <animations/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="255" translatesAutoresizingMaskIntoConstraints="NO" id="nUs-KL-4z7">
-                                <rect key="frame" x="33" y="131" width="255" height="109"/>
+                                <rect key="frame" x="33" y="21" width="255" height="109"/>
                                 <animations/>
                                 <string key="text">下記のフォームでログイン
 かサインインして下さい</string>
@@ -316,46 +309,26 @@ leOBhOOAggrigKjljZTlipvjgZfjgabjgY/jgaDjgZXjgovmlrnjga8K5LiL44Gu44Oc44K/44Oz44KS
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v7I-N7-cA3">
-                                <rect key="frame" x="61" y="229" width="198" height="30"/>
+                                <rect key="frame" x="61" y="119" width="198" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GDI-eI-TRU">
-                                <rect key="frame" x="61" y="267" width="198" height="30"/>
+                                <rect key="frame" x="61" y="157" width="198" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27C-a7-zm1">
-                                <rect key="frame" x="114" y="316" width="93" height="35"/>
-                                <animations/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Sign up">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="signUp:" destination="1oU-3B-fnU" eventType="touchUpInside" id="LP3-KF-GAr"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="既に登録している" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="136" translatesAutoresizingMaskIntoConstraints="NO" id="ydl-Ba-XJK">
-                                <rect key="frame" x="38" y="390" width="136" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="既に登録している" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="136" translatesAutoresizingMaskIntoConstraints="NO" id="ydl-Ba-XJK">
+                                <rect key="frame" x="38" y="280" width="136" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ch8-oA-5Do">
-                                <rect key="frame" x="139" y="395" width="42" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xtr-oA-jym">
-                                <rect key="frame" x="202" y="384" width="68" height="32"/>
+                                <rect key="frame" x="190" y="274" width="98" height="32"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -367,17 +340,31 @@ leOBhOOAggrigKjljZTlipvjgZfjgabjgY/jgaDjgZXjgovmlrnjga8K5LiL44Gu44Oc44K/44Oz44KS
                                     <action selector="login:" destination="1oU-3B-fnU" eventType="touchUpInside" id="y87-Cv-Ztg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27C-a7-zm1">
+                                <rect key="frame" x="114" y="206" width="93" height="35"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Sign up">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUp:" destination="1oU-3B-fnU" eventType="touchUpInside" id="LP3-KF-GAr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="ch8-oA-5Do" firstAttribute="leading" secondItem="ydl-Ba-XJK" secondAttribute="trailing" constant="-35" id="3Rv-e6-T95"/>
-                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="bottonButton" destination="Xtr-oA-jym" id="aEe-NZ-Dty"/>
                         <outlet property="password" destination="GDI-eI-TRU" id="0OK-5H-Wev"/>
+                        <outlet property="registeredText" destination="ydl-Ba-XJK" id="txt-rD-n3Y"/>
+                        <outlet property="topButton" destination="27C-a7-zm1" id="5RU-jX-CaO"/>
                         <outlet property="username" destination="v7I-N7-cA3" id="gf4-ET-Scx"/>
+                        <segue destination="XWY-TP-i4A" kind="show" identifier="login" id="aio-FN-m6E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6kQ-9M-qdn" userLabel="First Responder" sceneMemberID="firstResponder"/>
