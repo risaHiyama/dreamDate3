@@ -33,6 +33,7 @@
 		B07780B81BC3C13400C43975 /* BeachWaves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B07780B71BC3C13400C43975 /* BeachWaves.mp3 */; };
 		B0EFEA451B62071200D71A35 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0EFEA441B62071200D71A35 /* AVFoundation.framework */; };
 		E47CB5501BCD0585000BD89E /* logInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47CB54F1BCD0584000BD89E /* logInViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E4EE8E171BCE2FA5006EF84E /* resultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EE8E161BCE2FA5006EF84E /* resultViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		B07780B71BC3C13400C43975 /* BeachWaves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BeachWaves.mp3; sourceTree = "<group>"; };
 		B0EFEA441B62071200D71A35 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E47CB54F1BCD0584000BD89E /* logInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = logInViewController.swift; sourceTree = "<group>"; };
+		E4EE8E161BCE2FA5006EF84E /* resultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				E47CB54F1BCD0584000BD89E /* logInViewController.swift */,
 				B014F0F61BCA5922007B40D0 /* UserInputModeViewController.swift */,
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
+				E4EE8E161BCE2FA5006EF84E /* resultViewController.swift */,
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				B001E62F1BA93B06005AEB7F /* SleepLogModel.xcdatamodeld */,
 				81BA81511A49DA1800E65899 /* Images.xcassets */,
@@ -291,6 +294,7 @@
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
 				B001E6311BA93B06005AEB7F /* SleepLogModel.xcdatamodeld in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
+				E4EE8E171BCE2FA5006EF84E /* resultViewController.swift in Sources */,
 				E47CB5501BCD0585000BD89E /* logInViewController.swift in Sources */,
 				B014F0F71BCA5922007B40D0 /* UserInputModeViewController.swift in Sources */,
 			);

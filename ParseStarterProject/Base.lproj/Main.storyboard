@@ -71,10 +71,10 @@
             </objects>
             <point key="canvasLocation" x="348" y="248"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="UcZ-cs-8dq">
             <objects>
-                <viewController id="WWT-yO-OwP" sceneMemberID="viewController">
+                <viewController id="WWT-yO-OwP" customClass="resultViewController" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="360-nI-c9V"/>
                         <viewControllerLayoutGuide type="bottom" id="E2v-Es-ND3"/>
@@ -88,7 +88,7 @@
                                 <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyv-hj-CI3">
-                                <rect key="frame" x="126" y="256" width="68" height="29"/>
+                                <rect key="frame" x="126" y="191" width="68" height="29"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="完了">
@@ -96,11 +96,12 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="resultEnter:" destination="WWT-yO-OwP" eventType="touchUpInside" id="3Jt-Bp-bS1"/>
                                     <segue destination="Da3-kO-v6t" kind="show" id="9vJ-Wo-f6L"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="259" translatesAutoresizingMaskIntoConstraints="NO" id="aKk-6F-AyS">
-                                <rect key="frame" x="31" y="102" width="259" height="67"/>
+                                <rect key="frame" x="31" y="37" width="259" height="67"/>
                                 <animations/>
                                 <string key="text">どんな夢を見たか
 教えてください</string>
@@ -109,7 +110,7 @@
                                 <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="例：海で家族と遊ぶ夢を見た" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rAk-gx-Pv1">
-                                <rect key="frame" x="37" y="182" width="247" height="30"/>
+                                <rect key="frame" x="37" y="124" width="247" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -120,6 +121,9 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="result" destination="rAk-gx-Pv1" id="uvt-ra-egg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LP9-Dm-RVi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
