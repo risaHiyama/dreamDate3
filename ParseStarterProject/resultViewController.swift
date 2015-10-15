@@ -13,7 +13,31 @@ import Parse
 
 class resultViewController: UIViewController {
     
+    var dreamed = true
+    var quality = 0
+    
+    
     @IBOutlet weak var result: UITextField!
+    
+    @IBAction func dreamed(sender: AnyObject) {
+        dreamed = true
+    }
+    
+    @IBAction func didNotDream(sender: AnyObject) {
+        dreamed = false
+    }
+    
+    @IBAction func bad(sender: AnyObject) {
+        quality = 0
+    }
+
+    @IBAction func soso(sender: AnyObject) {
+        quality = 1
+    }
+    
+    @IBAction func good(sender: AnyObject) {
+        quality = 2
+    }
     
     @IBAction func resultEnter(sender: AnyObject) {
         if result.text == "" {
@@ -31,6 +55,10 @@ class resultViewController: UIViewController {
             }
             
             //Parse: setting up variables details
+            object["dreamed"] = self.dreamed
+            
+            object["quality"] = self.quality
+        
             object["result"] = self.result.text
             
             //Parse: send! checking if it's sucessful
@@ -42,7 +70,7 @@ class resultViewController: UIViewController {
                     print(error)
                 }
             }
-
+            
             
         }
     }
@@ -76,7 +104,7 @@ class resultViewController: UIViewController {
         result.endEditing(true)
         super.touchesBegan(touches, withEvent: event)
     }
-
+    
     /*
     // MARK: - Navigation
     

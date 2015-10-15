@@ -35,6 +35,7 @@ class logInViewController: UIViewController {
             bottonButton.setTitle("Sign up", forState : UIControlState.Normal)
             
             signupActive = false
+            
         } else {
             topButton.setTitle("Sign up", forState : UIControlState.Normal)
             
@@ -47,8 +48,6 @@ class logInViewController: UIViewController {
         }
         
     }
-    
-    
     
     func displayAlert(title: String ,message: String){
         
@@ -151,6 +150,13 @@ class logInViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        if PFUser.currentUser() != nil {
+            self.performSegueWithIdentifier("login", sender: self)
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {
