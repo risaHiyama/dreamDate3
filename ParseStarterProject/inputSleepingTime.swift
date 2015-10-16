@@ -8,27 +8,12 @@
 
 import UIKit
 
-class timerSetViewController: UIViewController {
+class inputSleepingTime: UIViewController {
     
-    var timer = NSTimer()
-    
-    var count = 0
-    
-    func updateTime() {
-        
-        count++
-        print(count)
-        //time.text = "\(count)"
-        
-    }
     
     
     @IBOutlet weak var sleepDuration: UITextField!
     
-    @IBAction func enter(sender: AnyObject) {
-        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("updateTime"), userInfo: nil, repeats: true)
-        // sleepDuration * 60
-    }
     
     override func viewDidLoad() {
         

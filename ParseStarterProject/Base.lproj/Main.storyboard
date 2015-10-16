@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="d8B-li-1Gh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="d8B-li-1Gh">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
@@ -68,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="348" y="248"/>
         </scene>
-        <!--Timer Set View Controller-->
+        <!--Input Sleeping Time-->
         <scene sceneID="1tR-sI-RwV">
             <objects>
-                <viewController id="5Sc-LB-eWN" customClass="timerSetViewController" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5Sc-LB-eWN" customClass="inputSleepingTime" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JRf-7M-uQ2"/>
                         <viewControllerLayoutGuide type="bottom" id="9Ga-M5-Pg0"/>
@@ -105,7 +105,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="enter:" destination="5Sc-LB-eWN" eventType="touchUpInside" id="KJ5-yT-7BM"/>
+                                    <segue destination="vOM-Cx-Eyq" kind="show" id="OqO-1j-lKK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJi-Wf-9dP">
@@ -128,6 +128,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gw9-pk-ijg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="331" y="957"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oAx-yH-wT0">
+            <objects>
+                <viewController id="vOM-Cx-Eyq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eXY-UG-71U"/>
+                        <viewControllerLayoutGuide type="bottom" id="VMV-no-E5F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tPi-es-AMJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backGroundStar.png" translatesAutoresizingMaskIntoConstraints="NO" id="SvK-yl-wgN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sxB-Wk-h3D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="957"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="UcZ-cs-8dq">
@@ -456,7 +480,8 @@ leOBhOOAggrigKjljZTlipvjgZfjgabjgY/jgaDjgZXjgovmlrnjga8K5LiL44Gu44Oc44K/44Oz44KS
                             <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="276" translatesAutoresizingMaskIntoConstraints="NO" id="8md-CA-ro6">
                                 <rect key="frame" x="24" y="95" width="276" height="259"/>
                                 <animations/>
-                                <string key="text">1. 設定の画面で一般を選んで、 オートロック機能をOFFにしてください  2. 携帯を充電に繋げて下さい 照明を最小限にすると節電できます  3. 音量を３~5に設定してください</string>
+                                <string key="text">1. 設定の画面で一般を選んで、 オートロック機能を
+OFFにしてください  2. 携帯を充電に繋げて下さい 照明を最小限にすると節電できます  3. 音量を３~5に設定してください</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
