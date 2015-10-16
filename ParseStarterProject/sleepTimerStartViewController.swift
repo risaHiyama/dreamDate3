@@ -17,13 +17,13 @@ class sleepTimerStartViewController: UIViewController {
     
     @IBOutlet var sleepDuration: UILabel!
     
+    
     @IBAction func start(sender: AnyObject) {
         
         timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("timerStart"), userInfo: nil, repeats: true)
         
         timerStart()
         
-        print(sleepDuration)
         
     }
     
@@ -32,10 +32,16 @@ class sleepTimerStartViewController: UIViewController {
         count++
         print(count)
         
+        let sleepingTime : Int? = (Int(sleepDuration.text!)!-1)
+        //*60*60
+        print(sleepingTime)
+
+     
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         // Do any additional setup after loading the view.
     }
@@ -43,6 +49,12 @@ class sleepTimerStartViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        self.sleepDuration.text = sleepDurationInput
+        
+        
     }
     
     

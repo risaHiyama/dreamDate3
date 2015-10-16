@@ -11,13 +11,13 @@ import UIKit
 class inputSleepingTime: UIViewController {
     
     @IBOutlet var userInput: UITextField!
-
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if let viewController = segue.destinationViewController as? sleepTimerStartViewController {
-                viewController.sleepDurationInput = userInput.text!
-            }
+            viewController.sleepDurationInput = userInput.text!
         }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
