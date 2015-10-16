@@ -10,8 +10,12 @@ import UIKit
 
 class sleepTimerStartViewController: UIViewController {
     
+    //パラメータ受取用プロパティ
+    var sleepDurationInput: String = "abc"
     var timer = NSTimer()
     var count = 0
+    
+    @IBOutlet var sleepDuration: UILabel!
     
     @IBAction func start(sender: AnyObject) {
         
@@ -19,17 +23,14 @@ class sleepTimerStartViewController: UIViewController {
         
         timerStart()
         
+        print(sleepDuration)
+        
     }
     
     func timerStart() {
         
-        
-        
         count++
-        
         print(count)
-        
-        
         
     }
     

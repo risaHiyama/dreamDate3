@@ -12,9 +12,6 @@ import CoreData
 
 class SwiftPlayerManager: NSObject, AVAudioPlayerDelegate{
     
-  
-    
-    
     var name = String()
     
     var player : AVAudioPlayer! = nil
@@ -92,8 +89,8 @@ class ViewController: UIViewController , UITextFieldDelegate {
     //var movement : Bool = false
     var timer = NSTimer()
     var count = 0
-
     
+    //受け取りようプロパティー
     var sleepType = 0
     
     @IBOutlet var explanation: UILabel!
@@ -114,7 +111,6 @@ class ViewController: UIViewController , UITextFieldDelegate {
         
         super.viewDidLoad()
         manager = SwiftPlayerManager()
-        
 
         print(self.sleepType)
         

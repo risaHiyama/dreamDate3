@@ -103,11 +103,9 @@ class logInViewController: UIViewController {
                         if let errorString = error!.userInfo ["error"] as? String{
                             
                             errorMessage = errorString
-                            
+                        
                         }
-                        
                         self.displayAlert("Failded Signup", message: errorMessage)
-                        
                     }
                     
                 })
@@ -132,7 +130,6 @@ class logInViewController: UIViewController {
                             }
                             
                             self.displayAlert("Failded Login", message: errorMessage)
-                            
                     }
                 })
             }
