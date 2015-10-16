@@ -1,19 +1,39 @@
 //
-//  timerSetViewController.swift
+//  sleepTimerStartViewController.swift
 //  ParseStarterProject
 //
-//  Created by 樋山 理紗 on 2015/10/15.
+//  Created by 樋山理紗 on 2015/10/16.
 //  Copyright © 2015年 Parse. All rights reserved.
 //
 
 import UIKit
 
-class inputSleepingTime: UIViewController {
+class sleepTimerStartViewController: UIViewController {
     
-    @IBOutlet var userInput: UITextField!
+    var timer = NSTimer()
+    var count = 0
+    
+    @IBAction func start(sender: AnyObject) {
+        
+        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("timerStart"), userInfo: nil, repeats: true)
+        
+        timerStart()
+        
+    }
+    
+    func timerStart() {
+        
+        
+        
+        count++
+        
+        print(count)
+        
+        
+        
+    }
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
