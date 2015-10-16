@@ -77,6 +77,10 @@ class sleepTimerStartViewController: UIViewController {
         
         timerStart()
         
+        //一回しかおせないようにする
+        let disableMyButton = sender as? UIButton
+        disableMyButton!.enabled = false
+        
     }
     
     func timerStart() {
