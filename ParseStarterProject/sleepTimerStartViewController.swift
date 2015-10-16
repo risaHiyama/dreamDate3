@@ -59,11 +59,7 @@ class SwiftPlayerManager2: NSObject, AVAudioPlayerDelegate{
     func playState() -> Bool {
         return player.playing
     }
-    
-   
 }
-
-
 
 class sleepTimerStartViewController: UIViewController {
     
