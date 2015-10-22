@@ -63,12 +63,14 @@ class SwiftPlayerManager2: NSObject, AVAudioPlayerDelegate{
 
 class sleepTimerStartViewController: UIViewController {
     
-    //パラメータ受取用プロパティ
+    //パラメータ受取用プロパティ、sleepDurationInputの初期値を与える
     var sleepDurationInput: String = "abc"
+    
     var timer = NSTimer()
     var count = 0
     var manager : SwiftPlayerManager?
 
+    //この画面のsleepDurationラベル
     @IBOutlet var sleepDuration: UILabel!
     
     @IBAction func start(sender: AnyObject) {
@@ -89,6 +91,7 @@ class sleepTimerStartViewController: UIViewController {
         
         print(count)
         
+        //sleepTime（音を鳴らすまでにタイマーが数える秒数）に前のページに書き込んだ数値sleepDurationをもとに計算
         let sleepingTime : Int? = (Int(sleepDuration.text!)!-1)*60*60
         
         print(sleepingTime)
@@ -118,7 +121,9 @@ class sleepTimerStartViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //
     override func viewDidAppear(animated: Bool) {
+        //この画面のラベルsleepDurationにこのページのsleepDurationInputを代入
         self.sleepDuration.text = sleepDurationInput
     }
     

@@ -14,7 +14,7 @@ import Parse
 class resultViewController: UIViewController {
     
     var dreamed = true
-    var quality = 0
+    var dreamRelativeToSound = true
     
     
     @IBOutlet weak var result: UITextField!
@@ -28,15 +28,11 @@ class resultViewController: UIViewController {
     }
     
     @IBAction func bad(sender: AnyObject) {
-        quality = 0
+        dreamRelativeToSound = false
     }
-
-    @IBAction func soso(sender: AnyObject) {
-        quality = 1
-    }
-    
     @IBAction func good(sender: AnyObject) {
-        quality = 2
+        dreamRelativeToSound = true
+
     }
     
     @IBAction func resultEnter(sender: AnyObject) {
@@ -57,7 +53,7 @@ class resultViewController: UIViewController {
             //Parse: setting up variables details
             object["dreamed"] = self.dreamed
             
-            object["quality"] = self.quality
+            object["retativity"] = self.dreamRelativeToSound
         
             object["result"] = self.result.text
             

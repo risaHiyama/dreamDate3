@@ -68,6 +68,10 @@ class SwiftPlayerManager: NSObject, AVAudioPlayerDelegate{
 
 class ViewController: UIViewController , UITextFieldDelegate {
     
+    //受取用プロパティー
+    var sleepType = 1
+    var usernameParseClass:String = "abc"
+
     var manager : SwiftPlayerManager?
     let myMotionManager = CMMotionManager()
     
@@ -90,10 +94,9 @@ class ViewController: UIViewController , UITextFieldDelegate {
     var timer = NSTimer()
     var count = 0
     
-    //受け取りようプロパティー
-    var sleepType = 0
-    
     @IBOutlet var explanation: UILabel!
+    
+    @IBOutlet var userInfo: UITextField!
     
     //開始後画像入れ替えするため
     @IBOutlet var showDreaming: UIImageView!
@@ -111,35 +114,32 @@ class ViewController: UIViewController , UITextFieldDelegate {
         
         super.viewDidLoad()
         manager = SwiftPlayerManager()
-
-        print(self.sleepType)
-        
     }
     
     //布団に入って３０分待ってから加速度を図り始める
-                func timerStart(){
-                    if (count < 60*30){
-                        count++
-                        //print(count)
-                    }
-                    if count ==  60*30 {
-                        readAccelerometer()
-                    }
-    
-                }
+//                func timerStart(){
+//                    if (count < 60*30){
+//                        count++
+//                        //print(count)
+//                    }
+//                    if count ==  60*30 {
+//                        readAccelerometer()
+//                    }
+//    
+//                }
 
     //テスト用
-//    func timerStart(){
-//        if (count < 10){
-//            count++
+    func timerStart(){
+        if (count < 5){
+            count++
 //            print(count)
-//        }
-//        if count ==  10 {
-//            readAccelerometer()
-//            start.hidden = true
-//        }
-//        
-//    }
+        }
+        if count == 5 {
+            readAccelerometer()
+            start.hidden = true
+        }
+        
+    }
 
     func readAccelerometer(){
 
@@ -167,9 +167,8 @@ class ViewController: UIViewController , UITextFieldDelegate {
                 //println("DifferenceZ:\(self.differenceZ)")
             }
             
-            
             //Parse: create a table of acceletometer data
-            let object = PFObject(className:"risa1016")
+            let object = PFObject(className:self.userInfo.text!)
             
             if let user = PFUser.currentUser(),
                 objectID = user.objectId {
@@ -180,7 +179,8 @@ class ViewController: UIViewController , UITextFieldDelegate {
             object["DifferenceX"]=self.differenceX
             object["DifferenceY"]=self.differenceY
             object["DifferenceZ"]=self.differenceZ
-            object["REM"]=self.sleepType
+            object["SleepType"]=self.sleepType
+            object["username"]=self.usernameParseClass
             
             //Parse: send! checking if it's sucessful
             object.saveInBackgroundWithBlock{(success,error)->Void in
@@ -230,6 +230,12 @@ class ViewController: UIViewController , UITextFieldDelegate {
     
     override func viewWillDisappear(animated: Bool) {
         self.pauseMusic()
+    }
+    
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        userInfo.endEditing(true)
+        super.touchesBegan(touches, withEvent: event)
     }
     
     

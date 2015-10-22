@@ -120,7 +120,6 @@
 				E4EF38811BCCEB54007730FC /* music */,
 				E4EF38821BCCEB60007730FC /* domucment */,
 				81BA814E1A49DA1800E65899 /* Main.storyboard */,
-				E47CB54F1BCD0584000BD89E /* logInViewController.swift */,
 				B014F0F61BCA5922007B40D0 /* UserInputModeViewController.swift */,
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
 				E4EE8E161BCE2FA5006EF84E /* resultViewController.swift */,
@@ -128,6 +127,7 @@
 				E45A1E9E1BCFA34400A9ACC3 /* inputSleepingTime.swift */,
 				B0E2B81C1BD0EECE00B38B35 /* sleepTimerStartViewController.swift */,
 				B001E62F1BA93B06005AEB7F /* SleepLogModel.xcdatamodeld */,
+				B0878F781BD918FA00982FF5 /* hide */,
 				81BA81511A49DA1800E65899 /* Images.xcassets */,
 				81BA81481A49DA1800E65899 /* Supporting Files */,
 			);
@@ -167,6 +167,14 @@
 				81BA81761A49E0D500E65899 /* libsqlite3.dylib */,
 			);
 			name = "System Frameworks";
+			sourceTree = "<group>";
+		};
+		B0878F781BD918FA00982FF5 /* hide */ = {
+			isa = PBXGroup;
+			children = (
+				E47CB54F1BCD0584000BD89E /* logInViewController.swift */,
+			);
+			name = hide;
 			sourceTree = "<group>";
 		};
 		E4EF38801BCCEB2E007730FC /* music */ = {
