@@ -10,6 +10,7 @@ import CoreMotion
 import AVFoundation
 import CoreData
 
+@available(iOS 8.0, *)
 class SwiftPlayerManager: NSObject, AVAudioPlayerDelegate{
     
     var name = String()
@@ -21,15 +22,15 @@ class SwiftPlayerManager: NSObject, AVAudioPlayerDelegate{
     override init() {
         
         super.init()
-        // 音声ファイルパス取得
+        
         //beachWaves
-        let audioPath = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("shorebirdsBeach", ofType: "mp3")!)
+        let audioPath = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("loveMe", ofType: "mp3")!)
         
         // プレイヤー準備
         player = try? AVAudioPlayer(contentsOfURL: audioPath)
         player.delegate = self
         player.prepareToPlay()
-        player.numberOfLoops=2*10
+        //        player.numberOfLoops=2*10
         
         // When users indicate they are Giants fans, we subscribe them to that channel.
         //            let currentInstallation = PFInstallation.currentInstallation()
@@ -66,6 +67,7 @@ class SwiftPlayerManager: NSObject, AVAudioPlayerDelegate{
     }
 }
 
+@available(iOS 8.0, *)
 class ViewController: UIViewController , UITextFieldDelegate {
     
     //受取用プロパティー
@@ -95,7 +97,6 @@ class ViewController: UIViewController , UITextFieldDelegate {
     var count = 0
     
     @IBOutlet var explanation: UILabel!
-    
     @IBOutlet var userInfo: UITextField!
     
     //開始後画像入れ替えするため
@@ -103,15 +104,14 @@ class ViewController: UIViewController , UITextFieldDelegate {
     
     @IBOutlet weak var start: UIButton!
     
-    @IBAction func startMonitoring(sender: AnyObject) {
-        timerStart()
+    @IBAction func startTimer(sender: AnyObject) {
+        _ = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("timerStart"), userInfo: nil, repeats: true)
+        
         explanation.hidden = true
+        timerStart()
     }
     
     override func viewDidLoad() {
-        
-        _ = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("timerStart"), userInfo: nil, repeats: true)
-        
         super.viewDidLoad()
         manager = SwiftPlayerManager()
     }
@@ -119,12 +119,21 @@ class ViewController: UIViewController , UITextFieldDelegate {
     //音楽を流し始めるタイミング
     func timerStart(){
         if (self.sleepType == 0 || self.sleepType == 1){
-            if (count < 60*30){
+            //            if (count < 60*30){
+            //                count++
+            //                //print(count)
+            //            }
+            //            if count ==  60*30 {
+            //                readAccelerometer()
+            //            }
+            
+            if (count < 5){
                 count++
-                //print(count)
+                print(count)
             }
-            if count ==  60*30 {
+            if count == 5 {
                 readAccelerometer()
+                start.hidden = true
             }
         }
         if (self.sleepType==3){
@@ -184,8 +193,6 @@ class ViewController: UIViewController , UITextFieldDelegate {
             object["DifferenceX"]=self.differenceX
             object["DifferenceY"]=self.differenceY
             object["DifferenceZ"]=self.differenceZ
-            object["SleepType"]=self.sleepType
-            object["username"]=self.usernameParseClass
             
             //Parse: send! checking if it's sucessful
             object.saveInBackgroundWithBlock{(success,error)->Void in
@@ -197,30 +204,30 @@ class ViewController: UIViewController , UITextFieldDelegate {
                 }
             }
             
-            if ((self.differenceX > 0.08 || self.differenceY > 0.08 ) || self.differenceZ > 0.08 ){
-                
-                //self.movement = true
-                
-                //self.music = true
-                
-                // Send a notification to all devices subscribed to the "Giants" channel.
-                //                    let push = PFPush()
-                //
-                //                    push.setChannel("Giants")
-                //                    push.setMessage("Satomi is dreaming!")
-                //                    push.sendPushInBackground()
-                
-                if self.sleepType == 0 {
+            if self.sleepType==0{
+                if ((self.differenceX > 0.08 || self.differenceY > 0.08 ) || self.differenceZ > 0.08 ){
+                    
+                    //self.movement = true
+                    
+                    //self.music = true
+                    
+                    // Send a notification to all devices subscribed to the "Giants" channel.
+                    //                    let push = PFPush()
+                    //
+                    //                    push.setChannel("Giants")
+                    //                    push.setMessage("Satomi is dreaming!")
+                    //                    push.sendPushInBackground()
+                    
                     self.playMusic()
                 }
-                
                 //accelerometer["moved"]=self.movement
                 //println("moved")
-            }
-            else{
-                if self.sleepType == 1 {
-                    self.playMusic()
+            }else{
+                self.playMusic()
+                if ((self.differenceX > 0.08 || self.differenceY > 0.08 ) || self.differenceZ > 0.08 ){
+                    self.pauseMusic()
                 }
+                
             }
             
             if (self.manager!.playState()) {
@@ -237,12 +244,10 @@ class ViewController: UIViewController , UITextFieldDelegate {
         self.pauseMusic()
     }
     
-    
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         userInfo.endEditing(true)
         super.touchesBegan(touches, withEvent: event)
     }
-    
     
     func playMusic(){
         self.manager!.playOrPause()

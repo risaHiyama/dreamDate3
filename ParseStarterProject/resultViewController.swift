@@ -12,10 +12,10 @@ import Parse
 @available(iOS 8.0, *)
 
 class resultViewController: UIViewController {
+    var sleepType = 1
     
     var dreamed = true
     var dreamRelativeToSound = true
-    
     
     @IBOutlet weak var result: UITextField!
     
@@ -42,7 +42,7 @@ class resultViewController: UIViewController {
         } else {
             
             //Parse: create a table of acceletometer data
-            let object = PFObject(className:"Dream")
+            let object = PFObject(className:"Result")
             
             if let user = PFUser.currentUser(),
                 objectID = user.objectId {
@@ -54,7 +54,9 @@ class resultViewController: UIViewController {
             
             object["retativity"] = self.dreamRelativeToSound
         
-            object["result"] = self.result.text
+            object["detail"] = self.result.text
+            
+//            object["dreamType"] = self.sleepType
             
             //Parse: send! checking if it's sucessful
             object.saveInBackgroundWithBlock{(success,error)->Void in

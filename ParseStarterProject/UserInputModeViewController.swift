@@ -15,8 +15,8 @@ class UserInputModeViewController: UIViewController {
     
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
-    @IBOutlet weak var button3: UIButton!
     @IBOutlet weak var button4: UIButton!
+    @IBOutlet weak var button3: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,11 +40,14 @@ class UserInputModeViewController: UIViewController {
 
 
         if let viewController = segue.destinationViewController as? ViewController {
+            print(sender)
             if let button = sender as? UIButton {
                 // 0=REM
                 // 1=nonREM
                 // 2=timer
                 // 3=beforeSleeping
+                
+                print(button)
                 
                 if button == button1 {
                     
@@ -58,19 +61,19 @@ class UserInputModeViewController: UIViewController {
                     
                     object["dreamType"] = 1
                     
-                } else if button == button2 {
+                } else if button == button3 {
                     
                     object["dreamType"] = 2
+                    print("test")
                     
-                } else if button == button2 {
+                } else if button == button4 {
                     
                     object["dreamType"] = 3
                     
                     viewController.sleepType = 3
-
-                
                 }
                 
+                print(object)
             }
         }
         

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+@available(iOS 8.0, *)
 
 class inputSleepingTime: UIViewController {
     
@@ -24,6 +25,10 @@ class inputSleepingTime: UIViewController {
         super.viewDidLoad()
         //パラメータのバインド
         //self.userInput.text = self.sleepDurationInput
+    }
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        userInput.endEditing(true)
+        super.touchesBegan(touches, withEvent: event)
     }
     
     override func didReceiveMemoryWarning() {

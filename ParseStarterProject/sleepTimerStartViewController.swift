@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 
+@available(iOS 8.0, *)
 class SwiftPlayerManager2: NSObject, AVAudioPlayerDelegate{
     
     var player : AVAudioPlayer! = nil
@@ -61,6 +62,8 @@ class SwiftPlayerManager2: NSObject, AVAudioPlayerDelegate{
     }
 }
 
+@available(iOS 8.0, *)
+
 class sleepTimerStartViewController: UIViewController {
     
     //パラメータ受取用プロパティ、sleepDurationInputの初期値を与える
@@ -94,7 +97,7 @@ class sleepTimerStartViewController: UIViewController {
         //sleepTime（音を鳴らすまでにタイマーが数える秒数）に前のページに書き込んだ数値sleepDurationをもとに計算
         let sleepingTime : Int? = (Int(sleepDuration.text!)!-1)*60*60
         
-        print(sleepingTime)
+        //print(sleepingTime!)
         
         if sleepingTime < count {
             self.playMusic()
@@ -127,14 +130,10 @@ class sleepTimerStartViewController: UIViewController {
         self.sleepDuration.text = sleepDurationInput
     }
     
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        sleepDuration.endEditing(true)
+        super.touchesBegan(touches, withEvent: event)
     }
-    */
-    
+
+   
 }
