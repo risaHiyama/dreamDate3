@@ -119,7 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				E4EF38801BCCEB2E007730FC /* music */,
-				E4EF38811BCCEB54007730FC /* music */,
+				E4EF38811BCCEB54007730FC /* images */,
 				E4EF38821BCCEB60007730FC /* domucment */,
 				81BA814E1A49DA1800E65899 /* Main.storyboard */,
 				B014F0F61BCA5922007B40D0 /* UserInputModeViewController.swift */,
@@ -192,14 +192,14 @@
 			name = music;
 			sourceTree = "<group>";
 		};
-		E4EF38811BCCEB54007730FC /* music */ = {
+		E4EF38811BCCEB54007730FC /* images */ = {
 			isa = PBXGroup;
 			children = (
 				B014F1021BCA6435007B40D0 /* backGroundStar.png */,
 				B014F0F21BCA53DB007B40D0 /* backGround.png */,
 				B014F1041BCA7140007B40D0 /* musicOn.png */,
 			);
-			name = music;
+			name = images;
 			sourceTree = "<group>";
 		};
 		E4EF38821BCCEB60007730FC /* domucment */ = {
