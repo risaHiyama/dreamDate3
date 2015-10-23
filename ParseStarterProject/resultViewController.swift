@@ -32,7 +32,6 @@ class resultViewController: UIViewController {
     }
     @IBAction func good(sender: AnyObject) {
         dreamRelativeToSound = true
-
     }
     
     @IBAction func resultEnter(sender: AnyObject) {
@@ -66,11 +65,8 @@ class resultViewController: UIViewController {
                     print(error)
                 }
             }
-            
-            
         }
     }
-    
     
     
     func displayAlert(title: String ,message: String){

@@ -65,6 +65,9 @@ class UserInputModeViewController: UIViewController {
                 } else if button == button2 {
                     
                     object["dreamType"] = 3
+                    
+                    viewController.sleepType = 3
+
                 
                 }
                 

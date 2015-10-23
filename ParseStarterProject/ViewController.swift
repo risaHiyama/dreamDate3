@@ -71,7 +71,7 @@ class ViewController: UIViewController , UITextFieldDelegate {
     //受取用プロパティー
     var sleepType = 1
     var usernameParseClass:String = "abc"
-
+    
     var manager : SwiftPlayerManager?
     let myMotionManager = CMMotionManager()
     
@@ -116,33 +116,38 @@ class ViewController: UIViewController , UITextFieldDelegate {
         manager = SwiftPlayerManager()
     }
     
-    //布団に入って３０分待ってから加速度を図り始める
-//                func timerStart(){
-//                    if (count < 60*30){
-//                        count++
-//                        //print(count)
-//                    }
-//                    if count ==  60*30 {
-//                        readAccelerometer()
-//                    }
-//    
-//                }
-
-    //テスト用
+    //音楽を流し始めるタイミング
     func timerStart(){
-        if (count < 5){
-            count++
-//            print(count)
+        if (self.sleepType == 0 || self.sleepType == 1){
+            if (count < 60*30){
+                count++
+                //print(count)
+            }
+            if count ==  60*30 {
+                readAccelerometer()
+            }
         }
-        if count == 5 {
+        if (self.sleepType==3){
+            self.playMusic()
             readAccelerometer()
-            start.hidden = true
         }
-        
     }
-
+    
+    //テスト用
+    //    func timerStart(){
+    //        if (count < 5){
+    //            count++
+    ////            print(count)
+    //        }
+    //        if count == 5 {
+    //            readAccelerometer()
+    //            start.hidden = true
+    //        }
+    //
+    //    }
+    
     func readAccelerometer(){
-
+        
         myMotionManager.accelerometerUpdateInterval = 1.0
         myMotionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue(), withHandler: {(accelerometerData:CMAccelerometerData?, error:NSError?) -> Void in
             
@@ -192,7 +197,7 @@ class ViewController: UIViewController , UITextFieldDelegate {
                 }
             }
             
-            if ((self.differenceX > 0.1 || self.differenceY > 0.1 ) || self.differenceZ > 0.1 ){
+            if ((self.differenceX > 0.08 || self.differenceY > 0.08 ) || self.differenceZ > 0.08 ){
                 
                 //self.movement = true
                 
