@@ -43,7 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pqx-rQ-p6Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="348" y="-419"/>
+            <point key="canvasLocation" x="348" y="-462"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -179,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gw9-pk-ijg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="331" y="957"/>
+            <point key="canvasLocation" x="348" y="957"/>
         </scene>
         <!--Sleep Timer Start View Controller-->
         <scene sceneID="oAx-yH-wT0">
@@ -394,7 +394,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nty-My-n3O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1947" y="556"/>
+            <point key="canvasLocation" x="1587" y="430"/>
         </scene>
         <!--User Input Mode View Controller-->
         <scene sceneID="Pnb-jy-hXB">
@@ -495,7 +495,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tgC-Lm-2bF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-52" y="248"/>
+            <point key="canvasLocation" x="-184" y="248"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="aJ6-xf-Ywg">
@@ -553,7 +553,7 @@ leOBhOOAggrigKjljZTlipvjgZfjgabjgY/jgaDjgZXjgovmlrnjga8K5LiL44Gu44Oc44K/44Oz44KS
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cuu-dq-TCK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-875" y="248"/>
+            <point key="canvasLocation" x="-1007" y="248"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tEd-Pe-VHC">
@@ -608,7 +608,7 @@ OFFにしてください  2. 携帯を充電に繋げて下さい 照明
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5jq-dG-Qn8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-471" y="248"/>
+            <point key="canvasLocation" x="-603" y="248"/>
         </scene>
     </scenes>
     <resources>
@@ -617,6 +617,6 @@ OFFにしてください  2. 携帯を充電に繋げて下さい 照明
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="2JS-je-WcF"/>
-        <segue reference="ZR8-l2-caU"/>
+        <segue reference="Q51-ia-i54"/>
     </inferredMetricsTieBreakers>
 </document>

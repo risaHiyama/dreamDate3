@@ -24,7 +24,7 @@ class SwiftPlayerManager: NSObject, AVAudioPlayerDelegate{
         super.init()
         
         //beachWaves
-        let audioPath = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("loveMe", ofType: "mp3")!)
+        let audioPath = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("amusmentPark", ofType: "mp3")!)
         
         // プレイヤー準備
         player = try? AVAudioPlayer(contentsOfURL: audioPath)
@@ -109,6 +109,11 @@ class ViewController: UIViewController , UITextFieldDelegate {
         
         explanation.hidden = true
         timerStart()
+        
+        if sleepType == 4 {
+            self.playMusic()
+
+        }
     }
     
     override func viewDidLoad() {
@@ -127,17 +132,16 @@ class ViewController: UIViewController , UITextFieldDelegate {
             //                readAccelerometer()
             //            }
             
-            if (count < 5){
+            if (count < 60*30 ){
                 count++
                 print(count)
             }
-            if count == 5 {
+            if count == 60*30 {
                 readAccelerometer()
                 start.hidden = true
             }
         }
-        if (self.sleepType==3){
-            self.playMusic()
+        if (self.sleepType==4){
             readAccelerometer()
         }
     }
@@ -204,7 +208,7 @@ class ViewController: UIViewController , UITextFieldDelegate {
                 }
             }
             
-            if self.sleepType==0{
+            if ( self.sleepType==0 || self.sleepType==4 ) {
                 if ((self.differenceX > 0.08 || self.differenceY > 0.08 ) || self.differenceZ > 0.08 ){
                     
                     //self.movement = true
@@ -222,8 +226,8 @@ class ViewController: UIViewController , UITextFieldDelegate {
                 }
                 //accelerometer["moved"]=self.movement
                 //println("moved")
-            }else{
-                self.playMusic()
+            } else if self.sleepType==1 {
+                
                 if ((self.differenceX > 0.08 || self.differenceY > 0.08 ) || self.differenceZ > 0.08 ){
                     self.pauseMusic()
                 }

@@ -74,10 +74,9 @@ class UserInputModeViewController: UIViewController {
                     
                     object["dreamType"] = 4
                     
-                    viewController.sleepType = 3
+                    viewController.sleepType = 4
                 }
                 
-                print(object)
             }
         }
         
