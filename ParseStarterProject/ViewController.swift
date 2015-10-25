@@ -11,6 +11,7 @@ import AVFoundation
 import CoreData
 
 @available(iOS 8.0, *)
+
 class SwiftPlayerManager: NSObject, AVAudioPlayerDelegate{
     
     var name = String()
@@ -24,7 +25,7 @@ class SwiftPlayerManager: NSObject, AVAudioPlayerDelegate{
         super.init()
         
         //beachWaves
-        let audioPath = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("amusmentPark", ofType: "mp3")!)
+        let audioPath = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("BeachWaves", ofType: "mp3")!)
         
         // プレイヤー準備
         player = try? AVAudioPlayer(contentsOfURL: audioPath)
@@ -78,7 +79,7 @@ class ViewController: UIViewController , UITextFieldDelegate {
     let myMotionManager = CMMotionManager()
     
     var first_readingX: Double = 0.0
-    var second_readingX: Double = 0.0
+    var second_readingX: Double = 0.2
     var differenceX: Double = 0.0
     
     var first_readingY: Double = 0.0
@@ -112,7 +113,6 @@ class ViewController: UIViewController , UITextFieldDelegate {
         
         if sleepType == 4 {
             self.playMusic()
-
         }
     }
     
@@ -132,7 +132,7 @@ class ViewController: UIViewController , UITextFieldDelegate {
             //                readAccelerometer()
             //            }
             
-            if (count < 60*30 ){
+            if (count < 60*30){
                 count++
                 print(count)
             }
@@ -167,22 +167,22 @@ class ViewController: UIViewController , UITextFieldDelegate {
             if let x = accelerometerData?.acceleration.x {
                 self.first_readingX = self.second_readingX
                 self.second_readingX = x
-                self.differenceX = abs (self.second_readingX -  self.first_readingX)
-                //println("DifferenceX:\(self.differenceX)")
+                self.differenceX = self.second_readingX -  self.first_readingX
+                print("DifferenceX:\(self.differenceX)")
             }
             
             if let y = accelerometerData?.acceleration.y {
                 self.first_readingY = self.second_readingY
                 self.second_readingY = y
-                self.differenceY = abs (self.second_readingY -  self.first_readingY)
-                //println("DifferenceY:\(self.differenceY)")
+                self.differenceY = self.second_readingY -  self.first_readingY
+                print("DifferenceY:\(self.differenceY)")
             }
             
             if let z = accelerometerData?.acceleration.z {
                 self.first_readingZ = self.second_readingZ
                 self.second_readingZ = z
-                self.differenceZ = abs (self.second_readingZ -  self.first_readingZ)
-                //println("DifferenceZ:\(self.differenceZ)")
+                self.differenceZ = self.second_readingZ -  self.first_readingZ
+                print("DifferenceZ:\(self.differenceZ)")
             }
             
             //Parse: create a table of acceletometer data
@@ -209,7 +209,7 @@ class ViewController: UIViewController , UITextFieldDelegate {
             }
             
             if ( self.sleepType==0 || self.sleepType==4 ) {
-                if ((self.differenceX > 0.08 || self.differenceY > 0.08 ) || self.differenceZ > 0.08 ){
+                if (self.differenceX > 0.1 || self.differenceY > 0.1 ){
                     
                     //self.movement = true
                     
@@ -244,8 +244,17 @@ class ViewController: UIViewController , UITextFieldDelegate {
         })
     }
     
+    @IBAction func stop(sender: AnyObject) {
+        stopAccelerometerUpdates()
+    }
+    
+    func stopAccelerometerUpdates(){
+        self.myMotionManager.stopAccelerometerUpdates()
+    }
+    
     override func viewWillDisappear(animated: Bool) {
         self.pauseMusic()
+        stopAccelerometerUpdates()
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {

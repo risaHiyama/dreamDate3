@@ -21,6 +21,7 @@ class resultViewController: UIViewController {
     
     @IBAction func dreamed(sender: AnyObject) {
         dreamed = true
+
     }
     
     @IBAction func didNotDream(sender: AnyObject) {
@@ -85,7 +86,6 @@ class resultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
     }
     
