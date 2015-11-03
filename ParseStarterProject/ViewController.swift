@@ -31,7 +31,7 @@ class SwiftPlayerManager: NSObject, AVAudioPlayerDelegate{
         player = try? AVAudioPlayer(contentsOfURL: audioPath)
         player.delegate = self
         player.prepareToPlay()
-        //        player.numberOfLoops=2*10
+        player.numberOfLoops=2*10
         
         // When users indicate they are Giants fans, we subscribe them to that channel.
         //            let currentInstallation = PFInstallation.currentInstallation()
@@ -132,7 +132,7 @@ class ViewController: UIViewController , UITextFieldDelegate {
             //                readAccelerometer()
             //            }
             
-            if (count < 60*30){
+            if (count < 60*30 ){
                 count++
                 print(count)
             }
@@ -209,26 +209,13 @@ class ViewController: UIViewController , UITextFieldDelegate {
             }
             
             if ( self.sleepType==0 || self.sleepType==4 ) {
-                if (self.differenceX > 0.1 || self.differenceY > 0.1 ){
-                    
-                    //self.movement = true
-                    
-                    //self.music = true
-                    
-                    // Send a notification to all devices subscribed to the "Giants" channel.
-                    //                    let push = PFPush()
-                    //
-                    //                    push.setChannel("Giants")
-                    //                    push.setMessage("Satomi is dreaming!")
-                    //                    push.sendPushInBackground()
-                    
+                if ((self.differenceX > 0.1 || self.differenceY >   0.1 ) || self.differenceZ >  0.1 ){
                     self.playMusic()
                 }
-                //accelerometer["moved"]=self.movement
-                //println("moved")
+                
             } else if self.sleepType==1 {
                 
-                if ((self.differenceX > 0.08 || self.differenceY > 0.08 ) || self.differenceZ > 0.08 ){
+                if ((self.differenceY < 0.08 || self.differenceY > 0.07 ) || self.differenceZ > 0.08 ){
                     self.pauseMusic()
                 }
                 
@@ -274,3 +261,14 @@ class ViewController: UIViewController , UITextFieldDelegate {
         super.didReceiveMemoryWarning()
     }
 }
+
+//self.movement = true
+
+//self.music = true
+
+// Send a notification to all devices subscribed to the "Giants" channel.
+//                    let push = PFPush()
+//
+//                    push.setChannel("Giants")
+//                    push.setMessage("Satomi is dreaming!")
+//                    push.sendPushInBackground()
