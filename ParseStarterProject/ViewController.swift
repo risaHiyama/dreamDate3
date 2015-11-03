@@ -5,12 +5,9 @@
 //
 
 import UIKit
-import Parse
 import CoreMotion
 import AVFoundation
 import CoreData
-
-@available(iOS 8.0, *)
 
 class SwiftPlayerManager: NSObject, AVAudioPlayerDelegate{
     
@@ -68,7 +65,6 @@ class SwiftPlayerManager: NSObject, AVAudioPlayerDelegate{
     }
 }
 
-@available(iOS 8.0, *)
 class ViewController: UIViewController , UITextFieldDelegate {
     
     //受取用プロパティー
@@ -79,16 +75,15 @@ class ViewController: UIViewController , UITextFieldDelegate {
     let myMotionManager = CMMotionManager()
     
     var first_readingX: Double = 0.0
-    var second_readingX: Double = 0.2
-    var differenceX: Double = 0.0
+    var second_readingX: Double = 0.0
     
     var first_readingY: Double = 0.0
     var second_readingY: Double = 0.0
-    var differenceY: Double = 0.0
     
     var first_readingZ: Double = 0.0
-    var second_readingZ: Double = -1.0
-    var differenceZ: Double = 0.0
+    var second_readingZ: Double = 0.0
+    
+    var status:Status = .NonRem
     
     //var music : Bool = false
     var musicStarted : Bool = false
@@ -118,28 +113,15 @@ class ViewController: UIViewController , UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         manager = SwiftPlayerManager()
     }
     
     //音楽を流し始めるタイミング
     func timerStart(){
         if (self.sleepType == 0 || self.sleepType == 1){
-            //            if (count < 60*30){
-            //                count++
-            //                //print(count)
-            //            }
-            //            if count ==  60*30 {
-            //                readAccelerometer()
-            //            }
-            
-            if (count < 60*30 ){
-                count++
-                print(count)
-            }
-            if count == 60*30 {
-                readAccelerometer()
-                start.hidden = true
-            }
+            readAccelerometer()
+            start.hidden = true
         }
         if (self.sleepType==4){
             readAccelerometer()
@@ -164,68 +146,62 @@ class ViewController: UIViewController , UITextFieldDelegate {
         myMotionManager.accelerometerUpdateInterval = 1.0
         myMotionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue(), withHandler: {(accelerometerData:CMAccelerometerData?, error:NSError?) -> Void in
             
+            var differenceX: Double = 0.0
+            var differenceY: Double = 0.0
+            var differenceZ: Double = 0.0
+            
             if let x = accelerometerData?.acceleration.x {
                 self.first_readingX = self.second_readingX
                 self.second_readingX = x
-                self.differenceX = self.second_readingX -  self.first_readingX
-                print("DifferenceX:\(self.differenceX)")
+                differenceX = self.second_readingX -  self.first_readingX
             }
             
             if let y = accelerometerData?.acceleration.y {
                 self.first_readingY = self.second_readingY
                 self.second_readingY = y
-                self.differenceY = self.second_readingY -  self.first_readingY
-                print("DifferenceY:\(self.differenceY)")
+                differenceY = self.second_readingY -  self.first_readingY
             }
             
             if let z = accelerometerData?.acceleration.z {
                 self.first_readingZ = self.second_readingZ
                 self.second_readingZ = z
-                self.differenceZ = self.second_readingZ -  self.first_readingZ
-                print("DifferenceZ:\(self.differenceZ)")
+                differenceZ = self.second_readingZ -  self.first_readingZ
             }
             
-            //Parse: create a table of acceletometer data
-            let object = PFObject(className:self.userInfo.text!)
+            let beingChageStatus = Motion.sharedInstance.addMotion(differenceX, differenceY, differenceZ)
             
-            if let user = PFUser.currentUser(),
-                objectID = user.objectId {
-                    object["userID"] = objectID
-            }
-            
-            //Parse: setting up variables details
-            object["DifferenceX"]=self.differenceX
-            object["DifferenceY"]=self.differenceY
-            object["DifferenceZ"]=self.differenceZ
-            
-            //Parse: send! checking if it's sucessful
-            object.saveInBackgroundWithBlock{(success,error)->Void in
-                if success == true{
-                    //println("Successful")
-                }else{
-                    print("Failed")
-                    print(error)
-                }
-            }
-            
-            if ( self.sleepType==0 || self.sleepType==4 ) {
-                if ((self.differenceX > 0.1 || self.differenceY >   0.1 ) || self.differenceZ >  0.1 ){
+            // レム／ノンレムの切り替え
+            if beingChageStatus {
+                if self.status == .NonRem {
+                    self.status = .Rem
+                    // 音楽を流す
                     self.playMusic()
-                }
-                
-            } else if self.sleepType==1 {
-                
-                if ((self.differenceY < 0.08 || self.differenceY > 0.07 ) || self.differenceZ > 0.08 ){
+                } else {
+                    self.status = .NonRem
+                    // 音楽を止める
                     self.pauseMusic()
                 }
-                
             }
             
+            // Parseに保存
+            Motion.sharedInstance.saveToParse(self.userInfo.text!, musicStatus: self.manager!.playState())
+            
+//            if ( self.sleepType==0 || self.sleepType==4 ) {
+//                if ((differenceX > 0.1 || differenceY >   0.1 ) || differenceZ >  0.1 ){
+//                    
+//                }
+//                
+//            } else if self.sleepType==1 {
+//                
+//                if ((differenceY < 0.08 || differenceY > 0.07 ) || differenceZ > 0.08 ){
+//                    
+//                }
+//                
+//            }
+            
             if (self.manager!.playState()) {
-                object["music"]=self.manager!.playState()
                 self.showDreaming.image=UIImage(named: "musicOn.png")
             } else {
-                object["music"]=self.manager!.playState()
                 self.showDreaming.image=UIImage(named: "backGroundStar.png")
             }
         })

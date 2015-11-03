@@ -30,6 +30,9 @@
 		B04455871BE2652D00B899E6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B04455841BE2652D00B899E6 /* Default-568h@2x.png */; settings = {ASSET_TAGS = (); }; };
 		B04455881BE2652D00B899E6 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B04455851BE2652D00B899E6 /* Default-667h@2x.png */; settings = {ASSET_TAGS = (); }; };
 		B04455891BE2652D00B899E6 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B04455861BE2652D00B899E6 /* Default-736h@3x.png */; settings = {ASSET_TAGS = (); }; };
+		B044558D1BE8784900B899E6 /* Motion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B044558C1BE8784900B899E6 /* Motion.swift */; settings = {ASSET_TAGS = (); }; };
+		B04455901BE8786700B899E6 /* MotionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B044558F1BE8786700B899E6 /* MotionEntity.swift */; settings = {ASSET_TAGS = (); }; };
+		B04455941BE8A08300B899E6 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04455931BE8A08300B899E6 /* Settings.swift */; settings = {ASSET_TAGS = (); }; };
 		B047F2ED1BA91ACA0062F359 /* loveMe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B047F2EC1BA91ACA0062F359 /* loveMe.mp3 */; };
 		B06564B11B60F93500E61BCD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06564B01B60F93500E61BCD /* CoreMotion.framework */; };
 		B06A1D4D1BC9500D00567957 /* shorebirdsBeach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B06A1D4C1BC9500D00567957 /* shorebirdsBeach.mp3 */; };
@@ -69,6 +72,9 @@
 		B04455841BE2652D00B899E6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B04455851BE2652D00B899E6 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		B04455861BE2652D00B899E6 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
+		B044558C1BE8784900B899E6 /* Motion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Motion.swift; sourceTree = "<group>"; };
+		B044558F1BE8786700B899E6 /* MotionEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionEntity.swift; sourceTree = "<group>"; };
+		B04455931BE8A08300B899E6 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		B047F2EB1BA915B10062F359 /* dreamDate.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = dreamDate.pages; sourceTree = "<group>"; };
 		B047F2EC1BA91ACA0062F359 /* loveMe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loveMe.mp3; sourceTree = "<group>"; };
 		B06564B01B60F93500E61BCD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
@@ -124,12 +130,13 @@
 		81BA81471A49DA1800E65899 /* ParseStarterProject */ = {
 			isa = PBXGroup;
 			children = (
+				B044558A1BE8780700B899E6 /* App */,
+				B04455921BE8A05A00B899E6 /* Config */,
 				E4EF38801BCCEB2E007730FC /* music */,
 				E4EF38811BCCEB54007730FC /* images */,
-				E4EF38821BCCEB60007730FC /* domucment */,
+				E4EF38821BCCEB60007730FC /* docs */,
 				81BA814E1A49DA1800E65899 /* Main.storyboard */,
 				B014F0F61BCA5922007B40D0 /* UserInputModeViewController.swift */,
-				81BA814C1A49DA1800E65899 /* ViewController.swift */,
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				E45A1E9E1BCFA34400A9ACC3 /* inputSleepingTime.swift */,
 				B0E2B81C1BD0EECE00B38B35 /* sleepTimerStartViewController.swift */,
@@ -177,6 +184,48 @@
 			name = "System Frameworks";
 			sourceTree = "<group>";
 		};
+		B044558A1BE8780700B899E6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B044558E1BE8785800B899E6 /* Entities */,
+				B044558B1BE8781000B899E6 /* Models */,
+				B04455911BE87A1100B899E6 /* Controllers */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		B044558B1BE8781000B899E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B044558C1BE8784900B899E6 /* Motion.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B044558E1BE8785800B899E6 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B044558F1BE8786700B899E6 /* MotionEntity.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		B04455911BE87A1100B899E6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				81BA814C1A49DA1800E65899 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B04455921BE8A05A00B899E6 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B04455931BE8A08300B899E6 /* Settings.swift */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
 		B0878F781BD918FA00982FF5 /* hide */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,12 +260,12 @@
 			name = images;
 			sourceTree = "<group>";
 		};
-		E4EF38821BCCEB60007730FC /* domucment */ = {
+		E4EF38821BCCEB60007730FC /* docs */ = {
 			isa = PBXGroup;
 			children = (
 				B047F2EB1BA915B10062F359 /* dreamDate.pages */,
 			);
-			name = domucment;
+			name = docs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,13 +370,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B04455901BE8786700B899E6 /* MotionEntity.swift in Sources */,
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
 				B001E6311BA93B06005AEB7F /* SleepLogModel.xcdatamodeld in Sources */,
 				E45A1E9F1BCFA34700A9ACC3 /* inputSleepingTime.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
+				B044558D1BE8784900B899E6 /* Motion.swift in Sources */,
 				E4EE8E171BCE2FA5006EF84E /* resultViewController.swift in Sources */,
 				B0E2B81D1BD0EECE00B38B35 /* sleepTimerStartViewController.swift in Sources */,
 				E47CB5501BCD0585000BD89E /* logInViewController.swift in Sources */,
+				B04455941BE8A08300B899E6 /* Settings.swift in Sources */,
 				B014F0F71BCA5922007B40D0 /* UserInputModeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,7 +500,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ParseStarterProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.risahiyama.dreamdate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -471,7 +523,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ParseStarterProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.risahiyama.dreamdate;
 				PRODUCT_NAME = "$(TARGET_NAME)";

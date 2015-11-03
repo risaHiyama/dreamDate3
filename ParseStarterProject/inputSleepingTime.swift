@@ -7,7 +7,6 @@
 //
 
 import UIKit
-@available(iOS 8.0, *)
 
 class inputSleepingTime: UIViewController {
     
