@@ -12,6 +12,7 @@ import Parse
 class Motion {
 
     static let sharedInstance = Motion()
+    //var manager : SwiftPlayerManager?
 
     /// 計測したデータの合計数
     var allMotionLength = 0
@@ -40,13 +41,13 @@ class Motion {
         if self.allMotionLength < Settings.preparingDataLength {
             decideThreshold(filteredMotion)
         } else {
-            print("\(self.threshold) < \(filteredMotion.z) negaeri: \(negaeriNow)")
-            if (!negaeriNow && self.threshold < filteredMotion.z) {
+            print("\(self.threshold) < \(filteredMotion.x) negaeri: \(negaeriNow)")
+            if (!negaeriNow && self.threshold < filteredMotion.x) {
                 // レム／ノンレムを切り替える
                 negaeriNow = true
                 print("------CHANGE-----")
                 return true
-            } else if(self.threshold > filteredMotion.z) {
+            } else if(self.threshold > filteredMotion.x) {
                 negaeriNow = false
             }
         }
@@ -58,10 +59,10 @@ class Motion {
     /// 最初のN個のデータのMeanフィルタによる値の最大値 × M
     func decideThreshold(m: MotionEntity) {
         // いったんZ軸の値のみを計算する
-        let z = m.z * Settings.timesToDecideThreshold
-        if z > self.threshold {
-            print("UPDATE threshold: \(z)")
-            self.threshold = z
+        let x = m.x * Settings.timesToDecideThreshold
+        if x > self.threshold {
+            print("UPDATE threshold: \(x)")
+            self.threshold = x
         }
     }
     
@@ -81,6 +82,7 @@ class Motion {
         object["DifferenceX"] = filteredMotion.x
         object["DifferenceY"] = filteredMotion.y
         object["DifferenceZ"] = filteredMotion.z
+        object["music"] = musicStatus
         
         //Parse: send! checking if it's sucessful
         object.saveInBackgroundWithBlock{(success,error)->Void in

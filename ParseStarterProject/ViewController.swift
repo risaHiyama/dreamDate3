@@ -12,11 +12,9 @@ import CoreData
 class SwiftPlayerManager: NSObject, AVAudioPlayerDelegate{
     
     var name = String()
-    
     var player : AVAudioPlayer! = nil
     
     // 初期化処理
-    
     override init() {
         
         super.init()
@@ -29,16 +27,12 @@ class SwiftPlayerManager: NSObject, AVAudioPlayerDelegate{
         player.delegate = self
         player.prepareToPlay()
         player.numberOfLoops=2*10
-        
-        // When users indicate they are Giants fans, we subscribe them to that channel.
-        //            let currentInstallation = PFInstallation.currentInstallation()
-        //            currentInstallation.addUniqueObject("Giants", forKey: "channels")
-        //            currentInstallation.saveInBackground()
-        
+    
     }
     
     func playOrPause() {
         if (player.playing) {
+            
         } else {
             // 現在再生していないなら再生
             player.play()
@@ -101,14 +95,13 @@ class ViewController: UIViewController , UITextFieldDelegate {
     @IBOutlet weak var start: UIButton!
     
     @IBAction func startTimer(sender: AnyObject) {
+        
         _ = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("timerStart"), userInfo: nil, repeats: true)
         
         explanation.hidden = true
-        timerStart()
+        start.hidden = true
         
-        if sleepType == 4 {
-            self.playMusic()
-        }
+        timerStart()
     }
     
     override func viewDidLoad() {
@@ -117,29 +110,16 @@ class ViewController: UIViewController , UITextFieldDelegate {
         manager = SwiftPlayerManager()
     }
     
-    //音楽を流し始めるタイミング
+    //音楽を流し始めるタイミング、選んだボタンによって違う動きをする
     func timerStart(){
-        if (self.sleepType == 0 || self.sleepType == 1){
-            readAccelerometer()
-            start.hidden = true
+        if  ( count < Settings.timeWaitingForUserToSleep ) {
+            count++
+            print(count)
         }
-        if (self.sleepType==4){
+        if ( count == Settings.timeWaitingForUserToSleep ) {
             readAccelerometer()
         }
     }
-    
-    //テスト用
-    //    func timerStart(){
-    //        if (count < 5){
-    //            count++
-    ////            print(count)
-    //        }
-    //        if count == 5 {
-    //            readAccelerometer()
-    //            start.hidden = true
-    //        }
-    //
-    //    }
     
     func readAccelerometer(){
         
@@ -183,27 +163,16 @@ class ViewController: UIViewController , UITextFieldDelegate {
                 }
             }
             
-            // Parseに保存
-            Motion.sharedInstance.saveToParse(self.userInfo.text!, musicStatus: self.manager!.playState())
-            
-//            if ( self.sleepType==0 || self.sleepType==4 ) {
-//                if ((differenceX > 0.1 || differenceY >   0.1 ) || differenceZ >  0.1 ){
-//                    
-//                }
-//                
-//            } else if self.sleepType==1 {
-//                
-//                if ((differenceY < 0.08 || differenceY > 0.07 ) || differenceZ > 0.08 ){
-//                    
-//                }
-//                
-//            }
-            
+        
             if (self.manager!.playState()) {
                 self.showDreaming.image=UIImage(named: "musicOn.png")
             } else {
                 self.showDreaming.image=UIImage(named: "backGroundStar.png")
             }
+            
+            // Parseに保存
+            Motion.sharedInstance.saveToParse(self.userInfo.text!, musicStatus: self.manager!.playState())
+            
         })
     }
     
@@ -237,14 +206,3 @@ class ViewController: UIViewController , UITextFieldDelegate {
         super.didReceiveMemoryWarning()
     }
 }
-
-//self.movement = true
-
-//self.music = true
-
-// Send a notification to all devices subscribed to the "Giants" channel.
-//                    let push = PFPush()
-//
-//                    push.setChannel("Giants")
-//                    push.setMessage("Satomi is dreaming!")
-//                    push.sendPushInBackground()
