@@ -9,8 +9,6 @@
 import UIKit
 import Parse
 
-@available(iOS 8.0, *)
-
 class UserInputModeViewController: UIViewController {
     
     @IBOutlet weak var button0: UIButton!

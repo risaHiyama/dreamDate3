@@ -83,6 +83,7 @@ class Motion {
         object["DifferenceY"] = filteredMotion.y
         object["DifferenceZ"] = filteredMotion.z
         object["music"] = musicStatus
+        object["threshold"] = threshold
         
         //Parse: send! checking if it's sucessful
         object.saveInBackgroundWithBlock{(success,error)->Void in

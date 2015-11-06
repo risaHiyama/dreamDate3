@@ -15,7 +15,6 @@ import Parse
 // If you want to use Crash Reporting - uncomment this line
 // import ParseCrashReporting
 
-@available(iOS 8.0, *)
 @UIApplicationMain
 
 class AppDelegate: UIResponder, UIApplicationDelegate {

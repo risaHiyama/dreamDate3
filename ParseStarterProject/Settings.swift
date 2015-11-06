@@ -29,11 +29,11 @@ enum Settings {
     static let bufferIndexOfMiddle = bufferLength / 2
     
     // しきい値を計算する期間に該当する最初のデータ数
-    static let preparingDataLength = 80
+    static let preparingDataLength = 10
     
     //寝るまで待つ時間
-    static let timeWaitingForUserToSleep = 60*30
+    static let timeWaitingForUserToSleep = 10
     
     // しきい値を計算する際、乗算する定数
-    static let timesToDecideThreshold = 1.15
+    static let timesToDecideThreshold = 1.10
 }

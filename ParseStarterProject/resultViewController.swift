@@ -9,8 +9,6 @@
 import UIKit
 import Parse
 
-@available(iOS 8.0, *)
-
 class resultViewController: UIViewController {
     var sleepType = 1
     
@@ -98,15 +96,4 @@ class resultViewController: UIViewController {
         result.endEditing(true)
         super.touchesBegan(touches, withEvent: event)
     }
-    
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
-    
 }

@@ -9,7 +9,6 @@
 import UIKit
 import AVFoundation
 
-@available(iOS 8.0, *)
 class SwiftPlayerManager2: NSObject, AVAudioPlayerDelegate{
     
     var player : AVAudioPlayer! = nil
@@ -26,12 +25,7 @@ class SwiftPlayerManager2: NSObject, AVAudioPlayerDelegate{
         player.delegate = self
         player.prepareToPlay()
         player.numberOfLoops=2*10
-        
-        // When users indicate they are Giants fans, we subscribe them to that channel.
-        //            let currentInstallation = PFInstallation.currentInstallation()
-        //            currentInstallation.addUniqueObject("Giants", forKey: "channels")
-        //            currentInstallation.saveInBackground()
-        
+    
     }
     
     func playOrPause() {

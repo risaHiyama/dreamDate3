@@ -27,26 +27,26 @@
 		B014F0F71BCA5922007B40D0 /* UserInputModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B014F0F61BCA5922007B40D0 /* UserInputModeViewController.swift */; };
 		B014F1031BCA6435007B40D0 /* backGroundStar.png in Resources */ = {isa = PBXBuildFile; fileRef = B014F1021BCA6435007B40D0 /* backGroundStar.png */; };
 		B014F1051BCA7140007B40D0 /* musicOn.png in Resources */ = {isa = PBXBuildFile; fileRef = B014F1041BCA7140007B40D0 /* musicOn.png */; };
-		B04455871BE2652D00B899E6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B04455841BE2652D00B899E6 /* Default-568h@2x.png */; settings = {ASSET_TAGS = (); }; };
-		B04455881BE2652D00B899E6 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B04455851BE2652D00B899E6 /* Default-667h@2x.png */; settings = {ASSET_TAGS = (); }; };
-		B04455891BE2652D00B899E6 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B04455861BE2652D00B899E6 /* Default-736h@3x.png */; settings = {ASSET_TAGS = (); }; };
-		B044558D1BE8784900B899E6 /* Motion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B044558C1BE8784900B899E6 /* Motion.swift */; settings = {ASSET_TAGS = (); }; };
-		B04455901BE8786700B899E6 /* MotionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B044558F1BE8786700B899E6 /* MotionEntity.swift */; settings = {ASSET_TAGS = (); }; };
-		B04455941BE8A08300B899E6 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04455931BE8A08300B899E6 /* Settings.swift */; settings = {ASSET_TAGS = (); }; };
+		B04455871BE2652D00B899E6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B04455841BE2652D00B899E6 /* Default-568h@2x.png */; };
+		B04455881BE2652D00B899E6 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B04455851BE2652D00B899E6 /* Default-667h@2x.png */; };
+		B04455891BE2652D00B899E6 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B04455861BE2652D00B899E6 /* Default-736h@3x.png */; };
+		B044558D1BE8784900B899E6 /* Motion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B044558C1BE8784900B899E6 /* Motion.swift */; };
+		B04455901BE8786700B899E6 /* MotionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B044558F1BE8786700B899E6 /* MotionEntity.swift */; };
+		B04455941BE8A08300B899E6 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04455931BE8A08300B899E6 /* Settings.swift */; };
 		B047F2ED1BA91ACA0062F359 /* loveMe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B047F2EC1BA91ACA0062F359 /* loveMe.mp3 */; };
 		B06564B11B60F93500E61BCD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06564B01B60F93500E61BCD /* CoreMotion.framework */; };
 		B06A1D4D1BC9500D00567957 /* shorebirdsBeach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B06A1D4C1BC9500D00567957 /* shorebirdsBeach.mp3 */; };
 		B07780B81BC3C13400C43975 /* BeachWaves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B07780B71BC3C13400C43975 /* BeachWaves.mp3 */; };
-		B0878FB71BD9EB3A00982FF5 /* amusmentPark.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B0878FB61BD9EB3A00982FF5 /* amusmentPark.mp3 */; settings = {ASSET_TAGS = (); }; };
-		B0E2B81D1BD0EECE00B38B35 /* sleepTimerStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E2B81C1BD0EECE00B38B35 /* sleepTimerStartViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B0878FB71BD9EB3A00982FF5 /* amusmentPark.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B0878FB61BD9EB3A00982FF5 /* amusmentPark.mp3 */; };
+		B0E2B81D1BD0EECE00B38B35 /* sleepTimerStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E2B81C1BD0EECE00B38B35 /* sleepTimerStartViewController.swift */; };
 		B0EFEA451B62071200D71A35 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0EFEA441B62071200D71A35 /* AVFoundation.framework */; };
-		E45A1E9F1BCFA34700A9ACC3 /* inputSleepingTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45A1E9E1BCFA34400A9ACC3 /* inputSleepingTime.swift */; settings = {ASSET_TAGS = (); }; };
-		E47CB5501BCD0585000BD89E /* logInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47CB54F1BCD0584000BD89E /* logInViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		E4EE8E171BCE2FA5006EF84E /* resultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EE8E161BCE2FA5006EF84E /* resultViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E45A1E9F1BCFA34700A9ACC3 /* inputSleepingTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45A1E9E1BCFA34400A9ACC3 /* inputSleepingTime.swift */; };
+		E47CB5501BCD0585000BD89E /* logInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47CB54F1BCD0584000BD89E /* logInViewController.swift */; };
+		E4EE8E171BCE2FA5006EF84E /* resultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EE8E161BCE2FA5006EF84E /* resultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		81BA81451A49DA1800E65899 /* ParseStarterProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseStarterProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81BA81451A49DA1800E65899 /* DreamDate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamDate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81BA81491A49DA1800E65899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81BA814A1A49DA1800E65899 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81BA814C1A49DA1800E65899 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 		81BA813C1A49DA1800E65899 = {
 			isa = PBXGroup;
 			children = (
-				81BA81471A49DA1800E65899 /* ParseStarterProject */,
+				81BA81471A49DA1800E65899 /* DreamDate */,
 				81BA816A1A49DB5600E65899 /* Frameworks */,
 				81BA81461A49DA1800E65899 /* Products */,
 			);
@@ -122,12 +122,12 @@
 		81BA81461A49DA1800E65899 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				81BA81451A49DA1800E65899 /* ParseStarterProject.app */,
+				81BA81451A49DA1800E65899 /* DreamDate.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		81BA81471A49DA1800E65899 /* ParseStarterProject */ = {
+		81BA81471A49DA1800E65899 /* DreamDate */ = {
 			isa = PBXGroup;
 			children = (
 				B044558A1BE8780700B899E6 /* App */,
@@ -135,17 +135,12 @@
 				E4EF38801BCCEB2E007730FC /* music */,
 				E4EF38811BCCEB54007730FC /* images */,
 				E4EF38821BCCEB60007730FC /* docs */,
-				81BA814E1A49DA1800E65899 /* Main.storyboard */,
-				B014F0F61BCA5922007B40D0 /* UserInputModeViewController.swift */,
-				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
-				E45A1E9E1BCFA34400A9ACC3 /* inputSleepingTime.swift */,
-				B0E2B81C1BD0EECE00B38B35 /* sleepTimerStartViewController.swift */,
-				E4EE8E161BCE2FA5006EF84E /* resultViewController.swift */,
 				B001E62F1BA93B06005AEB7F /* SleepLogModel.xcdatamodeld */,
 				B0878F781BD918FA00982FF5 /* hide */,
 				81BA81511A49DA1800E65899 /* Images.xcassets */,
 				81BA81481A49DA1800E65899 /* Supporting Files */,
 			);
+			name = DreamDate;
 			path = ParseStarterProject;
 			sourceTree = "<group>";
 		};
@@ -187,6 +182,7 @@
 		B044558A1BE8780700B899E6 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				81BA814E1A49DA1800E65899 /* Main.storyboard */,
 				B044558E1BE8785800B899E6 /* Entities */,
 				B044558B1BE8781000B899E6 /* Models */,
 				B04455911BE87A1100B899E6 /* Controllers */,
@@ -214,6 +210,11 @@
 			isa = PBXGroup;
 			children = (
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
+				B014F0F61BCA5922007B40D0 /* UserInputModeViewController.swift */,
+				E45A1E9E1BCFA34400A9ACC3 /* inputSleepingTime.swift */,
+				B0E2B81C1BD0EECE00B38B35 /* sleepTimerStartViewController.swift */,
+				E4EE8E161BCE2FA5006EF84E /* resultViewController.swift */,
+				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -271,9 +272,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		81BA81441A49DA1800E65899 /* ParseStarterProject */ = {
+		81BA81441A49DA1800E65899 /* DreamDate */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 81BA81641A49DA1800E65899 /* Build configuration list for PBXNativeTarget "ParseStarterProject" */;
+			buildConfigurationList = 81BA81641A49DA1800E65899 /* Build configuration list for PBXNativeTarget "DreamDate" */;
 			buildPhases = (
 				81BA81411A49DA1800E65899 /* Sources */,
 				81BA81421A49DA1800E65899 /* Frameworks */,
@@ -284,9 +285,9 @@
 			);
 			dependencies = (
 			);
-			name = ParseStarterProject;
+			name = DreamDate;
 			productName = ParseStarterProject;
-			productReference = 81BA81451A49DA1800E65899 /* ParseStarterProject.app */;
+			productReference = 81BA81451A49DA1800E65899 /* DreamDate.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -306,7 +307,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 81BA81401A49DA1800E65899 /* Build configuration list for PBXProject "ParseStarterProject" */;
+			buildConfigurationList = 81BA81401A49DA1800E65899 /* Build configuration list for PBXProject "DreamDate" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -319,7 +320,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				81BA81441A49DA1800E65899 /* ParseStarterProject */,
+				81BA81441A49DA1800E65899 /* DreamDate */,
 			);
 		};
 /* End PBXProject section */
@@ -500,10 +501,10 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ParseStarterProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.risahiyama.dreamdate;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DreamDate;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ParseStarterProject/ParseStarterProject-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -523,10 +524,10 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ParseStarterProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.risahiyama.dreamdate;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DreamDate;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ParseStarterProject/ParseStarterProject-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -536,7 +537,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		81BA81401A49DA1800E65899 /* Build configuration list for PBXProject "ParseStarterProject" */ = {
+		81BA81401A49DA1800E65899 /* Build configuration list for PBXProject "DreamDate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				81BA81621A49DA1800E65899 /* Debug */,
@@ -545,7 +546,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		81BA81641A49DA1800E65899 /* Build configuration list for PBXNativeTarget "ParseStarterProject" */ = {
+		81BA81641A49DA1800E65899 /* Build configuration list for PBXNativeTarget "DreamDate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				81BA81651A49DA1800E65899 /* Debug */,
