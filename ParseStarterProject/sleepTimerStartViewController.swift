@@ -18,7 +18,7 @@ class SwiftPlayerManager2: NSObject, AVAudioPlayerDelegate{
         super.init()
         // 音声ファイルパス取得
         //beachWaves
-        let audioPath = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("amusmentPark", ofType: "mp3")!)
+        let audioPath = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("rainforest_ambienc", ofType: "mp3")!)
         
         // プレイヤー準備
         player = try? AVAudioPlayer(contentsOfURL: audioPath)

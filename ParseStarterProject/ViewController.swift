@@ -26,7 +26,7 @@ class SwiftPlayerManager: NSObject, AVAudioPlayerDelegate{
         player = try? AVAudioPlayer(contentsOfURL: audioPath)
         player.delegate = self
         player.prepareToPlay()
-        player.numberOfLoops=2*60
+        player.numberOfLoops=2*90
     
     }
     
