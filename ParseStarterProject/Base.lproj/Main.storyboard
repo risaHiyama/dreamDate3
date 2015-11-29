@@ -514,12 +514,12 @@
                                 <animations/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aeY-13-y1L">
-                                <rect key="frame" x="51" y="107" width="205" height="45"/>
+                                <rect key="frame" x="51" y="55" width="205" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <string key="text">該当するボタンを
 押して下さい</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -537,7 +537,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2zV-5f-ia6">
-                                <rect key="frame" x="64" y="299" width="192" height="30"/>
+                                <rect key="frame" x="64" y="308" width="192" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.29999999999999999" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="実験３日目">
@@ -549,7 +549,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="smH-xL-F6a">
-                                <rect key="frame" x="64" y="194" width="192" height="30"/>
+                                <rect key="frame" x="64" y="180" width="192" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.29999999999999999" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="実験０日目">
@@ -561,7 +561,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Zff-pR-ZBu">
-                                <rect key="frame" x="64" y="347" width="192" height="30"/>
+                                <rect key="frame" x="64" y="370" width="192" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="0.29999999999999999" colorSpace="calibratedWhite"/>
@@ -644,7 +644,7 @@ leOBhOOAggrigKjljZTlipvjgZfjgabjgY/jgaDjgZXjgovmlrnjga8K5LiL44Gu44Oc44K/44Oz44KS
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cuu-dq-TCK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1137" y="226"/>
+            <point key="canvasLocation" x="-1461" y="226"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="AP8-yD-yyL">
@@ -654,38 +654,30 @@ leOBhOOAggrigKjljZTlipvjgZfjgabjgY/jgaDjgZXjgovmlrnjga8K5LiL44Gu44Oc44K/44Oz44KS
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forest.jpg" id="9I0-33-m06">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SXV-zo-0q3">
-                                <rect key="frame" x="126" y="232" width="69" height="33"/>
+                                <rect key="frame" x="191" y="495" width="60" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="OKAY">
+                                <state key="normal">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="b9f-lB-Fby" kind="modal" id="PsX-cj-Eaq"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日は森の音を流します" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IYV-uT-1VD">
-                                <rect key="frame" x="0.0" y="168" width="320" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app.png" id="9I0-33-m06">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.098039217293262482" green="0.098039217293262482" blue="0.098039217293262482" alpha="0.71999999999999997" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2b8-iF-I5c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-835" y="-405"/>
+            <point key="canvasLocation" x="-1011" y="-217"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tEd-Pe-VHC">
@@ -701,27 +693,27 @@ leOBhOOAggrigKjljZTlipvjgZfjgabjgY/jgaDjgZXjgovmlrnjga8K5LiL44Gu44Oc44K/44Oz44KS
                                 <animations/>
                             </imageView>
                             <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8md-CA-ro6">
-                                <rect key="frame" x="24" y="95" width="276" height="259"/>
+                                <rect key="frame" x="20" y="122" width="276" height="259"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
-                                <string key="text">1. 設定の画面で一般を選んで、 オートロック機能を
-OFFにしてください  2. 携帯を充電に繋げて下さい 照明を最小限にすると節電できます  3. 音量を３~5に設定してください</string>
+                                <string key="text">1設定の画面で一般を選んで、 オートロック機能を
+OFFにしてください  携帯を充電に繋げて下さい 照明を最小限にすると節電できます  音量を３~5に設定してください</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jot-26-q7O">
-                                <rect key="frame" x="20" y="0.0" width="255" height="109"/>
+                                <rect key="frame" x="31" y="43" width="255" height="109"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <string key="text">アプリの使用方法
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XPp-dm-Xcb">
-                                <rect key="frame" x="132" y="379" width="56" height="30"/>
+                                <rect key="frame" x="126" y="384" width="69" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
@@ -744,9 +736,9 @@ OFFにしてください  2. 携帯を充電に繋げて下さい 照明
         </scene>
     </scenes>
     <resources>
+        <image name="app.png" width="749" height="1341"/>
         <image name="backGround.png" width="1242" height="2208"/>
         <image name="backGroundStar.png" width="1500" height="2668"/>
-        <image name="forest.jpg" width="469" height="626"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="zd0-J9-Idi"/>
