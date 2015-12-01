@@ -37,6 +37,7 @@
 		B047F2ED1BA91ACA0062F359 /* loveMe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B047F2EC1BA91ACA0062F359 /* loveMe.mp3 */; };
 		B0497DFA1C0B42A700E66A57 /* titanic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B0497DF81C0B42A700E66A57 /* titanic.mp3 */; };
 		B0497DFB1C0B42A700E66A57 /* islandSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B0497DF91C0B42A700E66A57 /* islandSound.mp3 */; };
+		B0497DFD1C0B444200E66A57 /* JamesBond007.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B0497DFC1C0B444200E66A57 /* JamesBond007.mp3 */; };
 		B06564B11B60F93500E61BCD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06564B01B60F93500E61BCD /* CoreMotion.framework */; };
 		B06A1D4D1BC9500D00567957 /* shorebirdsBeach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B06A1D4C1BC9500D00567957 /* shorebirdsBeach.mp3 */; };
 		B07780B81BC3C13400C43975 /* BeachWaves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B07780B71BC3C13400C43975 /* BeachWaves.mp3 */; };
@@ -84,6 +85,7 @@
 		B047F2EC1BA91ACA0062F359 /* loveMe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loveMe.mp3; sourceTree = "<group>"; };
 		B0497DF81C0B42A700E66A57 /* titanic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = titanic.mp3; sourceTree = "<group>"; };
 		B0497DF91C0B42A700E66A57 /* islandSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = islandSound.mp3; sourceTree = "<group>"; };
+		B0497DFC1C0B444200E66A57 /* JamesBond007.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = JamesBond007.mp3; sourceTree = "<group>"; };
 		B06564B01B60F93500E61BCD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		B06A1D4C1BC9500D00567957 /* shorebirdsBeach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shorebirdsBeach.mp3; sourceTree = "<group>"; };
 		B07780B71BC3C13400C43975 /* BeachWaves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BeachWaves.mp3; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 				B0878FB61BD9EB3A00982FF5 /* amusmentPark.mp3 */,
 				B0497DF81C0B42A700E66A57 /* titanic.mp3 */,
 				B0497DF91C0B42A700E66A57 /* islandSound.mp3 */,
+				B0497DFC1C0B444200E66A57 /* JamesBond007.mp3 */,
 				B00ACC971BC1682A0069AF91 /* brianInokashira.mp3 */,
 				B07C4E281BF23C730097AED4 /* rainforest_ambienc.mp3 */,
 				B047F2EC1BA91ACA0062F359 /* loveMe.mp3 */,
@@ -357,6 +360,7 @@
 				B014F1051BCA7140007B40D0 /* musicOn.png in Resources */,
 				B0497DFB1C0B42A700E66A57 /* islandSound.mp3 in Resources */,
 				B014F0F31BCA53DB007B40D0 /* backGround.png in Resources */,
+				B0497DFD1C0B444200E66A57 /* JamesBond007.mp3 in Resources */,
 				B06A1D4D1BC9500D00567957 /* shorebirdsBeach.mp3 in Resources */,
 				81BA81521A49DA1800E65899 /* Images.xcassets in Resources */,
 				B04455891BE2652D00B899E6 /* Default-736h@3x.png in Resources */,
