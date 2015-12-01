@@ -10,11 +10,12 @@ import UIKit
 
 class inputSleepingTime: UIViewController {
     
+    //userInputにユーザーが時間を書き込む
     @IBOutlet var userInput: UITextField!
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
         if let viewController = segue.destinationViewController as? sleepTimerStartViewController {
+            //userInputがviewContollerのsleepDurationInputに送られる
             viewController.sleepDurationInput = userInput.text!
         }
     }
@@ -24,21 +25,13 @@ class inputSleepingTime: UIViewController {
         //パラメータのバインド
         //self.userInput.text = self.sleepDurationInput
     }
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        userInput.endEditing(true)
+        super.touchesBegan(touches, withEvent: event)
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
-    
 }

@@ -15,7 +15,7 @@ class logInViewController: UIViewController {
     
     var signupActive = true
     
-    @IBOutlet weak var username: UITextField!
+    @IBOutlet var username: UITextField!
     @IBOutlet weak var password: UITextField!
     
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
@@ -49,8 +49,13 @@ class logInViewController: UIViewController {
         
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let viewController2 = segue.destinationViewController as? ViewController {
+            viewController2.usernameParseClass = self.username.text!
+        }
+    }
+
     func displayAlert(title: String ,message: String){
-        
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
         
@@ -142,7 +147,6 @@ class logInViewController: UIViewController {
         super.touchesBegan(touches, withEvent: event)
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -161,16 +165,5 @@ class logInViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
     
 }

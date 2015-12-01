@@ -9,18 +9,17 @@
 import UIKit
 import Parse
 
-@available(iOS 8.0, *)
-
 class resultViewController: UIViewController {
+    var sleepType = 1
     
     var dreamed = true
-    var quality = 0
-    
+    var dreamRelativeToSound = true
     
     @IBOutlet weak var result: UITextField!
     
     @IBAction func dreamed(sender: AnyObject) {
         dreamed = true
+
     }
     
     @IBAction func didNotDream(sender: AnyObject) {
@@ -28,15 +27,10 @@ class resultViewController: UIViewController {
     }
     
     @IBAction func bad(sender: AnyObject) {
-        quality = 0
+        dreamRelativeToSound = false
     }
-
-    @IBAction func soso(sender: AnyObject) {
-        quality = 1
-    }
-    
     @IBAction func good(sender: AnyObject) {
-        quality = 2
+        dreamRelativeToSound = true
     }
     
     @IBAction func resultEnter(sender: AnyObject) {
@@ -47,7 +41,7 @@ class resultViewController: UIViewController {
         } else {
             
             //Parse: create a table of acceletometer data
-            let object = PFObject(className:"Dream")
+            let object = PFObject(className:"Result")
             
             if let user = PFUser.currentUser(),
                 objectID = user.objectId {
@@ -57,9 +51,11 @@ class resultViewController: UIViewController {
             //Parse: setting up variables details
             object["dreamed"] = self.dreamed
             
-            object["quality"] = self.quality
+            object["retativity"] = self.dreamRelativeToSound
         
-            object["result"] = self.result.text
+            object["detail"] = self.result.text
+            
+//            object["dreamType"] = self.sleepType
             
             //Parse: send! checking if it's sucessful
             object.saveInBackgroundWithBlock{(success,error)->Void in
@@ -70,11 +66,8 @@ class resultViewController: UIViewController {
                     print(error)
                 }
             }
-            
-            
         }
     }
-    
     
     
     func displayAlert(title: String ,message: String){
@@ -91,7 +84,6 @@ class resultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
     }
     
@@ -104,15 +96,4 @@ class resultViewController: UIViewController {
         result.endEditing(true)
         super.touchesBegan(touches, withEvent: event)
     }
-    
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
-    
 }

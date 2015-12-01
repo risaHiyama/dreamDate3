@@ -9,21 +9,19 @@
 import UIKit
 import Parse
 
-@available(iOS 8.0, *)
-
 class UserInputModeViewController: UIViewController {
     
+    @IBOutlet weak var button0: UIButton!
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
-    @IBOutlet weak var button3: UIButton!
     @IBOutlet weak var button4: UIButton!
+    @IBOutlet weak var button3: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -37,35 +35,43 @@ class UserInputModeViewController: UIViewController {
             objectID = user.objectId {
                 object["userID"] = objectID
         }
-
-
+        
+        
         if let viewController = segue.destinationViewController as? ViewController {
+            print(sender)
             if let button = sender as? UIButton {
                 // 0=REM
                 // 1=nonREM
                 // 2=timer
                 // 3=beforeSleeping
                 
-                if button == button1 {
-                    
-                    viewController.sleepType = 0
+                print(button)
+                
+                if button == button0 {
                     
                     object["dreamType"] = 0
                     
-                } else if button == button2 {
+                } else if button == button1 {
                     
-                    viewController.sleepType = 1
+                    viewController.sleepType = 0
                     
                     object["dreamType"] = 1
                     
                 } else if button == button2 {
                     
+                    viewController.sleepType = 1
+                    
                     object["dreamType"] = 2
                     
-                } else if button == button2 {
+                } else if button == button3 {
                     
                     object["dreamType"] = 3
-                
+                    
+                } else if button == button4 {
+                    
+                    object["dreamType"] = 4
+                    
+                    viewController.sleepType = 4
                 }
                 
             }
@@ -82,5 +88,5 @@ class UserInputModeViewController: UIViewController {
         }
         
     }
-
+    
 }

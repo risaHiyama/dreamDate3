@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E5AB6691-6A95-4E5B-8F5B-747159E5ABA0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ParseStarterProject</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0F63C8555D52BC3EEDEB2BD5BDB3D8E803E5F0E6</key>
+		<string>https://github.com/risaHiyama/dreamDate3.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ParseStarterProject.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0F63C8555D52BC3EEDEB2BD5BDB3D8E803E5F0E6</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/risaHiyama/dreamDate3.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0F63C8555D52BC3EEDEB2BD5BDB3D8E803E5F0E6</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0F63C8555D52BC3EEDEB2BD5BDB3D8E803E5F0E6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>dreamDate</string>
+		</dict>
+	</array>
+</dict>
+</plist>

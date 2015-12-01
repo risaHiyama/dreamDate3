@@ -18,19 +18,14 @@ class SwiftPlayerManager2: NSObject, AVAudioPlayerDelegate{
         super.init()
         // 音声ファイルパス取得
         //beachWaves
-        let audioPath = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("shorebirdsBeach", ofType: "mp3")!)
+        let audioPath = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("rainforest_ambienc", ofType: "mp3")!)
         
         // プレイヤー準備
         player = try? AVAudioPlayer(contentsOfURL: audioPath)
         player.delegate = self
         player.prepareToPlay()
         player.numberOfLoops=2*10
-        
-        // When users indicate they are Giants fans, we subscribe them to that channel.
-        //            let currentInstallation = PFInstallation.currentInstallation()
-        //            currentInstallation.addUniqueObject("Giants", forKey: "channels")
-        //            currentInstallation.saveInBackground()
-        
+    
     }
     
     func playOrPause() {
@@ -61,14 +56,18 @@ class SwiftPlayerManager2: NSObject, AVAudioPlayerDelegate{
     }
 }
 
+@available(iOS 8.0, *)
+
 class sleepTimerStartViewController: UIViewController {
     
-    //パラメータ受取用プロパティ
+    //パラメータ受取用プロパティ、sleepDurationInputの初期値を与える
     var sleepDurationInput: String = "abc"
+    
     var timer = NSTimer()
     var count = 0
     var manager : SwiftPlayerManager?
 
+    //この画面のsleepDurationラベル
     @IBOutlet var sleepDuration: UILabel!
     
     @IBAction func start(sender: AnyObject) {
@@ -89,9 +88,10 @@ class sleepTimerStartViewController: UIViewController {
         
         print(count)
         
+        //sleepTime（音を鳴らすまでにタイマーが数える秒数）に前のページに書き込んだ数値sleepDurationをもとに計算
         let sleepingTime : Int? = (Int(sleepDuration.text!)!-1)*60*60
         
-        print(sleepingTime)
+        //print(sleepingTime!)
         
         if sleepingTime < count {
             self.playMusic()
@@ -118,18 +118,16 @@ class sleepTimerStartViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //
     override func viewDidAppear(animated: Bool) {
+        //この画面のラベルsleepDurationにこのページのsleepDurationInputを代入
         self.sleepDuration.text = sleepDurationInput
     }
     
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        sleepDuration.endEditing(true)
+        super.touchesBegan(touches, withEvent: event)
     }
-    */
-    
+
+   
 }
