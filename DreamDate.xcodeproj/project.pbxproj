@@ -27,6 +27,11 @@
 		B014F0F71BCA5922007B40D0 /* UserInputModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B014F0F61BCA5922007B40D0 /* UserInputModeViewController.swift */; };
 		B014F1031BCA6435007B40D0 /* backGroundStar.png in Resources */ = {isa = PBXBuildFile; fileRef = B014F1021BCA6435007B40D0 /* backGroundStar.png */; };
 		B014F1051BCA7140007B40D0 /* musicOn.png in Resources */ = {isa = PBXBuildFile; fileRef = B014F1041BCA7140007B40D0 /* musicOn.png */; };
+		B023655A1C1472500075D447 /* takekoputa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B02365551C1472500075D447 /* takekoputa.mp3 */; };
+		B023655B1C1472500075D447 /* doraemon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B02365561C1472500075D447 /* doraemon.mp3 */; };
+		B023655C1C1472500075D447 /* ebisu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B02365571C1472500075D447 /* ebisu.mp3 */; };
+		B023655D1C1472500075D447 /* india.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B02365581C1472500075D447 /* india.mp3 */; };
+		B023655E1C1472500075D447 /* AllAroundTheWorld.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B02365591C1472500075D447 /* AllAroundTheWorld.mp3 */; };
 		B03D5DA61BFE2BBF00B0E4C6 /* app.png in Resources */ = {isa = PBXBuildFile; fileRef = B03D5DA51BFE2BBF00B0E4C6 /* app.png */; };
 		B04455871BE2652D00B899E6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B04455841BE2652D00B899E6 /* Default-568h@2x.png */; };
 		B04455881BE2652D00B899E6 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B04455851BE2652D00B899E6 /* Default-667h@2x.png */; };
@@ -74,6 +79,11 @@
 		B014F0F61BCA5922007B40D0 /* UserInputModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInputModeViewController.swift; sourceTree = "<group>"; };
 		B014F1021BCA6435007B40D0 /* backGroundStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backGroundStar.png; sourceTree = "<group>"; };
 		B014F1041BCA7140007B40D0 /* musicOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = musicOn.png; sourceTree = "<group>"; };
+		B02365551C1472500075D447 /* takekoputa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = takekoputa.mp3; sourceTree = "<group>"; };
+		B02365561C1472500075D447 /* doraemon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = doraemon.mp3; sourceTree = "<group>"; };
+		B02365571C1472500075D447 /* ebisu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ebisu.mp3; sourceTree = "<group>"; };
+		B02365581C1472500075D447 /* india.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = india.mp3; sourceTree = "<group>"; };
+		B02365591C1472500075D447 /* AllAroundTheWorld.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AllAroundTheWorld.mp3; sourceTree = "<group>"; };
 		B03D5DA51BFE2BBF00B0E4C6 /* app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app.png; sourceTree = "<group>"; };
 		B04455841BE2652D00B899E6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B04455851BE2652D00B899E6 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
@@ -250,6 +260,11 @@
 			children = (
 				B0878FB61BD9EB3A00982FF5 /* amusmentPark.mp3 */,
 				B0497DF81C0B42A700E66A57 /* titanic.mp3 */,
+				B02365551C1472500075D447 /* takekoputa.mp3 */,
+				B02365561C1472500075D447 /* doraemon.mp3 */,
+				B02365571C1472500075D447 /* ebisu.mp3 */,
+				B02365581C1472500075D447 /* india.mp3 */,
+				B02365591C1472500075D447 /* AllAroundTheWorld.mp3 */,
 				B0497DF91C0B42A700E66A57 /* islandSound.mp3 */,
 				B0497DFC1C0B444200E66A57 /* JamesBond007.mp3 */,
 				B00ACC971BC1682A0069AF91 /* brianInokashira.mp3 */,
@@ -348,8 +363,11 @@
 				81BA81501A49DA1800E65899 /* Main.storyboard in Resources */,
 				B00ACC961BC166870069AF91 /* brianSinging.mp3 in Resources */,
 				B0497DFA1C0B42A700E66A57 /* titanic.mp3 in Resources */,
+				B023655B1C1472500075D447 /* doraemon.mp3 in Resources */,
 				B04455881BE2652D00B899E6 /* Default-667h@2x.png in Resources */,
 				B00ACC981BC1682A0069AF91 /* brianInokashira.mp3 in Resources */,
+				B023655E1C1472500075D447 /* AllAroundTheWorld.mp3 in Resources */,
+				B023655A1C1472500075D447 /* takekoputa.mp3 in Resources */,
 				B03D5DA61BFE2BBF00B0E4C6 /* app.png in Resources */,
 				B07780B81BC3C13400C43975 /* BeachWaves.mp3 in Resources */,
 				B07C4E291BF23C730097AED4 /* rainforest_ambienc.mp3 in Resources */,
@@ -361,7 +379,9 @@
 				B0497DFB1C0B42A700E66A57 /* islandSound.mp3 in Resources */,
 				B014F0F31BCA53DB007B40D0 /* backGround.png in Resources */,
 				B0497DFD1C0B444200E66A57 /* JamesBond007.mp3 in Resources */,
+				B023655D1C1472500075D447 /* india.mp3 in Resources */,
 				B06A1D4D1BC9500D00567957 /* shorebirdsBeach.mp3 in Resources */,
+				B023655C1C1472500075D447 /* ebisu.mp3 in Resources */,
 				81BA81521A49DA1800E65899 /* Images.xcassets in Resources */,
 				B04455891BE2652D00B899E6 /* Default-736h@3x.png in Resources */,
 			);
