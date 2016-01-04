@@ -36,7 +36,6 @@ class UserInputModeViewController: UIViewController {
                 object["userID"] = objectID
         }
         
-        
         if let viewController = segue.destinationViewController as? ViewController {
             print(sender)
             if let button = sender as? UIButton {

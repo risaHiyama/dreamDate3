@@ -20,13 +20,13 @@ class SwiftPlayerManager: NSObject, AVAudioPlayerDelegate{
         super.init()
         
         //beachWaves
-        let audioPath = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("BeachWaves", ofType: "mp3")!)
+        let audioPath = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("AllAroundTheWorld", ofType: "mp3")!)
         
         // プレイヤー準備
         player = try? AVAudioPlayer(contentsOfURL: audioPath)
         player.delegate = self
         player.prepareToPlay()
-        player.numberOfLoops=2*90
+        player.numberOfLoops=30
     
     }
     
