@@ -86,29 +86,35 @@ class ViewController: UIViewController , UITextFieldDelegate {
     var timer = NSTimer()
     var count = 0
     
-    @IBOutlet var explanation: UILabel!
+    //説明文ラベル
+    
+    @IBOutlet weak var experimentDis: UILabel!
+    @IBOutlet weak var explanation: UILabel!
+    
+    //ユーザのtextField
     @IBOutlet var userInfo: UITextField!
     
     //開始後画像入れ替えするため
     @IBOutlet var showDreaming: UIImageView!
-    
     @IBOutlet weak var start: UIButton!
     
     @IBAction func startTimer(sender: AnyObject) {
-        
         _ = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("timerStart"), userInfo: nil, repeats: true)
-        
-        explanation.hidden = true
+        //explanation.hidden = true
         start.hidden = true
-        
+        userInfo.hidden = true
+        experimentDis.hidden = true
+        explanation.hidden = true
+        self.view.endEditing(true);
         timerStart()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         manager = SwiftPlayerManager()
+        
     }
+    
     
     //音楽を流し始めるタイミング、選んだボタンによって違う動きをする
     func timerStart(){
@@ -187,11 +193,6 @@ class ViewController: UIViewController , UITextFieldDelegate {
     override func viewWillDisappear(animated: Bool) {
         self.pauseMusic()
         stopAccelerometerUpdates()
-    }
-    
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        userInfo.endEditing(true)
-        super.touchesBegan(touches, withEvent: event)
     }
     
     func playMusic(){

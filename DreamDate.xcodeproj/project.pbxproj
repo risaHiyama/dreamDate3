@@ -52,6 +52,7 @@
 		B0B5C4221C3AB00300BFE94D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B5C4211C3AB00300BFE94D /* Main.storyboard */; };
 		B0E2B81D1BD0EECE00B38B35 /* sleepTimerStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E2B81C1BD0EECE00B38B35 /* sleepTimerStartViewController.swift */; };
 		B0EAC4AB1C3B955100FC633B /* playAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAC4AA1C3B955100FC633B /* playAudio.swift */; };
+		B0EAC4AD1C3BB2AE00FC633B /* iPhonePos.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EAC4AC1C3BB2AE00FC633B /* iPhonePos.png */; };
 		B0EFEA451B62071200D71A35 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0EFEA441B62071200D71A35 /* AVFoundation.framework */; };
 		E45A1E9F1BCFA34700A9ACC3 /* inputSleepingTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45A1E9E1BCFA34400A9ACC3 /* inputSleepingTime.swift */; };
 		E47CB5501BCD0585000BD89E /* logInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47CB54F1BCD0584000BD89E /* logInViewController.swift */; };
@@ -108,6 +109,7 @@
 		B0B5C4211C3AB00300BFE94D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B0E2B81C1BD0EECE00B38B35 /* sleepTimerStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sleepTimerStartViewController.swift; sourceTree = "<group>"; };
 		B0EAC4AA1C3B955100FC633B /* playAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = playAudio.swift; sourceTree = "<group>"; };
+		B0EAC4AC1C3BB2AE00FC633B /* iPhonePos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhonePos.png; sourceTree = "<group>"; };
 		B0EFEA441B62071200D71A35 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E45A1E9E1BCFA34400A9ACC3 /* inputSleepingTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = inputSleepingTime.swift; sourceTree = "<group>"; };
 		E47CB54F1BCD0584000BD89E /* logInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = logInViewController.swift; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 		E4EF38811BCCEB54007730FC /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B0EAC4AC1C3BB2AE00FC633B /* iPhonePos.png */,
 				B0B5C41B1C3AA71C00BFE94D /* yuikoMusic.png */,
 				B0B5C41F1C3AABED00BFE94D /* Thailand.png */,
 				B03D5DA51BFE2BBF00B0E4C6 /* app.png */,
@@ -386,6 +389,7 @@
 				B047F2ED1BA91ACA0062F359 /* loveMe.mp3 in Resources */,
 				B014F1031BCA6435007B40D0 /* backGroundStar.png in Resources */,
 				B014F1051BCA7140007B40D0 /* musicOn.png in Resources */,
+				B0EAC4AD1C3BB2AE00FC633B /* iPhonePos.png in Resources */,
 				B0497DFB1C0B42A700E66A57 /* islandSound.mp3 in Resources */,
 				B014F0F31BCA53DB007B40D0 /* backGround.png in Resources */,
 				B0B5C41C1C3AA71C00BFE94D /* yuikoMusic.png in Resources */,
