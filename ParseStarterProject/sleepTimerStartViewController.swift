@@ -69,8 +69,11 @@ class sleepTimerStartViewController: UIViewController {
 
     //この画面のsleepDurationラベル
     @IBOutlet var sleepDuration: UILabel!
+    @IBOutlet weak var startButton: UIButton!
+    
     
     @IBAction func start(sender: AnyObject) {
+        startButton.hidden = true
         
         timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("timerStart"), userInfo: nil, repeats: true)
         

@@ -51,6 +51,7 @@
 		B0B5C4201C3AABED00BFE94D /* Thailand.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B5C41F1C3AABED00BFE94D /* Thailand.png */; };
 		B0B5C4221C3AB00300BFE94D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B5C4211C3AB00300BFE94D /* Main.storyboard */; };
 		B0E2B81D1BD0EECE00B38B35 /* sleepTimerStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E2B81C1BD0EECE00B38B35 /* sleepTimerStartViewController.swift */; };
+		B0EAC4AB1C3B955100FC633B /* playAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAC4AA1C3B955100FC633B /* playAudio.swift */; };
 		B0EFEA451B62071200D71A35 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0EFEA441B62071200D71A35 /* AVFoundation.framework */; };
 		E45A1E9F1BCFA34700A9ACC3 /* inputSleepingTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45A1E9E1BCFA34400A9ACC3 /* inputSleepingTime.swift */; };
 		E47CB5501BCD0585000BD89E /* logInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47CB54F1BCD0584000BD89E /* logInViewController.swift */; };
@@ -106,6 +107,7 @@
 		B0B5C41F1C3AABED00BFE94D /* Thailand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Thailand.png; sourceTree = "<group>"; };
 		B0B5C4211C3AB00300BFE94D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B0E2B81C1BD0EECE00B38B35 /* sleepTimerStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sleepTimerStartViewController.swift; sourceTree = "<group>"; };
+		B0EAC4AA1C3B955100FC633B /* playAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = playAudio.swift; sourceTree = "<group>"; };
 		B0EFEA441B62071200D71A35 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E45A1E9E1BCFA34400A9ACC3 /* inputSleepingTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = inputSleepingTime.swift; sourceTree = "<group>"; };
 		E47CB54F1BCD0584000BD89E /* logInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = logInViewController.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
+				B0EAC4AA1C3B955100FC633B /* playAudio.swift */,
 				B014F0F61BCA5922007B40D0 /* UserInputModeViewController.swift */,
 				E45A1E9E1BCFA34400A9ACC3 /* inputSleepingTime.swift */,
 				B0E2B81C1BD0EECE00B38B35 /* sleepTimerStartViewController.swift */,
@@ -421,6 +424,7 @@
 			files = (
 				B04455901BE8786700B899E6 /* MotionEntity.swift in Sources */,
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
+				B0EAC4AB1C3B955100FC633B /* playAudio.swift in Sources */,
 				B001E6311BA93B06005AEB7F /* SleepLogModel.xcdatamodeld in Sources */,
 				E45A1E9F1BCFA34700A9ACC3 /* inputSleepingTime.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,

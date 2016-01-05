@@ -32,7 +32,7 @@ enum Settings {
     static let preparingDataLength = 80
     
     //寝るまで待つ時間
-    static let timeWaitingForUserToSleep = 30
+    static let timeWaitingForUserToSleep = 60*20
     
     // しきい値を計算する際、乗算する定数
     static let timesToDecideThreshold = 1.8
