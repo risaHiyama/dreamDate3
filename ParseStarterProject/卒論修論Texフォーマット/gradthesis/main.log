@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2016.1.4)  15 JAN 2016 18:25
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2016.1.4)  15 JAN 2016 23:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -154,11 +154,8 @@ LaTeX Warning: Label `DreamOnレビュー' multiply defined.
 
 LaTeX Warning: Label `DreamOnレビュー' multiply defined.
 
-) (./06.aux) (./07.aux) (./90_acknowledgment.aux) (./91_bibliography.aux
-
-LaTeX Warning: Label `saintDenys' multiply defined.
-
-) (./92_appendix.aux))
+) (./06.aux) (./07.aux) (./90_acknowledgment.aux) (./91_bibliography.aux)
+(./92_appendix.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
@@ -324,7 +321,7 @@ File: eps/vrTrends.eps Graphic file (type eps)
 
 ]
 
-LaTeX Warning: Reference `chap:conclusion' on page 2 undefined on input line 35
+LaTeX Warning: Reference `chap:conclusion' on page 2 undefined on input line 25
 .
 
 ) [2]
@@ -389,14 +386,16 @@ File: eps/smell.eps Graphic file (type eps)
 
 
 ]
+File: eps/remNonrem.eps Graphic file (type eps)
+ <eps/remNonrem.eps>
 File: eps/kinect.eps Graphic file (type eps)
- <eps/kinect.eps>) [14]
+ <eps/kinect.eps> [14]) [15]
 \openout2 = `05.aux'.
 
  (./05.tex
 第 5 章
 File: eps/dreamDate02.eps Graphic file (type eps)
-<eps/dreamDate02.eps> [15
+<eps/dreamDate02.eps> [16
 
 
 
@@ -411,13 +410,13 @@ File: eps/AppMusicPlay.eps Graphic file (type eps)
 File: eps/AppStart.eps Graphic file (type eps)
  <eps/AppStart.eps>
 File: eps/AppDiary.eps Graphic file (type eps)
- <eps/AppDiary.eps>) [16] [17]
-[18]
+ <eps/AppDiary.eps>) [17] [18]
+[19]
 \openout2 = `06.aux'.
 
  (./06.tex
 第 6 章
-) [19
+) [20
 
 
 
@@ -426,14 +425,14 @@ File: eps/AppDiary.eps Graphic file (type eps)
 
  (./07.tex
 第 7 章
-[20
+[21
 
 
 
-]) [21]
+]) [22]
 \openout2 = `90_acknowledgment.aux'.
 
- (./90_acknowledgment.tex) [22
+ (./90_acknowledgment.tex) [23
 
 
 
@@ -449,26 +448,26 @@ LaTeX Font Info:    Font shape `JT1/utfj/m/0' will be
 (Font)              scaled to size 10.53629pt on input line 34.
 LaTeX Font Info:    Font shape `JY1/utfj/m/0' will be
 (Font)              scaled to size 10.53629pt on input line 34.
- [23
+ [24
 
 
 
-]) [24]
+]) [25]
 \openout2 = `92_appendix.aux'.
 
 
 (./92_appendix.tex
 付 録 A  
 
-LaTeX Warning: Citation `away3d' on page 25 undefined on input line 5.
+LaTeX Warning: Citation `away3d' on page 26 undefined on input line 5.
 
 
-LaTeX Warning: Citation `bulkloader' on page 25 undefined on input line 6.
+LaTeX Warning: Citation `bulkloader' on page 26 undefined on input line 6.
 
 
-LaTeX Warning: Citation `as3crypto' on page 25 undefined on input line 7.
+LaTeX Warning: Citation `as3crypto' on page 26 undefined on input line 7.
 
-) [25
+) [26
 
 
 
@@ -483,12 +482,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3213 strings out of 493777
- 39599 string characters out of 6151335
- 115917 words of memory out of 5000000
- 6581 multiletter control sequences out of 15000+600000
+ 3220 strings out of 493777
+ 39698 string characters out of 6151335
+ 115943 words of memory out of 5000000
+ 6587 multiletter control sequences out of 15000+600000
  20105 words of font info for 84 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 25i,5n,20p,1027b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 25i,5n,20p,948b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (31 pages, 83504 bytes).
+Output written on main.dvi (32 pages, 86824 bytes).
