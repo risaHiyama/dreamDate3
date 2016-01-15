@@ -19,7 +19,6 @@ class resultViewController: UIViewController {
     
     @IBAction func dreamed(sender: AnyObject) {
         dreamed = true
-
     }
     
     @IBAction func didNotDream(sender: AnyObject) {

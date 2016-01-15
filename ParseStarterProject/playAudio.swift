@@ -52,10 +52,16 @@ class playAudio: NSObject ,AVAudioPlayerDelegate{
 
 class playAudioViewController: ViewController {
     var manager2: playAudio?
+
+    
+    @IBOutlet weak var segueButton: UIButton!
     
     @IBOutlet weak var buttonPlayPauseMusic: UIButton!
     
     @IBAction func playMusic(sender: AnyObject) {
+        
+        segueButton.enabled = true
+        
         manager2!.playOrPause()
         
         // 再生／一時停止ボタン表示切り替え
@@ -80,7 +86,6 @@ class playAudioViewController: ViewController {
         
         // 再生管理クラス生成
         manager2 = playAudio()
-        
         // 再生終了通知を監視
         let nc = NSNotificationCenter.defaultCenter()
         nc.addObserver(self, selector: "audioStopAction", name: "stop", object: nil)

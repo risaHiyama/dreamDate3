@@ -1,0 +1,100 @@
+% 独自のコマンド
+
+% ■ アブストラクト
+%	\begin{jabstract} 〜 \end{jabstract}	：日本語のアブストラクト
+%	\begin{eabstract} 〜 \end{eabstract}	：英語のアブストラクト
+
+% ■ 謝辞
+%	\begin{acknowledgment} 〜 \end{acknowledgment}
+
+% ■ 文献リスト
+%	\begin{bib}[100] 〜 \end{bib}
+
+
+\newif\ifjapanese
+
+\japanesetrue	% 論文全体を日本語で書く（英語で書くならコメントアウト）
+
+\ifjapanese
+	\documentclass[11pt]{jreport}
+	\renewcommand{\bibname}{参考文献}
+	\newcommand{\acknowledgmentname}{謝辞}
+\else
+	\documentclass[11pt]{report}
+	\newcommand{\acknowledgmentname}{Acknowledgment}
+\fi
+\usepackage[top=30truemm,bottom=30truemm,left=25truemm,right=25truemm]{geometry}
+\usepackage{ascmac}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{ylab_thesis}
+\DeclareFontShape{JY1}{mc}{m}{it}{<5> <6> <7> <8> <9> <10> sgen*min
+    <10.95><12><14.4><17.28><20.74><24.88> min10 <-> min10}{}
+\DeclareFontShape{JT1}{mc}{m}{it}{<5> <6> <7> <8> <9> <10> sgen*tmin
+    <10.95><12><14.4><17.28><20.74><24.88> tmin10 <-> tmin10}{}
+\usepackage{times}
+\usepackage[stable]{footmisc}
+\usepackage{otf}
+\usepackage{epsf}
+
+%\bindermode	% バインダ用余白設定
+
+% 日本語情報（必要なら）
+\jclass	{卒業論文}							% 論文種別
+\jtitle		{TokimekiDream 好きな思い出を夢で再生するためのアプリケーションの提案と試作
+}			% タイトル。改行する場合は\\を入れる
+\juniv		{慶應義塾大学}						% 大学名
+\jfaculty	{環境情報学部環境情報学科}				% 学部、学科
+\jauthor	{樋山 理紗}						% 著者 \CID{7808}でも同字が出る
+\jnumber	{71247475}						% 学籍番号
+\jadvisor	{中西 泰人}{教授}					% 指導教官、形式は『{名前}{肩書}』
+\jchief	{渡邊 義明}{教授}					% 学科長名、形式は『{名前}{肩書}』
+\jhyear	{28}								% 平成○年
+\jhyeared {28}								% 平成○年「度」
+\jsyear	{2016}						% 西暦○年
+\jsyeared	{2016}							% 西暦○年「度」
+\jkeyword	{Lucid Dreaming, iOS, Sleep Monitoring}			% 論文のキーワード
+
+% 英語情報（必要なら）
+\eclass	{Graduation Thesis}					% 論文種別
+\etitle		{TokimekiDream Smartphone application for dreaming about desired memory}	% タイトル。改行する場合は\\を入れる
+\euniv	{Keio University}						% 大学名
+\efaculty	{Bachelor of Arts in Environment and Information Studies}	% 学部、学科
+\eauthor	{Risa HIAYAMA}					% 著者
+\enumber	{71247475}						% 学籍番号
+\eadvisor	{Professor}{Yasuto NAKANISHI}				% 指導教官、形式は『{肩書}{名前}』
+\echief		{Professor}{Yoshiaki WATANABE}				% 学科主任名、形式は『{肩書}{名前}』
+\eyear	{2016}							% 西暦○年
+\ekeyword	{Lucid Dreaming, iOS, Sleep Monitoring}		% 論文のキーワード
+
+
+
+\begin{document}
+
+\jmaketitle		% 表紙（日本語）、不要ならコメントアウト
+\emaketitle		% 表紙（英語\ref{chap:latex}）、不要ならコメントアウト
+
+\include{00_abstract}	% アブストラクト。要独自コマンド、include先参照のこと
+
+\tableofcontents	% 目次
+ \listoffigures		% 図目次、不要ならコメントアウト
+% \listoftables		% 表目次、不要ならコメントアウト
+
+\pagenumbering{arabic}
+
+\include{01}	% 序論
+\include{02}	% WebAPIについて
+\include{03}	% 検索エンジンの精度向上
+\include{04}	% WWW視覚化
+\include{05}	% 開発手法
+\include{06}	% Androidアプリ「LEDOXEA」
+\include{07}	% アンケートによる評価と考察
+%\include{08}	% まとめ
+
+
+\include{90_acknowledgment}	% 謝辞。要独自コマンド、include先参照のこと
+\include{91_bibliography}	% 参考文献。要独自コマンド、include先参照のこと
+\appendix
+\include{92_appendix}		% 付録
+
+\end{document}

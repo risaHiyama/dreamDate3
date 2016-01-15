@@ -1,0 +1,494 @@
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2016.1.4)  15 JAN 2016 18:25
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**main
+(./main.tex
+pLaTeX2e <2006/11/10> (based on LaTeX2e <2015/01/01> patch level 0)
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+(/usr/local/texlive/2015/texmf-dist/tex/platex/base/jreport.cls
+Document Class: jreport 2006/06/27 v1.6 Standard pLaTeX class
+\c@@paper=\count81
+(/usr/local/texlive/2015/texmf-dist/tex/platex/base/jsize11.clo
+File: jsize11.clo 2006/06/27 v1.6 Standard pLaTeX file (size option)
+)
+\c@part=\count82
+\c@chapter=\count83
+\c@section=\count84
+\c@subsection=\count85
+\c@subsubsection=\count86
+\c@paragraph=\count87
+\c@subparagraph=\count88
+\c@figure=\count89
+\c@table=\count90
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\symmincho=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 677.
+\toclineskip=\dimen118
+\@lnumwidth=\dimen119
+\bibindent=\dimen120
+\heisei=\count91
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count92
+\Gm@cntv=\count93
+\c@Gm@tempcnt=\count94
+\Gm@bindingoffset=\dimen121
+\Gm@wd@mp=\dimen122
+\Gm@odd@mp=\dimen123
+\Gm@even@mp=\dimen124
+\Gm@layoutwidth=\dimen125
+\Gm@layoutheight=\dimen126
+\Gm@layouthoffset=\dimen127
+\Gm@layoutvoffset=\dimen128
+\Gm@dimlist=\toks16
+)
+(/usr/local/texlive/2015/texmf-dist/tex/platex/base/ascmac.sty
+(/usr/local/texlive/2015/texmf-dist/tex/platex/base/tascmac.sty
+\@savetbaselineshift=\dimen129
+\@saveybaselineshift=\dimen130
+\scb@x=\box41
+\scscb@x=\box42
+\@bw=\dimen131
+\@nbox=\box43
+\@nbody=\box44
+\@scw=\dimen132
+\@itemh=\dimen133
+\@iboxpos=\toks17
+\@iboxstr=\box45
+\@bwsp=\box46
+\@@bwsp=\box47
+\@bcal=\count95
+\shaderule=\dimen134
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 94.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 2014/10/14 v3.0j Driver-dependent file (DPC,SPQR)
+))
+\Gin@req@height=\dimen135
+\Gin@req@width=\dimen136
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen137
+)
+(./ylab_thesis.sty)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+) (./footmisc.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks18
+\footnotemargin=\dimen138
+\c@pp@next@reset=\count96
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+) (./otf.sty
+Package: otf 2010/03/22 v1.2.9.1 psitau
+
+(/usr/local/texlive/2015/texmf-dist/tex/platex/japanese-otf/ajmacros.sty
+Package: ajmacros 2005/12/25 13:52 iNOUE Koich! <inoue@ma.ns.musashi-tech.ac.jp
+>
+\@tempcntc=\count97
+\@tempcntd=\count98
+\@tempcnte=\count99
+\@tempcntf=\count100
+))
+(/usr/local/texlive/2015/texmf-dist/tex/generic/epsf/epsf.sty
+This is `epsf.tex' v2.7.4 <14 February 2011>
+\epsffilein=\read1
+\epsfframemargin=\dimen139
+\epsfframethickness=\dimen140
+\epsfrsize=\dimen141
+\epsftmp=\dimen142
+\epsftsize=\dimen143
+\epsfxsize=\dimen144
+\epsfysize=\dimen145
+\pspoints=\dimen146
+) (./main.aux (./00_abstract.aux) (./01.aux) (./02.aux
+
+LaTeX Warning: Label `拡張現実を体験したいタイミング' multiply defined.
+
+) (./03.aux
+
+LaTeX Warning: Label `DreamOnレビュー' multiply defined.
+
+) (./04.aux) (./05.aux
+
+LaTeX Warning: Label `DreamOnレビュー' multiply defined.
+
+) (./06.aux) (./07.aux) (./90_acknowledgment.aux) (./91_bibliography.aux
+
+LaTeX Warning: Label `saintDenys' multiply defined.
+
+) (./92_appendix.aux))
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+ (I search kanjifont definition file: . . )
+(I search font definition file: . . . . . . . )
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 10.53629pt on input line 72.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 10.53629pt on input line 72.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 72.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: dvips
+*geometry* verbose mode - [ preamble ] result:
+* driver: dvips
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=674.33032pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-23.91173pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=8.51457pt
+* \footskip=30.0pt
+* \marginparwidth=98.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 13.85594pt on input line 74.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 13.85594pt on input line 74.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 19.95642pt on input line 74.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 19.95642pt on input line 74.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <20.74> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 74.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 19.95642pt on input line 74.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <20.74> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 74.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 19.95642pt on input line 74.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 74.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 16.62714pt on input line 74.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 16.62714pt on input line 74.
+[1
+
+]
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 23.94002pt on input line 75.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 23.94002pt on input line 75.
+ (I search kanjifont definition file: . . ) (I search font definition file:
+. . . . . . . )
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 75.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+) [1]
+\openout2 = `00_abstract.aux'.
+
+ (./00_abstract.tex
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 7.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 13.85594pt on input line 7.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 7.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 13.85594pt on input line 7.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 7.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 16.62714pt on input line 7.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 7.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 16.62714pt on input line 7.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 11.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 10.53629pt on input line 11.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 11.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 10.53629pt on input line 11.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
+ [1
+
+]) (./main.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 2.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 7.69775pt on input line 2.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 5.77332pt on input line 2.
+ [2
+
+])
+\tf@toc=\write3
+\openout3 = `main.toc'.
+
+ [3] (./main.lof)
+\tf@lof=\write4
+\openout4 = `main.lof'.
+
+ [4]
+\openout2 = `01.aux'.
+
+ (./01.tex
+第 1 章
+File: eps/vrTrends.eps Graphic file (type eps)
+<eps/vrTrends.eps> [1
+
+
+]
+
+LaTeX Warning: Reference `chap:conclusion' on page 2 undefined on input line 35
+.
+
+) [2]
+\openout2 = `02.aux'.
+
+ (./02.tex
+第 2 章
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 11.54663pt on input line 9.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 11.54663pt on input line 9.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 9.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 11.54663pt on input line 9.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 9.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 11.54663pt on input line 9.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
+File: eps/VRselection.eps Graphic file (type eps)
+<eps/VRselection.eps> [3
+
+
+
+]
+File: eps/timing.eps Graphic file (type eps)
+ <eps/timing.eps>
+File: eps/remember.eps Graphic file (type eps)
+ <eps/remember.eps> [4]
+File: eps/input.eps Graphic file (type eps)
+
+<eps/input.eps>
+File: eps/lucidDreamingYesNo.eps Graphic file (type eps)
+ <eps/lucidDreamingYesNo.eps>
+File: eps/whatYouWantToDream.eps Graphic file (type eps)
+ <eps/whatYouWantToDream.eps>
+[5]
+File: eps/dreamType.eps Graphic file (type eps)
+ <eps/dreamType.eps>) [6] [7]
+\openout2 = `03.aux'.
+
+ (./03.tex
+第 3 章
+[8
+
+
+
+] [9]
+File: eps/takaratomi.eps Graphic file (type eps)
+ <eps/takaratomi.eps> [10]
+File: eps/dreamOn.eps Graphic file (type eps)
+ <eps/dreamOn.eps>) [11] [12]
+\openout2 = `04.aux'.
+
+ (./04.tex
+第 4 章
+File: eps/smell.eps Graphic file (type eps)
+<eps/smell.eps> [13
+
+
+
+]
+File: eps/kinect.eps Graphic file (type eps)
+ <eps/kinect.eps>) [14]
+\openout2 = `05.aux'.
+
+ (./05.tex
+第 5 章
+File: eps/dreamDate02.eps Graphic file (type eps)
+<eps/dreamDate02.eps> [15
+
+
+
+]
+File: eps/AppIntro.eps Graphic file (type eps)
+ <eps/AppIntro.eps>
+File: eps/AppMemoryImages.eps Graphic file (type eps)
+ <eps/AppMemoryImages.eps>
+File: eps/AppMusicPlay.eps Graphic file (type eps)
+
+<eps/AppMusicPlay.eps>
+File: eps/AppStart.eps Graphic file (type eps)
+ <eps/AppStart.eps>
+File: eps/AppDiary.eps Graphic file (type eps)
+ <eps/AppDiary.eps>) [16] [17]
+[18]
+\openout2 = `06.aux'.
+
+ (./06.tex
+第 6 章
+) [19
+
+
+
+]
+\openout2 = `07.aux'.
+
+ (./07.tex
+第 7 章
+[20
+
+
+
+]) [21]
+\openout2 = `90_acknowledgment.aux'.
+
+ (./90_acknowledgment.tex) [22
+
+
+
+]
+\openout2 = `91_bibliography.aux'.
+
+ (./91_bibliography.tex
+LaTeX Font Info:    Font shape `JT1/utfj/m/2' will be
+(Font)              scaled to size 10.53629pt on input line 13.
+LaTeX Font Info:    Font shape `JY1/utfj/m/2' will be
+(Font)              scaled to size 10.53629pt on input line 13.
+LaTeX Font Info:    Font shape `JT1/utfj/m/0' will be
+(Font)              scaled to size 10.53629pt on input line 34.
+LaTeX Font Info:    Font shape `JY1/utfj/m/0' will be
+(Font)              scaled to size 10.53629pt on input line 34.
+ [23
+
+
+
+]) [24]
+\openout2 = `92_appendix.aux'.
+
+
+(./92_appendix.tex
+付 録 A  
+
+LaTeX Warning: Citation `away3d' on page 25 undefined on input line 5.
+
+
+LaTeX Warning: Citation `bulkloader' on page 25 undefined on input line 6.
+
+
+LaTeX Warning: Citation `as3crypto' on page 25 undefined on input line 7.
+
+) [25
+
+
+
+] (./main.aux (./00_abstract.aux) (./01.aux) (./02.aux) (./03.aux)
+(./04.aux) (./05.aux) (./06.aux) (./07.aux) (./90_acknowledgment.aux)
+(./91_bibliography.aux) (./92_appendix.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3213 strings out of 493777
+ 39599 string characters out of 6151335
+ 115917 words of memory out of 5000000
+ 6581 multiletter control sequences out of 15000+600000
+ 20105 words of font info for 84 fonts, out of 8000000 for 9000
+ 929 hyphenation exceptions out of 8191
+ 25i,5n,20p,1027b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on main.dvi (31 pages, 83504 bytes).
