@@ -5,25 +5,25 @@
 \contentsline {chapter}{\numberline {第2章}研究背景}{3}
 \contentsline {section}{\numberline {2.1}拡張現実について調査}{3}
 \contentsline {subsection}{\numberline {2.1.1}拡張現実を体験するために一般的な人々が支払う金額}{3}
-\contentsline {subsection}{\numberline {2.1.2}拡張現実を体験したいタイミング}{4}
-\contentsline {section}{\numberline {2.2}明晰夢に関する調査}{4}
-\contentsline {subsection}{\numberline {2.2.1}夢をどのくらい記憶しているか}{4}
+\contentsline {subsection}{\numberline {2.1.2}拡張現実を体験したいタイミング}{3}
+\contentsline {section}{\numberline {2.2}明晰夢に関する調査}{3}
+\contentsline {subsection}{\numberline {2.2.1}夢をどのくらい記憶しているか}{3}
 \contentsline {subsection}{\numberline {2.2.2}夢に影響を与えやすい外的刺激}{5}
-\contentsline {subsection}{\numberline {2.2.3}明晰夢のニーズ}{5}
+\contentsline {subsection}{\numberline {2.2.3}明晰夢のニーズ}{6}
 \contentsline {subsection}{\numberline {2.2.4}明晰夢で体験したい内容}{6}
-\contentsline {section}{\numberline {2.3}拡張現実体験する手段として主流の手段とされているVirtual Realityではなく明晰夢に着目した背景}{6}
+\contentsline {section}{\numberline {2.3}調査から分かったこと}{6}
 \contentsline {chapter}{\numberline {第3章}先行研究}{8}
 \contentsline {section}{\numberline {3.1}モニタリング}{8}
 \contentsline {subsection}{\numberline {3.1.1}beddit}{8}
 \contentsline {subsection}{\numberline {3.1.2}NEUROON TECHNOLOGY}{8}
-\contentsline {subsection}{\numberline {3.1.3}Zero}{9}
+\contentsline {subsection}{\numberline {3.1.3}Zero}{8}
 \contentsline {subsection}{\numberline {3.1.4}Be Well App}{9}
 \contentsline {subsection}{\numberline {3.1.5}iSleep}{9}
 \contentsline {section}{\numberline {3.2}睡眠に対するインプット}{9}
 \contentsline {subsection}{\numberline {3.2.1}sleepSheep}{9}
-\contentsline {subsection}{\numberline {3.2.2}takaratomi}{10}
+\contentsline {subsection}{\numberline {3.2.2}takaratomi}{9}
 \contentsline {subsection}{\numberline {3.2.3}iWinks}{10}
-\contentsline {subsection}{\numberline {3.2.4}DreamOn}{11}
+\contentsline {subsection}{\numberline {3.2.4}DreamOn}{10}
 \contentsline {section}{\numberline {3.3}MemoryDreamの立ち位置}{11}
 \contentsline {chapter}{\numberline {第4章}スマートフォンアプリで睡眠中音を流す形に至った背景}{13}
 \contentsline {section}{\numberline {4.1}音に着目した背景：夢を効果的に操作するインプットについて調査}{13}

@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2016.1.4)  15 JAN 2016 23:23
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2016.1.4)  16 JAN 2016 01:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -142,11 +142,7 @@ This is `epsf.tex' v2.7.4 <14 February 2011>
 \epsfxsize=\dimen144
 \epsfysize=\dimen145
 \pspoints=\dimen146
-) (./main.aux (./00_abstract.aux) (./01.aux) (./02.aux
-
-LaTeX Warning: Label `拡張現実を体験したいタイミング' multiply defined.
-
-) (./03.aux
+) (./main.aux (./00_abstract.aux) (./01.aux) (./02.aux) (./03.aux
 
 LaTeX Warning: Label `DreamOnレビュー' multiply defined.
 
@@ -289,7 +285,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
  [1
 
-]) (./main.toc
+] [2]) (./main.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -300,20 +296,21 @@ LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 7.69775pt on input line 2.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 5.77332pt on input line 2.
- [2
+ [3
 
 ])
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
- [3] (./main.lof)
+ [4] (./main.lof)
 \tf@lof=\write4
 \openout4 = `main.lof'.
 
- [4]
+ [5]
 \openout2 = `01.aux'.
 
- (./01.tex
+
+(./01.tex
 第 1 章
 File: eps/vrTrends.eps Graphic file (type eps)
 <eps/vrTrends.eps> [1
@@ -344,25 +341,25 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
 File: eps/VRselection.eps Graphic file (type eps)
-<eps/VRselection.eps> [3
-
-
-
-]
+<eps/VRselection.eps>
 File: eps/timing.eps Graphic file (type eps)
  <eps/timing.eps>
 File: eps/remember.eps Graphic file (type eps)
- <eps/remember.eps> [4]
+ <eps/remember.eps> [3
+
+
+
+] [4]
 File: eps/input.eps Graphic file (type eps)
 
 <eps/input.eps>
 File: eps/lucidDreamingYesNo.eps Graphic file (type eps)
- <eps/lucidDreamingYesNo.eps>
-File: eps/whatYouWantToDream.eps Graphic file (type eps)
- <eps/whatYouWantToDream.eps>
-[5]
+ <eps/lucidDreamingYesNo.eps> [5]
 File: eps/dreamType.eps Graphic file (type eps)
- <eps/dreamType.eps>) [6] [7]
+ <eps/dreamType.eps>
+File: eps/whatYouWantToDream.eps Graphic file (type eps)
+
+<eps/whatYouWantToDream.eps>) [6] [7]
 \openout2 = `03.aux'.
 
  (./03.tex
@@ -375,7 +372,7 @@ File: eps/dreamType.eps Graphic file (type eps)
 File: eps/takaratomi.eps Graphic file (type eps)
  <eps/takaratomi.eps> [10]
 File: eps/dreamOn.eps Graphic file (type eps)
- <eps/dreamOn.eps>) [11] [12]
+ <eps/dreamOn.eps> [11]) [12]
 \openout2 = `04.aux'.
 
  (./04.tex
@@ -482,12 +479,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3220 strings out of 493777
- 39698 string characters out of 6151335
- 115943 words of memory out of 5000000
- 6587 multiletter control sequences out of 15000+600000
- 20105 words of font info for 84 fonts, out of 8000000 for 9000
+ 3223 strings out of 493777
+ 39631 string characters out of 6151335
+ 115953 words of memory out of 5000000
+ 6590 multiletter control sequences out of 15000+600000
+ 21317 words of font info for 86 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 25i,5n,20p,948b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 25i,5n,20p,950b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (32 pages, 86824 bytes).
+Output written on main.dvi (33 pages, 88620 bytes).
