@@ -25,37 +25,43 @@
 \contentsline {subsection}{\numberline {3.1.5}iSleep}{10}
 \contentsline {subsection}{\numberline {3.1.6}Be Well App}{10}
 \contentsline {section}{\numberline {3.2}睡眠に対するインプット}{11}
-\contentsline {section}{\numberline {3.3}MemoryDreamの立ち位置}{13}
+\contentsline {section}{\numberline {3.3}Dreamtravelerの立ち位置}{13}
 \contentsline {chapter}{\numberline {第4章}スマートフォンアプリで睡眠中音を流す形に至った背景}{14}
 \contentsline {section}{\numberline {4.1}音に着目した背景：夢を効果的に操作するインプットについて調査}{14}
-\contentsline {subsection}{\numberline {4.1.1}実験：香りをインプットとして作ったプロトタイプ}{14}
-\contentsline {subsection}{\numberline {4.1.2}実験：音をインプットとして作ったもの}{14}
-\contentsline {section}{\numberline {4.2}iOSアプリに至った背景：REM睡眠のセンシング方法}{15}
-\contentsline {subsection}{\numberline {4.2.1}実験１：kinect}{15}
-\contentsline {subsection}{\numberline {4.2.2}実験２：mindWave}{16}
-\contentsline {subsection}{\numberline {4.2.3}実験３：パルスセンサー}{16}
-\contentsline {subsection}{\numberline {4.2.4}実験４：iOSアプリ}{16}
-\contentsline {chapter}{\numberline {第5章}開発手法}{17}
-\contentsline {section}{\numberline {5.1}概要}{17}
-\contentsline {section}{\numberline {5.2}利用方法}{17}
-\contentsline {section}{\numberline {5.3}システム概要}{20}
-\contentsline {subsection}{\numberline {5.3.1}センシングの方法とその正確性}{20}
-\contentsline {chapter}{\numberline {第6章}実験方法とその結果}{21}
-\contentsline {subsection}{\numberline {6.0.1}調査対象}{21}
-\contentsline {subsection}{\numberline {6.0.2}実験方法}{22}
-\contentsline {subsection}{\numberline {6.0.3}観察の方法}{23}
-\contentsline {section}{\numberline {6.1}実験結果}{23}
-\contentsline {subsection}{\numberline {6.1.1}データの提示}{23}
-\contentsline {subsection}{\numberline {6.1.2}解析結果の説明}{23}
-\contentsline {subsection}{\numberline {6.1.3}結果のまとめ}{23}
-\contentsline {chapter}{\numberline {第7章}結論}{24}
-\contentsline {section}{\numberline {7.1}本研究の総括}{24}
-\contentsline {section}{\numberline {7.2}今後の展開}{24}
-\contentsline {subsection}{\numberline {7.2.1}アプリの製作}{24}
-\contentsline {subsection}{\numberline {7.2.2}音による睡眠の悪影響につちえ医療の専門家に確認}{25}
-\contentsline {subsection}{\numberline {7.2.3}実験の精度をあげて大人数での実験を行う}{25}
-\contentsline {subsection}{\numberline {7.2.4}夢を見るために現実を加工することも検討}{25}
-\contentsline {subsection}{\numberline {7.2.5}医療の現場においての有効性を考える}{25}
-\contentsline {chapter}{謝辞}{26}
-\contentsline {chapter}{参考文献}{27}
-\contentsline {chapter}{\numberline {付 録A }プログラム}{29}
+\contentsline {subsection}{\numberline {4.1.1}プロトタイプ：アロマで刺激}{14}
+\contentsline {subsection}{\numberline {4.1.2}プロトタイプ：音で刺激}{15}
+\contentsline {section}{\numberline {4.2}スマートフォンアプリに至った背景}{15}
+\contentsline {subsection}{\numberline {4.2.1}脳波センサーを使ったプロトタイプ}{15}
+\contentsline {subsection}{\numberline {4.2.2}心拍センサーによるプロトタイプ}{15}
+\contentsline {subsection}{\numberline {4.2.3}kinectを使ったプロトタイプ}{17}
+\contentsline {subsection}{\numberline {4.2.4}スマートフォンアプリによるセンシング}{17}
+\contentsline {chapter}{\numberline {第5章}開発手法}{18}
+\contentsline {section}{\numberline {5.1}概要}{18}
+\contentsline {section}{\numberline {5.2}利用方法}{18}
+\contentsline {section}{\numberline {5.3}システム概要：アプリの動作}{21}
+\contentsline {subsection}{\numberline {5.3.1}キャリブレーション}{21}
+\contentsline {subsection}{\numberline {5.3.2}モニタリングと音楽再生}{21}
+\contentsline {subsection}{\numberline {5.3.3}記録}{22}
+\contentsline {chapter}{\numberline {第6章}実験方法とその結果}{23}
+\contentsline {section}{\numberline {6.1}実験方法}{23}
+\contentsline {section}{\numberline {6.2}実験スケジュール}{23}
+\contentsline {section}{\numberline {6.3}調査対象}{23}
+\contentsline {section}{\numberline {6.4}観察の方法}{26}
+\contentsline {section}{\numberline {6.5}実験結果}{26}
+\contentsline {subsection}{\numberline {6.5.1}より詳しい実験結果}{26}
+\contentsline {section}{\numberline {6.6}解析結果の考察}{27}
+\contentsline {subsection}{\numberline {6.6.1}音の効果、有効的なタイミング}{27}
+\contentsline {subsection}{\numberline {6.6.2}Dreamtravelerを長く使用すれば使用するほど効果が高まる}{27}
+\contentsline {subsection}{\numberline {6.6.3}睡眠に入る前に瞑想をする時間、写真を眺める時間を加えた方が高い効果が見込まれる}{27}
+\contentsline {subsection}{\numberline {6.6.4}年齢層が高いほど影響を受けにくい可能性がある}{27}
+\contentsline {chapter}{\numberline {第7章}結論}{28}
+\contentsline {section}{\numberline {7.1}本研究の総括}{28}
+\contentsline {section}{\numberline {7.2}今後の展開}{28}
+\contentsline {subsection}{\numberline {7.2.1}アプリの製作}{29}
+\contentsline {subsection}{\numberline {7.2.2}音による睡眠の悪影響について医療の専門家に確認}{29}
+\contentsline {subsection}{\numberline {7.2.3}思い出の多様化}{29}
+\contentsline {subsection}{\numberline {7.2.4}大人数での実験を行う}{29}
+\contentsline {subsection}{\numberline {7.2.5}医療の現場においての有効性を考える}{29}
+\contentsline {chapter}{謝辞}{30}
+\contentsline {chapter}{参考文献}{31}
+\contentsline {chapter}{\numberline {付 録A }プログラム}{33}
