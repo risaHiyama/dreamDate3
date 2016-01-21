@@ -3,17 +3,17 @@
 \contentsline {section}{\numberline {1.2}本研究の目的}{2}
 \contentsline {section}{\numberline {1.3}本文書の構成}{2}
 \contentsline {chapter}{\numberline {第2章}研究背景}{3}
-\contentsline {section}{\numberline {2.1}拡張現実について調査}{3}
-\contentsline {subsection}{\numberline {2.1.1}拡張現実を体験するために一般的な人々が支払う金額}{3}
-\contentsline {subsection}{\numberline {2.1.2}拡張現実を体験したいタイミング }{3}
+\contentsline {section}{\numberline {2.1}仮想現実について調査}{3}
+\contentsline {subsection}{\numberline {2.1.1}仮想現実を体験するために一般的な人々が支払う金額}{3}
+\contentsline {subsection}{\numberline {2.1.2}仮想現実を体験したいタイミング }{3}
 \contentsline {section}{\numberline {2.2}睡眠に関する調査}{4}
 \contentsline {subsection}{\numberline {2.2.1}睡眠と睡眠段階（睡眠の深さのレベル）について}{4}
 \contentsline {subsection}{\numberline {2.2.2}夢は現実であると錯覚するほどリアル}{5}
 \contentsline {subsection}{\numberline {2.2.3}人はなぜ夢を見るのか}{5}
-\contentsline {subsection}{\numberline {2.2.4}睡眠段階のセンシング方法}{5}
+\contentsline {subsection}{\numberline {2.2.4}睡眠段階のセンシング方法}{6}
 \contentsline {section}{\numberline {2.3}明晰夢に関するアンケート調査}{6}
 \contentsline {subsection}{\numberline {2.3.1}夢をどのくらい記憶しているか}{6}
-\contentsline {subsection}{\numberline {2.3.2}夢に影響を与えやすい外的刺激}{6}
+\contentsline {subsection}{\numberline {2.3.2}夢に影響を与えやすい外的刺激}{7}
 \contentsline {subsection}{\numberline {2.3.3}明晰夢のニーズ}{7}
 \contentsline {subsection}{\numberline {2.3.4}明晰夢で体験したい内容}{7}
 \contentsline {section}{\numberline {2.4}調査から分かったこと}{8}
@@ -26,8 +26,8 @@
 \contentsline {subsection}{\numberline {3.1.5}iSleep}{11}
 \contentsline {subsection}{\numberline {3.1.6}Be Well App}{11}
 \contentsline {section}{\numberline {3.2}睡眠に対するインプット}{12}
-\contentsline {section}{\numberline {3.3}Dreamtravelerの立ち位置}{13}
-\contentsline {chapter}{\numberline {第4章}DreamTraveler開発プロセス}{15}
+\contentsline {section}{\numberline {3.3}DreamDateの立ち位置}{13}
+\contentsline {chapter}{\numberline {第4章}DreamDate開発プロセス}{15}
 \contentsline {section}{\numberline {4.1}音に着目した背景：夢を効果的に操作するインプットについて調査}{15}
 \contentsline {subsection}{\numberline {4.1.1}プロトタイプ：アロマで刺激}{15}
 \contentsline {subsection}{\numberline {4.1.2}プロトタイプ：音で刺激}{16}
@@ -46,11 +46,11 @@
 \contentsline {chapter}{\numberline {第6章}評価}{24}
 \contentsline {section}{\numberline {6.1}予備実験1：音が夢に与えた回数}{24}
 \contentsline {section}{\numberline {6.2}予備実験2：睡眠中に流す音の種類とそれが与える影響}{24}
-\contentsline {section}{\numberline {6.3}実験：音を流すタイミングが夢に与える影響}{24}
-\contentsline {subsection}{\numberline {6.3.1}実験方法}{26}
-\contentsline {subsection}{\numberline {6.3.2}被験者の詳細}{26}
+\contentsline {section}{\numberline {6.3}実験：音を流すタイミングが夢に与える影響}{25}
+\contentsline {subsection}{\numberline {6.3.1}実験方法}{25}
+\contentsline {subsection}{\numberline {6.3.2}被験者の詳細}{25}
 \contentsline {subsection}{\numberline {6.3.3}実験結果}{27}
-\contentsline {section}{\numberline {6.4}解析結果の考察}{29}
+\contentsline {section}{\numberline {6.4}考察}{28}
 \contentsline {chapter}{\numberline {第7章}結論}{31}
 \contentsline {section}{\numberline {7.1}本研究の総括}{31}
 \contentsline {section}{\numberline {7.2}今後の展望}{31}
