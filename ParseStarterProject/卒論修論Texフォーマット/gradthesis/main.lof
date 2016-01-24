@@ -1,36 +1,32 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Virtual Reality トレンド}}{1}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces VirtualRealityのシュミレーション環境の推移}}{1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces 仮想現実を体験するために一般的ユーザーが選ぶデバイス}}{4}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces nonREMとREM睡眠}}{5}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces REM睡眠中の脳の働き睡眠}}{6}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces 夢を覚えている比率}}{7}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces 夢に影響を与えた外的刺激}}{7}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces 明晰夢で体験したい内容：分析１}}{8}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces 明晰夢で体験したい内容：分析２}}{9}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces nonREM睡眠とREM睡眠}}{5}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces REM睡眠中の脳の働きのモデル}}{6}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces 夢に影響を与えた外的刺激}}{7}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces 明晰夢で体験したい内容のカテゴリ:分析1}}{8}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces 明晰夢で体験したい内容の詳細:分析2}}{8}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces オムロン睡眠計の外観}}{9}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces 夢見工房}}{11}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces DreamOnのユーザレビュー}}{11}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces オムロン睡眠計のデザイン}}{11}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces 夢見工房のイメージ}}{12}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces DreamOnアプリのレビュー}}{13}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces 香りによる刺激}}{13}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces 香りによる刺激の実験結果}}{14}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces 脳波センサーによるセンシングのプログラムと睡眠ステージと脳波の数値}}{15}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces 心拍センサーによるセンシング}}{16}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces kinectによるセンシング}}{16}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces DreamDateの配置}}{17}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces 音刺激提示のタイミング}}{18}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces DreamDateのフローチャート}}{19}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces 起動画面}}{20}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces 思い出の画像を表示}}{20}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces 思い出に関連した音刺激の提示}}{21}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces 睡眠開始ボタン}}{21}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces 夢日記記入ページ}}{21}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces 香りで夢を刺激}}{15}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces 香りによる刺激の実験結果}}{16}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces 脳波センサーによるセンシングのプログラムと睡眠ステージと脳波の数値}}{17}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces 心拍センサーによるセンシング}}{18}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces kinectによるセンシング}}{18}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces DreamDate：枕の横に配置して、ユーザの体動を観測する}}{20}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces 起動画面}}{21}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces 思い出の画像を表示}}{21}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces 思い出の音楽が流れる}}{21}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces 眠り開始ボタン}}{21}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces 夢日記記入ページ}}{22}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces オレンジの部分（REM睡眠中）に音楽を流す}}{23}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces DreamDateのシステム}}{23}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces 予備実験1：実験スケジュールと実験結果}}{25}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces 予備実験2：実験スケジュールと実験結果}}{26}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces 実験スケジュールと実験結果}}{28}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces 関連した夢を見た回数をタイミング別に表した}}{29}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces 予備実験1：実験スケジュールと実験結果}}{23}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces 予備実験2：実験スケジュールと実験結果}}{24}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces 実験スケジュールと実験結果}}{26}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces 刺激提示のタイミング別の関連した夢を見た回数}}{27}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
