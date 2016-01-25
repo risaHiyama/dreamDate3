@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2016.1.4)  25 JAN 2016 00:36
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2016.1.4)  25 JAN 2016 09:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -313,17 +313,11 @@ File: eps/vrTrends.eps Graphic file (type eps)
 
 
 ] [2]
-Overfull \hbox (3.90648pt too wide) in paragraph at lines 35--36
+Overfull \hbox (3.90648pt too wide) in paragraph at lines 34--35
 []\JY1/mc/m/n/10.95 明晰夢を促進するデバイスとしては株式会社タカラトミ ーが開発
 した夢見工房 \OT1/ptm/m/n/10.95 [[]] \JY1/mc/m/n/10.95 や \OT1/ptm/m/n/10.95 Dr
 eamON[[]]
  []
-
-
-LaTeX Warning: Reference `chap:ledoxea' on page 3 undefined on input line 47.
-
-
-LaTeX Warning: Reference `chap:result' on page 3 undefined on input line 47.
 
 ) [3]
 \openout2 = `02.aux'.
@@ -364,9 +358,9 @@ File: eps/omuron.eps Graphic file (type eps)
  <eps/omuron.eps>
 [9]
 File: eps/takaratomi.eps Graphic file (type eps)
- <eps/takaratomi.eps>
+ <eps/takaratomi.eps> [10]
 File: eps/dreamOn.eps Graphic file (type eps)
- <eps/dreamOn.eps> [10] [11]) [12]
+ <eps/dreamOn.eps> [11]) [12]
 \openout2 = `03.aux'.
 
  (./03.tex
@@ -421,7 +415,7 @@ File: eps/schedule2.eps Graphic file (type eps)
  <eps/schedule2.eps>
 [25]
 File: eps/result.eps Graphic file (type eps)
- <eps/result.eps> [26] [27] [28]) [29]
+ <eps/result.eps> [26] [27]) [28] [29]
 \openout2 = `05.aux'.
 
  (./05.tex
@@ -467,19 +461,16 @@ LaTeX Font Info:    Font shape `JY1/utfj/m/0' will be
 (./04.aux) (./05.aux) (./90_acknowledgment.aux) (./91_bibliography.aux)
 (./92_appendix.aux))
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3243 strings out of 493777
- 39897 string characters out of 6151335
- 116494 words of memory out of 5000000
- 6617 multiletter control sequences out of 15000+600000
+ 3241 strings out of 493777
+ 39870 string characters out of 6151335
+ 115494 words of memory out of 5000000
+ 6615 multiletter control sequences out of 15000+600000
  21317 words of font info for 86 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 25i,5n,20p,1356b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 25i,4n,20p,1272b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (44 pages, 136172 bytes).
+Output written on main.dvi (44 pages, 134632 bytes).

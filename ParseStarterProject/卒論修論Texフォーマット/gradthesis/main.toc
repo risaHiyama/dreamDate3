@@ -13,7 +13,7 @@
 \contentsline {section}{\numberline {2.4}睡眠の観測と夢の制御}{7}
 \contentsline {subsection}{\numberline {2.4.1}睡眠の観測}{7}
 \contentsline {subsection}{\numberline {2.4.2}睡眠時の刺激提示}{10}
-\contentsline {section}{\numberline {2.5}本研究の位置付け}{12}
+\contentsline {section}{\numberline {2.5}本研究の位置付け}{11}
 \contentsline {chapter}{\numberline {第3章}DreamDateのプロトタイピングと機能}{13}
 \contentsline {section}{\numberline {3.1}刺激提示のプロトタイピング}{13}
 \contentsline {subsection}{\numberline {3.1.1}香りによる刺激}{13}
