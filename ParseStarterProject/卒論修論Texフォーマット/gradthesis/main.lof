@@ -1,7 +1,7 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces 睡眠中の脳の記憶モデル（Zhang, 2006, p.3）}}{5}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces 睡眠サイクルの図 (Catalyst Athletics, 2004, p.1) }}{6}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces 睡眠サイクルの図 (Catalyst Athletics, 2004, p.1) }}{5}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces 睡眠中の脳の記憶モデル（Zhang, 2006, p.3）}}{5}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces 夢に影響を与えた外的刺激}}{6}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces 明晰夢で体験したい内容のカテゴリ:分析1}}{7}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces 明晰夢で体験したい内容の詳細:分析2}}{8}
@@ -10,10 +10,11 @@
 \contentsline {figure}{\numberline {2.8}{\ignorespaces DreamOn音選択画面}}{11}
 \contentsline {figure}{\numberline {2.9}{\ignorespaces DreamOnのユーザレビュー}}{11}
 \contentsline {figure}{\numberline {2.10}{\ignorespaces ユメミールのユーザレビュー}}{12}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces DreamDateと各関連研究の位置付け}}{12}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces DreamDateの配置}}{14}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces 音刺激提示のタイミング}}{15}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces DreamDateのフローチャート}}{16}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces DreamDateのフローチャート}}{15}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces 音刺激提示のタイミング}}{16}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces 起動画面}}{17}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces 思い出の画像を表示}}{17}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces 思い出に関連した音刺激の提示}}{17}
@@ -36,3 +37,4 @@
 \contentsline {figure}{\numberline {A.3}{\ignorespaces 脳波センサーによるセンシングのプログラムと睡眠ステージと脳波の数値}}{39}
 \contentsline {figure}{\numberline {A.4}{\ignorespaces 心拍センサーによるセンシング}}{40}
 \contentsline {figure}{\numberline {A.5}{\ignorespaces kinectによるセンシング}}{40}
+\contentsline {figure}{\numberline {A.6}{\ignorespaces オンラインアンケートの質問項目}}{42}
