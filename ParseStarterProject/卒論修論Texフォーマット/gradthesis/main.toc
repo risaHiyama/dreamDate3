@@ -1,6 +1,6 @@
 \contentsline {chapter}{\numberline {第1章}序論}{1}
 \contentsline {section}{\numberline {1.1}研究の背景}{1}
-\contentsline {section}{\numberline {1.2}研究の目的：レム睡眠時における音刺激の提示を 用いた夢制御システム"DreamDate"}{2}
+\contentsline {section}{\numberline {1.2}研究の目的：レム睡眠時における音刺激の提示を 用いた夢制御システムDreamDate}{2}
 \contentsline {section}{\numberline {1.3}本論文の構成}{3}
 \contentsline {chapter}{\numberline {第2章}関連研究}{4}
 \contentsline {section}{\numberline {2.1}夢と睡眠}{4}
@@ -8,13 +8,11 @@
 \contentsline {subsection}{\numberline {2.1.2}夢と記憶}{4}
 \contentsline {subsection}{\numberline {2.1.3}睡眠段階のセンシング方法}{6}
 \contentsline {section}{\numberline {2.2}明晰夢に関するオンラインアンケート調査}{6}
-\contentsline {section}{\numberline {2.3}仮想現実システムに関するオンラインアンケート調査}{7}
-\contentsline {subsection}{\numberline {2.3.1}仮想現実を体験したいタイミング }{8}
-\contentsline {section}{\numberline {2.4}睡眠の観測と夢の制御}{8}
-\contentsline {subsection}{\numberline {2.4.1}睡眠の観測：先行研究}{8}
-\contentsline {subsection}{\numberline {2.4.2}睡眠時の刺激提示：先行研究}{10}
-\contentsline {section}{\numberline {2.5}本研究の位置付け}{11}
-\contentsline {chapter}{\numberline {第3章}DreamDateのプロトタイピングと機能}{13}
+\contentsline {section}{\numberline {2.3}睡眠の観測と夢の制御}{7}
+\contentsline {subsection}{\numberline {2.3.1}睡眠の観測：先行研究}{7}
+\contentsline {subsection}{\numberline {2.3.2}睡眠時の刺激提示：先行研究}{9}
+\contentsline {section}{\numberline {2.4}本研究の位置付け}{11}
+\contentsline {chapter}{\numberline {第3章}DreamDateの機能}{13}
 \contentsline {section}{\numberline {3.1}概要}{13}
 \contentsline {subsection}{\numberline {3.1.1}機能}{13}
 \contentsline {subsection}{\numberline {3.1.2}システム}{13}
@@ -22,29 +20,29 @@
 \contentsline {chapter}{\numberline {第4章}ユーザスタディ}{19}
 \contentsline {section}{\numberline {4.1}予備実験1:音刺激の有無}{19}
 \contentsline {section}{\numberline {4.2}予備実験2:音刺激の種類}{19}
-\contentsline {section}{\numberline {4.3}予備実験から浮かび上がった仮説}{21}
+\contentsline {section}{\numberline {4.3}予備実験から浮かび上がった仮説}{20}
 \contentsline {section}{\numberline {4.4}実験: 音とタイミング}{21}
 \contentsline {subsection}{\numberline {4.4.1}被験者の詳細と使用した音}{22}
-\contentsline {subsection}{\numberline {4.4.2}実験結果}{23}
-\contentsline {section}{\numberline {4.5}考察}{26}
-\contentsline {subsection}{\numberline {4.5.1}DreamDateによる明晰夢システムの有効性}{26}
-\contentsline {subsection}{\numberline {4.5.2}DreamDateの有効性を高めるためにできること}{27}
-\contentsline {subsection}{\numberline {4.5.3}明晰夢で好ましい仮想体験を味わうことはできるのか}{29}
-\contentsline {chapter}{\numberline {第5章}結論}{30}
-\contentsline {section}{\numberline {5.1}本研究の総括}{30}
-\contentsline {section}{\numberline {5.2}今後の展望}{30}
-\contentsline {subsection}{\numberline {5.2.1}スマートフォンアプリの課題}{31}
-\contentsline {subsection}{\numberline {5.2.2}明晰夢を制御することの課題}{31}
-\contentsline {chapter}{謝辞}{33}
-\contentsline {chapter}{参考文献}{34}
-\contentsline {chapter}{\numberline {付 録A }付録}{37}
-\contentsline {section}{\numberline {A.1}DreamDateプロトタイプ}{37}
-\contentsline {subsection}{\numberline {A.1.1}刺激提示のプロトタイピング}{37}
-\contentsline {subsubsection}{\numberline {(1)}香りによる刺激}{37}
-\contentsline {subsubsection}{\numberline {(2)}音による刺激}{38}
-\contentsline {subsection}{\numberline {A.1.2}睡眠観測のプロトタイピング}{38}
-\contentsline {subsubsection}{\numberline {(1)}脳波センサーによる観測}{38}
-\contentsline {subsubsection}{\numberline {(2)}心拍センサーによる観測}{39}
-\contentsline {subsubsection}{\numberline {(3)}kinectによる観測}{39}
-\contentsline {subsubsection}{\numberline {(4)}スマートフォンの加速度センサによる観測}{39}
-\contentsline {section}{\numberline {A.2}オンラインアンケートの質問項目}{41}
+\contentsline {subsection}{\numberline {4.4.2}実験結果}{24}
+\contentsline {section}{\numberline {4.5}考察}{24}
+\contentsline {subsection}{\numberline {4.5.1}睡眠中のユーザに音刺激を提示することで見る夢の内容を制御できるのか}{24}
+\contentsline {subsection}{\numberline {4.5.2}DreamDateの夢を制御できる確率を高めるためにできること}{29}
+\contentsline {subsection}{\numberline {4.5.3}DreamDate によって HMD よりでユーザ個別の経験に関連する現実世界に近いコンテンツを体験できるか}{30}
+\contentsline {chapter}{\numberline {第5章}結論}{31}
+\contentsline {section}{\numberline {5.1}本研究の総括}{31}
+\contentsline {section}{\numberline {5.2}今後の展望}{31}
+\contentsline {subsection}{\numberline {5.2.1}スマートフォンアプリの課題}{32}
+\contentsline {subsection}{\numberline {5.2.2}明晰夢を制御することの課題}{32}
+\contentsline {chapter}{謝辞}{34}
+\contentsline {chapter}{参考文献}{35}
+\contentsline {chapter}{\numberline {付 録A }付録}{38}
+\contentsline {section}{\numberline {A.1}DreamDateプロトタイプ}{38}
+\contentsline {subsection}{\numberline {A.1.1}刺激提示のプロトタイピング}{38}
+\contentsline {subsubsection}{\numberline {(1)}香りによる刺激}{38}
+\contentsline {subsubsection}{\numberline {(2)}音による刺激}{39}
+\contentsline {subsection}{\numberline {A.1.2}睡眠観測のプロトタイピング}{39}
+\contentsline {subsubsection}{\numberline {(1)}脳波センサーによる観測}{39}
+\contentsline {subsubsection}{\numberline {(2)}心拍センサーによる観測}{40}
+\contentsline {subsubsection}{\numberline {(3)}kinectによる観測}{40}
+\contentsline {subsubsection}{\numberline {(4)}スマートフォンの加速度センサによる観測}{40}
+\contentsline {section}{\numberline {A.2}オンラインアンケートの質問項目}{42}
